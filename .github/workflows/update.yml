@@ -36,7 +36,7 @@ jobs:
           cache: pip
 
       - name: Install deps
-        run: pip install pyyaml
+        run: pip install -r requirements.txt
 
       - name: Build data.json
         run: python scripts/build.py
