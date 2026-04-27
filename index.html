@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Climber Tier Chart</title>
+<style>
+  :root {
+    --bg: #0e1014;
+    --bg-elev: #161a21;
+    --bg-row: #1c2129;
+    --bg-row-hover: #232a35;
+    --border: #2a313c;
+    --text: #e6e9ef;
+    --text-dim: #8a93a3;
+    --accent: #f59e0b;
+    --accent-soft: #f59e0b22;
+    --rank-1: #f5d063;
+    --rank-2: #c8c8d0;
+    --rank-3: #c08760;
+    --pill-bg: #232a35;
+    --pill-bg-active: #f59e0b;
+    --pill-fg-active: #0e1014;
+    --fa-bg: #2c3a4a;
+    --fa-fg: #9bd0ff;
+    --flash-bg: #3a2c4a;
+    --flash-fg: #d29bff;
+    --onsight-bg: #2c4a32;
+    --onsight-fg: #9bffb1;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 20px 64px; }
+
+  header h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  header .sub { color: var(--text-dim); font-size: 14px; margin: 0 0 24px; }
+  header .meta { color: var(--text-dim); font-size: 12px; margin: 0 0 20px; }
+  header .meta code { background: var(--bg-elev); padding: 1px 5px; border-radius: 4px; font-size: 11px; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 18px; }
+  .pills { display: inline-flex; background: var(--bg-elev); border-radius: 999px; padding: 4px; }
+  .pill {
+    cursor: pointer;
+    border: none; background: transparent; color: var(--text-dim);
+    padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 500;
+    transition: background 0.15s, color 0.15s;
+  }
+  .pill:hover { color: var(--text); }
+  .pill.active { background: var(--pill-bg-active); color: var(--pill-fg-active); }
+
+  table { width: 100%; border-collapse: collapse; background: var(--bg-elev); border-radius: 10px; overflow: hidden; }
+  thead th {
+    background: var(--bg-elev);
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  thead th.num, td.num { text-align: right; }
+  tbody tr { background: var(--bg-row); border-top: 1px solid var(--border); cursor: pointer; }
+  tbody tr:first-child { border-top: none; }
+  tbody tr:hover { background: var(--bg-row-hover); }
+  tbody td { padding: 12px 14px; vertical-align: middle; }
+
+  .rank { font-weight: 700; font-variant-numeric: tabular-nums; width: 44px; }
+  .rank.r1 { color: var(--rank-1); }
+  .rank.r2 { color: var(--rank-2); }
+  .rank.r3 { color: var(--rank-3); }
+
+  .climber { display: flex; flex-direction: column; gap: 2px; }
+  .climber .name { font-weight: 600; }
+  .climber .meta { color: var(--text-dim); font-size: 12px; }
+  .country { font-variant: tabular-nums; }
+
+  .grade { font-weight: 600; color: var(--accent); }
+  .route-name { color: var(--text); }
+  .route-meta { color: var(--text-dim); font-size: 12px; }
+
+  .chip {
+    display: inline-block; padding: 1px 6px; border-radius: 4px; font-size: 10px;
+    font-weight: 600; letter-spacing: 0.04em; margin-left: 6px; vertical-align: middle;
+  }
+  .chip.fa { background: var(--fa-bg); color: var(--fa-fg); }
+  .chip.flash { background: var(--flash-bg); color: var(--flash-fg); }
+  .chip.onsight { background: var(--onsight-bg); color: var(--onsight-fg); }
+
+  /* Expandable details row */
+  tr.detail-row td { background: var(--bg); padding: 0; border-top: 1px solid var(--border); }
+  tr.detail-row .detail-inner { padding: 16px 24px 20px; }
+  tr.detail-row h4 { margin: 0 0 8px; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); }
+  tr.detail-row ul { margin: 0 0 14px; padding: 0; list-style: none; }
+  tr.detail-row li { padding: 4px 0; font-size: 13px; border-bottom: 1px dotted var(--border); }
+  tr.detail-row li:last-child { border-bottom: none; }
+  tr.detail-row li .grade { margin-right: 8px; }
+
+  .empty { padding: 32px; color: var(--text-dim); text-align: center; }
+
+  footer { margin-top: 32px; color: var(--text-dim); font-size: 12px; text-align: center; }
+  footer a { color: var(--text-dim); text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .num.hide-sm { display: none; }
+    thead th.hide-sm { display: none; }
+    .wrap { padding: 20px 14px 48px; }
+    header h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Climber Tier Chart</h1>
+    <p class="sub">Outdoor power rankings — sport, bouldering, and overall.</p>
+    <p class="meta" id="meta-line"></p>
+  </header>
+
+  <div class="controls">
+    <div class="pills" role="tablist" aria-label="Discipline">
+      <button class="pill active" data-board="sport">Sport</button>
+      <button class="pill" data-board="boulder">Bouldering</button>
+      <button class="pill" data-board="overall">Overall</button>
+    </div>
+    <div class="pills" role="tablist" aria-label="Time scope">
+      <button class="pill active" data-scope="all_time">All-Time</button>
+      <button class="pill" data-scope="current">Current</button>
+    </div>
+  </div>
+
+  <table id="leaderboard">
+    <thead>
+      <tr>
+        <th class="num">#</th>
+        <th>Climber</th>
+        <th>Hardest send</th>
+        <th class="num hide-sm" title="Sends at V15 / 9a+ or harder"># hard sends</th>
+        <th class="hide-sm">Hardest flash</th>
+        <th class="num hide-sm" title="Flashes/onsights at V15 / 9a+ or harder"># hard flashes</th>
+      </tr>
+    </thead>
+    <tbody id="rows">
+      <tr><td colspan="6" class="empty">Loading…</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Ranked by hardest single send, then volume of hard sends (V15+/9a+),
+    then hardest flash, then volume of hard flashes.
+    Data lives in <code>climbers.yaml</code> — open a PR to add a send.
+  </footer>
+</div>
+
+<script>
+const STATE = { board: "sport", scope: "all_time", data: null };
+
+async function init() {
+  try {
+    const res = await fetch("data.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    STATE.data = await res.json();
+  } catch (e) {
+    document.getElementById("rows").innerHTML =
+      `<tr><td colspan="6" class="empty">Couldn't load <code>data.json</code>. ` +
+      `Run <code>python scripts/build.py</code> first.<br>${e}</td></tr>`;
+    return;
+  }
+
+  // Meta line
+  const d = STATE.data;
+  const m = document.getElementById("meta-line");
+  m.innerHTML =
+    `${d.totals.climbers} climbers · ${d.totals.sends} qualifying sends · ` +
+    `<code>Current</code> = ${d.current_window.from_year}–present · ` +
+    `Updated ${d.generated_at}`;
+
+  // Wire up controls
+  document.querySelectorAll(".pill[data-board]").forEach(btn =>
+    btn.addEventListener("click", () => setBoard(btn.dataset.board))
+  );
+  document.querySelectorAll(".pill[data-scope]").forEach(btn =>
+    btn.addEventListener("click", () => setScope(btn.dataset.scope))
+  );
+
+  render();
+}
+
+function setBoard(board) {
+  STATE.board = board;
+  document.querySelectorAll(".pill[data-board]").forEach(b =>
+    b.classList.toggle("active", b.dataset.board === board)
+  );
+  render();
+}
+
+function setScope(scope) {
+  STATE.scope = scope;
+  document.querySelectorAll(".pill[data-scope]").forEach(b =>
+    b.classList.toggle("active", b.dataset.scope === scope)
+  );
+  render();
+}
+
+function gradeBadge(s) {
+  if (!s) return '<span class="route-meta">—</span>';
+  const fa = s.fa ? '<span class="chip fa">FA</span>' : "";
+  const styleChip =
+    s.style === "flash"
+      ? '<span class="chip flash">FLASH</span>'
+      : s.style === "onsight"
+      ? '<span class="chip onsight">OS</span>'
+      : "";
+  return (
+    `<span class="grade">${s.grade}</span> ` +
+    `<span class="route-name">${escapeHtml(s.route)}</span>` +
+    fa +
+    styleChip +
+    (s.year ? `<div class="route-meta">${s.year}</div>` : "")
+  );
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]
+  );
+}
+
+function render() {
+  const rows = STATE.data.leaderboards[STATE.board][STATE.scope];
+  const tbody = document.getElementById("rows");
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="6" class="empty">No qualifying sends in this view.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = rows
+    .map((r, i) => {
+      const rankClass = i < 3 ? `r${i + 1}` : "";
+      const sendsList = r.sends
+        .slice()
+        .sort((a, b) => (b.year || 0) - (a.year || 0))
+        .map(
+          s =>
+            `<li><span class="grade">${s.grade}</span>` +
+            `<span class="route-name">${escapeHtml(s.route)}</span> ` +
+            `<span class="route-meta">— ${escapeHtml(s.location || "")} · ${s.year || "?"}` +
+            (s.fa ? " · <strong>FA</strong>" : "") +
+            (s.style && s.style !== "redpoint" ? ` · <em>${s.style}</em>` : "") +
+            `</span></li>`
+        )
+        .join("");
+      return (
+        `<tr class="row" data-idx="${i}">` +
+        `<td class="num rank ${rankClass}">${r.rank}</td>` +
+        `<td><div class="climber"><span class="name">${escapeHtml(r.name)}</span>` +
+        `<span class="meta">${escapeHtml(r.country)}${r.gender ? " · " + r.gender : ""}</span></div></td>` +
+        `<td>${gradeBadge(r.hardest_send)}</td>` +
+        `<td class="num hide-sm">${r.hard_send_count}</td>` +
+        `<td class="hide-sm">${gradeBadge(r.hardest_flash)}</td>` +
+        `<td class="num hide-sm">${r.hard_flash_count}</td>` +
+        `</tr>` +
+        `<tr class="detail-row" data-detail="${i}" hidden>` +
+        `<td colspan="6"><div class="detail-inner">` +
+        `<h4>All qualifying sends (${r.sends.length})</h4><ul>${sendsList}</ul>` +
+        `</div></td></tr>`
+      );
+    })
+    .join("");
+
+  // Click row to expand details
+  tbody.querySelectorAll("tr.row").forEach(tr =>
+    tr.addEventListener("click", () => {
+      const i = tr.dataset.idx;
+      const dr = tbody.querySelector(`tr.detail-row[data-detail="${i}"]`);
+      dr.hidden = !dr.hidden;
+    })
+  );
+}
+
+init();
+</script>
+</body>
+</html>

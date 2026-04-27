@@ -1,0 +1,408 @@
+# =====================================================================
+# climbers.yaml — source of truth for the climber tier chart
+#
+# Threshold for "hard" sends (counted in volume metrics):
+#   Boulder: V15 / 8C and up
+#   Sport:   9a+ and up
+#
+# Only include sends at or above the threshold. (Lower-graded sends
+# are climbing achievements but won't move the needle on a tier list
+# of the world's hardest climbers.)
+#
+# Each send needs:
+#   discipline:   "boulder" | "sport"
+#   route:        Route name (string)
+#   grade:        For boulder: V15..V18.   For sport: 9a+..9c+.
+#   font_grade:   (boulder only, optional) e.g. 8C, 8C+, 9A, 9A+
+#   year:         Year of the ascent
+#   location:     Crag, Country
+#   fa:           true if first ascent, false otherwise (default false)
+#   style:        "redpoint" | "flash" | "onsight"
+#                  Use "flash"/"onsight" sparingly — these are rare
+#                  at this grade.
+#
+# To add a new climber: copy a block, fill in the sends list.
+# To log a new send for an existing climber: append to their `sends`.
+# =====================================================================
+
+config:
+  current_years: 3            # Sends within last N years count toward "Current" leaderboard
+  leaderboard_size: 30        # Rows per leaderboard
+  hard_threshold:
+    boulder: V15              # V15 / 8C
+    sport: 9a+                # 9a+
+
+climbers:
+
+  # ===== SPORT — MEN =================================================
+
+  - name: Adam Ondra
+    country: CZE
+    gender: M
+    sends:
+      - { discipline: sport, route: Silence, grade: 9c, year: 2017, location: "Hanshelleren, Norway", fa: true, style: redpoint }
+      - { discipline: sport, route: Change, grade: 9b+, year: 2012, location: "Hanshelleren, Norway", fa: true, style: redpoint }
+      - { discipline: sport, route: Vasil Vasil, grade: 9b+, year: 2013, location: "Sloup, Czech Republic", fa: true, style: redpoint }
+      - { discipline: sport, route: La Dura Dura, grade: 9b+, year: 2013, location: "Oliana, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Project Hard, grade: 9b+, year: 2018, location: "Flatanger, Norway", fa: true, style: redpoint }
+      - { discipline: sport, route: Move Hard, grade: 9b+, year: 2023, location: "Flatanger, Norway", fa: true, style: redpoint }
+      - { discipline: sport, route: C.R.S., grade: 9b+, year: 2023, location: "Arco, Italy", fa: true, style: redpoint }
+      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2011, location: "Villanueva del Rosario, Spain", fa: true, style: redpoint }
+      - { discipline: sport, route: Stoking the Fire, grade: 9b, year: 2013, location: "Santa Linya, Spain", fa: true, style: redpoint }
+      - { discipline: boulder, route: Terranova, grade: V16, font_grade: 8C+, year: 2020, location: "Moravsky Kras, Czech Republic", fa: true, style: redpoint }
+      - { discipline: boulder, route: Gioia, grade: V15, font_grade: 8C, year: 2011, location: "Varazze, Italy", fa: false, style: redpoint }
+
+  - name: Alex Megos
+    country: GER
+    gender: M
+    sends:
+      - { discipline: sport, route: Bibliographie, grade: 9c, year: 2020, location: "Ceuse, France", fa: true, style: redpoint }
+      - { discipline: sport, route: Perfecto Mundo, grade: 9b+, year: 2018, location: "Margalef, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Fight or Flight, grade: 9b, year: 2017, location: "Oliana, Spain", fa: false, style: redpoint }
+      # Megos famously onsighted Estado Critico in 2014 — first 9a+ onsight.
+      - { discipline: sport, route: Estado Critico, grade: 9a+, year: 2014, location: "Siurana, Spain", fa: false, style: onsight }
+
+  - name: Stefano Ghisolfi
+    country: ITA
+    gender: M
+    sends:
+      - { discipline: sport, route: Excalibur, grade: 9b+, year: 2023, location: "Arco, Italy", fa: true, style: redpoint }
+      - { discipline: sport, route: Erebor, grade: 9b+, year: 2021, location: "Arco, Italy", fa: true, style: redpoint }
+      - { discipline: sport, route: Bibliographie, grade: 9b+, year: 2021, location: "Ceuse, France", fa: false, style: redpoint }
+      - { discipline: sport, route: Perfecto Mundo, grade: 9b+, year: 2019, location: "Margalef, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Change, grade: 9b+, year: 2018, location: "Hanshelleren, Norway", fa: false, style: redpoint }
+      - { discipline: sport, route: Lapsus, grade: 9b, year: 2015, location: "Andonno, Italy", fa: true, style: redpoint }
+
+  - name: Jakob Schubert
+    country: AUT
+    gender: M
+    sends:
+      - { discipline: sport, route: B.I.G., grade: 9c, year: 2023, location: "Flatanger, Norway", fa: true, style: redpoint }
+      - { discipline: sport, route: Perfecto Mundo, grade: 9b+, year: 2018, location: "Margalef, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2018, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
+      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2023, location: "Fontainebleau, France", fa: false, style: redpoint }
+      - { discipline: boulder, route: Megatron, grade: V17, font_grade: 9A, year: 2023, location: "Black Mountain, USA", fa: false, style: redpoint }
+
+  - name: Sébastien Bouin
+    country: FRA
+    gender: M
+    sends:
+      - { discipline: sport, route: DNA, grade: 9c, year: 2022, location: "Verdon Gorge, France", fa: true, style: redpoint }
+      - { discipline: sport, route: Nordic Flower, grade: 9b+, year: 2022, location: "Flatanger, Norway", fa: true, style: redpoint }
+      - { discipline: sport, route: Beyond Integral, grade: 9b+, year: 2023, location: "Pic Saint Loup, France", fa: true, style: redpoint }
+      - { discipline: sport, route: La Rambla, grade: 9a+, year: 2014, location: "Siurana, Spain", fa: false, style: redpoint }
+
+  - name: Will Bosi
+    country: GBR
+    gender: M
+    sends:
+      - { discipline: sport, route: King Capella, grade: 9b+, year: 2022, location: "Siurana, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Excalibur, grade: 9b+, year: 2025, location: "Arco, Italy", fa: false, style: redpoint }
+      - { discipline: boulder, route: Realm of Tor'ment, grade: V17, font_grade: 9A, year: 2025, location: "Raven Tor, UK", fa: true, style: redpoint }
+      - { discipline: boulder, route: Spots of Time, grade: V17, font_grade: 9A, year: 2024, location: "Helvellyn, UK", fa: false, style: redpoint }
+      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2024, location: "Red Rocks, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Burden of Dreams, grade: V17, font_grade: 9A, year: 2023, location: "Lappnor, Finland", fa: false, style: redpoint }
+      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2022, location: "Chironico, Switzerland", fa: false, style: redpoint }
+
+  - name: Buster Martin
+    country: GBR
+    gender: M
+    sends:
+      - { discipline: sport, route: Lapsus, grade: 9b, year: 2024, location: "Andonno, Italy", fa: false, style: redpoint }
+      - { discipline: sport, route: Hubble, grade: 9a+, year: 2024, location: "Raven Tor, UK", fa: false, style: redpoint }
+
+  - name: Chris Sharma
+    country: USA
+    gender: M
+    sends:
+      - { discipline: sport, route: La Dura Dura, grade: 9b+, year: 2013, location: "Oliana, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Jumbo Love, grade: 9b, year: 2008, location: "Clark Mountain, USA", fa: true, style: redpoint }
+      - { discipline: sport, route: First Round First Minute, grade: 9b, year: 2011, location: "Margalef, Spain", fa: true, style: redpoint }
+      - { discipline: sport, route: Sleeping Lion, grade: 9b, year: 2018, location: "Siurana, Spain", fa: true, style: redpoint }
+      - { discipline: sport, route: Realization (Biographie), grade: 9a+, year: 2001, location: "Ceuse, France", fa: true, style: redpoint }
+      - { discipline: sport, route: Catxasa, grade: 9a+, year: 2014, location: "Santa Linya, Spain", fa: true, style: redpoint }
+
+  - name: Sachi Amma
+    country: JPN
+    gender: M
+    sends:
+      - { discipline: sport, route: La Dura Complete, grade: 9b, year: 2014, location: "Oliana, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Fight or Flight, grade: 9b, year: 2014, location: "Oliana, Spain", fa: false, style: redpoint }
+
+  - name: Seb Berthe
+    country: BEL
+    gender: M
+    sends:
+      - { discipline: sport, route: Bibliographie, grade: 9b+, year: 2023, location: "Ceuse, France", fa: false, style: redpoint }
+      - { discipline: sport, route: La Rambla, grade: 9a+, year: 2018, location: "Siurana, Spain", fa: false, style: redpoint }
+
+  - name: Sean Bailey
+    country: USA
+    gender: M
+    sends:
+      # Bailey's high-end project at Dry Canyon AZ — proposed grade
+      # under debate (V17 vs 9c). Treating as V17 boulder until clarified.
+      - { discipline: boulder, route: Duality of Man, grade: V17, font_grade: 9A, year: 2025, location: "Dry Canyon, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Arrival of the Birds, grade: V17, font_grade: 9A, year: 2025, location: "Chironico, Switzerland", fa: false, style: redpoint }
+
+  - name: Jorge Díaz-Rullo
+    country: ESP
+    gender: M
+    sends:
+      - { discipline: sport, route: Café Colombia, grade: 9c, year: 2025, location: "Margalef, Spain", fa: true, style: redpoint }
+      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2022, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
+
+  - name: Edu Marin
+    country: ESP
+    gender: M
+    sends:
+      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2014, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Seleccio Anal, grade: 9a+, year: 2008, location: "Perles, Spain", fa: false, style: redpoint }
+
+  - name: Domen Skofic
+    country: SLO
+    gender: M
+    sends:
+      - { discipline: sport, route: Vicious Circle, grade: 9a+, year: 2017, location: "Misja Pec, Slovenia", fa: true, style: redpoint }
+
+  # ===== SPORT — WOMEN ===============================================
+
+  - name: Brooke Raboutou
+    country: USA
+    gender: F
+    sends:
+      # First woman to climb 9b+ — Excalibur, April 5, 2025.
+      - { discipline: sport, route: Excalibur, grade: 9b+, year: 2025, location: "Arco, Italy", fa: false, style: redpoint }
+
+  - name: Janja Garnbret
+    country: SLO
+    gender: F
+    sends:
+      - { discipline: sport, route: American Hustle, grade: 9a+, year: 2024, location: "Rifle, USA", fa: false, style: redpoint }
+      - { discipline: sport, route: Fish Eye, grade: 9a+, year: 2022, location: "Oliana, Spain", fa: false, style: redpoint }
+      - { discipline: boulder, route: Bügeleisen Sit, grade: V15, font_grade: 8C, year: 2024, location: "Magic Wood, Switzerland", fa: false, style: redpoint }
+      - { discipline: boulder, route: Off the Wagon Low, grade: V15, font_grade: 8C, year: 2023, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
+
+  - name: Margo Hayes
+    country: USA
+    gender: F
+    sends:
+      - { discipline: sport, route: La Rambla, grade: 9a+, year: 2017, location: "Siurana, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Biographie, grade: 9a+, year: 2017, location: "Ceuse, France", fa: false, style: redpoint }
+      - { discipline: sport, route: Papichulo, grade: 9a+, year: 2018, location: "Oliana, Spain", fa: false, style: redpoint }
+
+  - name: Laura Rogora
+    country: ITA
+    gender: F
+    sends:
+      - { discipline: sport, route: Erebor, grade: 9b, year: 2023, location: "Arco, Italy", fa: false, style: redpoint }
+      - { discipline: sport, route: Ali Hulk Sit Extension Total, grade: 9b, year: 2020, location: "Rodellar, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2020, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Pure Dreaming Mallorca, grade: 9a+, year: 2018, location: "Mallorca, Spain", fa: false, style: redpoint }
+
+  - name: Angela Eiter
+    country: AUT
+    gender: F
+    sends:
+      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2017, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
+      - { discipline: sport, route: Madame Ching, grade: 9b, year: 2020, location: "Imst, Austria", fa: true, style: redpoint }
+
+  - name: Julia Chanourdie
+    country: FRA
+    gender: F
+    sends:
+      - { discipline: sport, route: Eagle-4, grade: 9b, year: 2020, location: "Saint Loup, France", fa: false, style: redpoint }
+
+  - name: Anak Verhoeven
+    country: BEL
+    gender: F
+    sends:
+      - { discipline: sport, route: Sweet Neuf, grade: 9a+, year: 2017, location: "Pierrot Beach, France", fa: true, style: redpoint }
+
+  - name: Ai Mori
+    country: JPN
+    gender: F
+    sends:
+      - { discipline: sport, route: Lapsus, grade: 9b, year: 2024, location: "Andonno, Italy", fa: false, style: redpoint }
+
+  # ===== BOULDER — MEN ===============================================
+
+  - name: Daniel Woods
+    country: USA
+    gender: M
+    sends:
+      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2021, location: "Red Rocks, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Sleepwalker, grade: V16, font_grade: 8C+, year: 2018, location: "Red Rocks, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2019, location: "Rocky Mountain National Park, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: The Game, grade: V16, font_grade: 8C+, year: 2010, location: "Boulder Canyon, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: The Process, grade: V16, font_grade: 8C+, year: 2015, location: "Bishop, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Creature from the Black Lagoon, grade: V16, font_grade: 8C+, year: 2017, location: "Rocky Mountain National Park, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Jade, grade: V15, font_grade: 8C, year: 2007, location: "Rocky Mountain National Park, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: In Search of Time Lost, grade: V15, font_grade: 8C, year: 2012, location: "Magic Wood, Switzerland", fa: false, style: redpoint }
+
+  - name: Nalle Hukkataival
+    country: FIN
+    gender: M
+    sends:
+      - { discipline: boulder, route: Burden of Dreams, grade: V17, font_grade: 9A, year: 2016, location: "Lappnor, Finland", fa: true, style: redpoint }
+      - { discipline: boulder, route: Livin' Large, grade: V15, font_grade: 8C, year: 2011, location: "Rocklands, South Africa", fa: true, style: redpoint }
+
+  - name: Simon Lorenzi
+    country: BEL
+    gender: M
+    sends:
+      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2021, location: "Fontainebleau, France", fa: true, style: redpoint }
+      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2022, location: "Chironico, Switzerland", fa: false, style: redpoint }
+      - { discipline: boulder, route: Burden of Dreams, grade: V17, font_grade: 9A, year: 2023, location: "Lappnor, Finland", fa: false, style: redpoint }
+      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2025, location: "Red Rocks, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Shaolin, grade: V17, font_grade: 9A, year: 2026, location: "Red Rocks, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Big Island Sit, grade: V16, font_grade: 8C+, year: 2020, location: "Fontainebleau, France", fa: false, style: redpoint }
+
+  - name: Shawn Raboutou
+    country: USA
+    gender: M
+    sends:
+      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2022, location: "Chironico, Switzerland", fa: true, style: redpoint }
+      - { discipline: boulder, route: Megatron, grade: V17, font_grade: 9A, year: 2022, location: "Black Mountain, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2024, location: "Red Rocks, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Off the Wagon Low, grade: V16, font_grade: 8C+, year: 2018, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
+      - { discipline: boulder, route: Sleepwalker, grade: V16, font_grade: 8C+, year: 2019, location: "Red Rocks, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2021, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
+
+  - name: Aidan Roberts
+    country: GBR
+    gender: M
+    sends:
+      - { discipline: boulder, route: Spots of Time, grade: V17, font_grade: 9A, year: 2024, location: "Helvellyn, UK", fa: true, style: redpoint }
+      - { discipline: boulder, route: Arrival of the Birds, grade: V17, font_grade: 9A, year: 2024, location: "Chironico, Switzerland", fa: true, style: redpoint }
+      - { discipline: boulder, route: Megatron, grade: V17, font_grade: 9A, year: 2023, location: "Black Mountain, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2023, location: "Chironico, Switzerland", fa: false, style: redpoint }
+
+  - name: Ryuichi Murai
+    country: JPN
+    gender: M
+    sends:
+      - { discipline: boulder, route: Hydrangea, grade: V17, font_grade: 9A, year: 2023, location: "Shiobara, Japan", fa: true, style: redpoint }
+      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2023, location: "Fontainebleau, France", fa: false, style: redpoint }
+      - { discipline: boulder, route: Byaku-Dou, grade: V16, font_grade: 8C+, year: 2022, location: "Mizugaki, Japan", fa: true, style: redpoint }
+
+  - name: Charles Albert
+    country: FRA
+    gender: M
+    sends:
+      - { discipline: boulder, route: No Kpote Only, grade: V17, font_grade: 9A, year: 2018, location: "Fontainebleau, France", fa: true, style: redpoint }
+      - { discipline: boulder, route: La Force Tranquille, grade: V16, font_grade: 8C+, year: 2017, location: "Fontainebleau, France", fa: true, style: redpoint }
+
+  - name: Nathaniel Coleman
+    country: USA
+    gender: M
+    sends:
+      - { discipline: boulder, route: No One Mourns the Wicked, grade: V17, font_grade: 9A, year: 2024, location: "Thunder Ridge, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2023, location: "Red Rocks, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Grand Illusion, grade: V16, font_grade: 8C+, year: 2020, location: "Little Cottonwood Canyon, USA", fa: true, style: redpoint }
+      - { discipline: boulder, route: Sleepwalker, grade: V16, font_grade: 8C+, year: 2019, location: "Red Rocks, USA", fa: false, style: redpoint }
+
+  - name: Drew Ruana
+    country: USA
+    gender: M
+    sends:
+      - { discipline: boulder, route: Megatron, grade: V16, font_grade: 8C+, year: 2021, location: "Black Mountain, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2021, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Creature from the Black Lagoon, grade: V16, font_grade: 8C+, year: 2021, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
+
+  - name: Giuliano Cameroni
+    country: SUI
+    gender: M
+    sends:
+      - { discipline: boulder, route: Off the Wagon Low, grade: V16, font_grade: 8C+, year: 2018, location: "Val Bavona, Switzerland", fa: true, style: redpoint }
+      - { discipline: boulder, route: Poison the Well, grade: V16, font_grade: 8C+, year: 2020, location: "Magic Wood, Switzerland", fa: true, style: redpoint }
+
+  - name: Jimmy Webb
+    country: USA
+    gender: M
+    sends:
+      - { discipline: boulder, route: Livin' Large, grade: V15, font_grade: 8C, year: 2014, location: "Rocklands, South Africa", fa: false, style: redpoint }
+      - { discipline: boulder, route: Lucid Dreaming, grade: V15, font_grade: 8C, year: 2015, location: "Bishop, USA", fa: false, style: redpoint }
+
+  - name: Dave Graham
+    country: USA
+    gender: M
+    sends:
+      - { discipline: boulder, route: The Story of Two Worlds, grade: V15, font_grade: 8C, year: 2005, location: "Cresciano, Switzerland", fa: true, style: redpoint }
+      - { discipline: boulder, route: The Process, grade: V16, font_grade: 8C+, year: 2018, location: "Bishop, USA", fa: false, style: redpoint }
+
+  - name: Camille Coudert
+    country: FRA
+    gender: M
+    sends:
+      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2022, location: "Fontainebleau, France", fa: false, style: redpoint }
+
+  - name: Mehdi Slimani
+    country: FRA
+    gender: M
+    sends:
+      - { discipline: boulder, route: No Kpote Only, grade: V17, font_grade: 9A, year: 2024, location: "Fontainebleau, France", fa: false, style: redpoint }
+
+  - name: Tomoaki Takata
+    country: JPN
+    gender: M
+    sends:
+      - { discipline: boulder, route: Hydrangea, grade: V17, font_grade: 9A, year: 2024, location: "Shiobara, Japan", fa: false, style: redpoint }
+
+  - name: Tomoa Narasaki
+    country: JPN
+    gender: M
+    sends:
+      - { discipline: boulder, route: Byaku-Dou, grade: V16, font_grade: 8C+, year: 2023, location: "Mizugaki, Japan", fa: false, style: redpoint }
+
+  - name: Yannick Flohé
+    country: GER
+    gender: M
+    sends:
+      - { discipline: boulder, route: Off the Wagon Low, grade: V16, font_grade: 8C+, year: 2022, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
+
+  - name: Elias Iagnemma
+    country: ITA
+    gender: M
+    sends:
+      # Proposed first V18 / 9A+ ascent — November 2025, Val Pellice, Italy.
+      # Awaiting repeats; some sources flag the grade as not yet confirmed.
+      - { discipline: boulder, route: Exodia, grade: V18, font_grade: 9A+, year: 2025, location: "Val Pellice, Italy", fa: true, style: redpoint }
+
+  # ===== BOULDER — WOMEN =============================================
+
+  - name: Katie Lamb
+    country: USA
+    gender: F
+    sends:
+      # First woman to climb V16 — Box Therapy, March 2024.
+      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2024, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: The Dark Side, grade: V16, font_grade: 8C+, year: 2025, location: "Yosemite, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: The Great Shark Hunt, grade: V15, font_grade: 8C, year: 2023, location: "Mount Evans, USA", fa: false, style: redpoint }
+      - { discipline: boulder, route: Fallen Angel, grade: V15, font_grade: 8C, year: 2024, location: "Tahoe, USA", fa: false, style: redpoint }
+
+  - name: Oriane Bertone
+    country: FRA
+    gender: F
+    sends:
+      - { discipline: boulder, route: Satan i Helvete, grade: V15, font_grade: 8C, year: 2024, location: "Fontainebleau, France", fa: false, style: redpoint }
+
+  - name: Camilla Moroni
+    country: ITA
+    gender: F
+    sends:
+      - { discipline: boulder, route: Off the Wagon Low, grade: V15, font_grade: 8C, year: 2024, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
+
+  - name: Michaela Kiersch
+    country: USA
+    gender: F
+    sends:
+      # First woman to do both 5.15 and V15 — V15 in Oct 2024.
+      - { discipline: boulder, route: The Penrose Step, grade: V15, font_grade: 8C, year: 2024, location: "Joe's Valley, USA", fa: false, style: redpoint }
+
+  - name: Ashima Shiraishi
+    country: USA
+    gender: F
+    sends:
+      - { discipline: boulder, route: Horizon, grade: V15, font_grade: 8C, year: 2016, location: "Mount Hiei, Japan", fa: false, style: redpoint }
+      - { discipline: sport, route: Open Your Mind Direct, grade: 9a+, year: 2015, location: "Santa Linya, Spain", fa: false, style: redpoint }

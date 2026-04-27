@@ -1,0 +1,69 @@
+name: Rebuild leaderboard
+
+# Runs on GitHub's servers — no local computer required.
+on:
+  # 06:00 UTC on the 1st of every month
+  schedule:
+    - cron: "0 6 1 * *"
+  # Also run on every push to climbers.yaml so edits redeploy immediately
+  push:
+    paths:
+      - "climbers.yaml"
+      - "scripts/build.py"
+      - "index.html"
+      - ".github/workflows/update.yml"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write       # allow committing the regenerated data.json
+  pages: write          # for GitHub Pages deploy
+  id-token: write       # for GitHub Pages deploy
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Build data.json
+        run: python scripts/build.py
+
+      - name: Commit refreshed data.json (if changed)
+        run: |
+          git config user.name "leaderboard-bot"
+          git config user.email "leaderboard-bot@users.noreply.github.com"
+          if git diff --quiet -- data.json; then
+            echo "No changes to data.json"
+          else
+            git add data.json
+            git commit -m "chore: rebuild data.json ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .          # publishes index.html, data.json, etc.
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,5896 @@
+{
+  "generated_at": "2026-04-27",
+  "current_window": {
+    "years": 3,
+    "from_year": 2023
+  },
+  "thresholds": {
+    "boulder": "V15",
+    "sport": "9a+"
+  },
+  "leaderboard_size": 30,
+  "totals": {
+    "climbers": 45,
+    "sends": 132
+  },
+  "leaderboards": {
+    "sport": {
+      "all_time": [
+        {
+          "name": "Adam Ondra",
+          "country": "CZE",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 9,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Silence",
+            "grade": "9c",
+            "year": 2017,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Silence",
+              "grade": "9c",
+              "year": 2017,
+              "location": "Hanshelleren, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Change",
+              "grade": "9b+",
+              "year": 2012,
+              "location": "Hanshelleren, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Vasil Vasil",
+              "grade": "9b+",
+              "year": 2013,
+              "location": "Sloup, Czech Republic",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Dura Dura",
+              "grade": "9b+",
+              "year": 2013,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Project Hard",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Move Hard",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "C.R.S.",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2011,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Stoking the Fire",
+              "grade": "9b",
+              "year": 2013,
+              "location": "Santa Linya, Spain",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Alex Megos",
+          "country": "GER",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 16.0,
+          "hard_flash_count": 1,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9c",
+            "year": 2020,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "Estado Critico",
+            "grade": "9a+",
+            "year": 2014,
+            "style": "onsight",
+            "discipline": "sport"
+          },
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9c",
+              "year": 2020,
+              "location": "Ceuse, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Perfecto Mundo",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Margalef, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Fight or Flight",
+              "grade": "9b",
+              "year": 2017,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Estado Critico",
+              "grade": "9a+",
+              "year": 2014,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "onsight"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "name": "S\u00e9bastien Bouin",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "DNA",
+            "grade": "9c",
+            "year": 2022,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "DNA",
+              "grade": "9c",
+              "year": 2022,
+              "location": "Verdon Gorge, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Nordic Flower",
+              "grade": "9b+",
+              "year": 2022,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Beyond Integral",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Pic Saint Loup, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Rambla",
+              "grade": "9a+",
+              "year": 2014,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Jakob Schubert",
+          "country": "AUT",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "B.I.G.",
+            "grade": "9c",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "B.I.G.",
+              "grade": "9c",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Perfecto Mundo",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Margalef, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2018,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Jorge D\u00edaz-Rullo",
+          "country": "ESP",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Caf\u00e9 Colombia",
+            "grade": "9c",
+            "year": 2025,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Caf\u00e9 Colombia",
+              "grade": "9c",
+              "year": 2025,
+              "location": "Margalef, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2022,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Chris Sharma",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Dura Dura",
+            "grade": "9b+",
+            "year": 2013,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Dura Dura",
+              "grade": "9b+",
+              "year": 2013,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Jumbo Love",
+              "grade": "9b",
+              "year": 2008,
+              "location": "Clark Mountain, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "First Round First Minute",
+              "grade": "9b",
+              "year": 2011,
+              "location": "Margalef, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Sleeping Lion",
+              "grade": "9b",
+              "year": 2018,
+              "location": "Siurana, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Realization (Biographie)",
+              "grade": "9a+",
+              "year": 2001,
+              "location": "Ceuse, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Catxasa",
+              "grade": "9a+",
+              "year": 2014,
+              "location": "Santa Linya, Spain",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "name": "Stefano Ghisolfi",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b+",
+              "year": 2021,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2021,
+              "location": "Ceuse, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Perfecto Mundo",
+              "grade": "9b+",
+              "year": 2019,
+              "location": "Margalef, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Change",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Hanshelleren, Norway",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2015,
+              "location": "Andonno, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Seb Berthe",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Ceuse, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Rambla",
+              "grade": "9a+",
+              "year": 2018,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Will Bosi",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "King Capella",
+            "grade": "9b+",
+            "year": 2022,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "King Capella",
+              "grade": "9b+",
+              "year": 2022,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Brooke Raboutou",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2025,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "name": "Laura Rogora",
+          "country": "ITA",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Erebor",
+            "grade": "9b",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Ali Hulk Sit Extension Total",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Rodellar, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Pure Dreaming Mallorca",
+              "grade": "9a+",
+              "year": 2018,
+              "location": "Mallorca, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "name": "Angela Eiter",
+          "country": "AUT",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Planta de Shiva",
+            "grade": "9b",
+            "year": 2017,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2017,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Madame Ching",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Imst, Austria",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "name": "Buster Martin",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Hubble",
+              "grade": "9a+",
+              "year": 2024,
+              "location": "Raven Tor, UK",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "name": "Edu Marin",
+          "country": "ESP",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Planta de Shiva",
+            "grade": "9b",
+            "year": 2014,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2014,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Seleccio Anal",
+              "grade": "9a+",
+              "year": 2008,
+              "location": "Perles, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "name": "Sachi Amma",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Dura Complete",
+            "grade": "9b",
+            "year": 2014,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Dura Complete",
+              "grade": "9b",
+              "year": 2014,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Fight or Flight",
+              "grade": "9b",
+              "year": 2014,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 15
+        },
+        {
+          "name": "Ai Mori",
+          "country": "JPN",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 16
+        },
+        {
+          "name": "Julia Chanourdie",
+          "country": "FRA",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Eagle-4",
+            "grade": "9b",
+            "year": 2020,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Eagle-4",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Saint Loup, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 17
+        },
+        {
+          "name": "Margo Hayes",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Rambla",
+            "grade": "9a+",
+            "year": 2017,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Rambla",
+              "grade": "9a+",
+              "year": 2017,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Biographie",
+              "grade": "9a+",
+              "year": 2017,
+              "location": "Ceuse, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Papichulo",
+              "grade": "9a+",
+              "year": 2018,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 18
+        },
+        {
+          "name": "Janja Garnbret",
+          "country": "SLO",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "American Hustle",
+            "grade": "9a+",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "American Hustle",
+              "grade": "9a+",
+              "year": 2024,
+              "location": "Rifle, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Fish Eye",
+              "grade": "9a+",
+              "year": 2022,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 19
+        },
+        {
+          "name": "Anak Verhoeven",
+          "country": "BEL",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Sweet Neuf",
+            "grade": "9a+",
+            "year": 2017,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Sweet Neuf",
+              "grade": "9a+",
+              "year": 2017,
+              "location": "Pierrot Beach, France",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 20
+        },
+        {
+          "name": "Ashima Shiraishi",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Open Your Mind Direct",
+            "grade": "9a+",
+            "year": 2015,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Open Your Mind Direct",
+              "grade": "9a+",
+              "year": 2015,
+              "location": "Santa Linya, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 21
+        },
+        {
+          "name": "Domen Skofic",
+          "country": "SLO",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Vicious Circle",
+            "grade": "9a+",
+            "year": 2017,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Vicious Circle",
+              "grade": "9a+",
+              "year": 2017,
+              "location": "Misja Pec, Slovenia",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 22
+        }
+      ],
+      "current": [
+        {
+          "name": "Jakob Schubert",
+          "country": "AUT",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "B.I.G.",
+            "grade": "9c",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "B.I.G.",
+              "grade": "9c",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Jorge D\u00edaz-Rullo",
+          "country": "ESP",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Caf\u00e9 Colombia",
+            "grade": "9c",
+            "year": 2025,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Caf\u00e9 Colombia",
+              "grade": "9c",
+              "year": 2025,
+              "location": "Margalef, Spain",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "name": "Adam Ondra",
+          "country": "CZE",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Move Hard",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Move Hard",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "C.R.S.",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Brooke Raboutou",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2025,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Seb Berthe",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Ceuse, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Stefano Ghisolfi",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "name": "S\u00e9bastien Bouin",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Beyond Integral",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Beyond Integral",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Pic Saint Loup, France",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Will Bosi",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2025,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Buster Martin",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Hubble",
+              "grade": "9a+",
+              "year": 2024,
+              "location": "Raven Tor, UK",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Ai Mori",
+          "country": "JPN",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "name": "Laura Rogora",
+          "country": "ITA",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Erebor",
+            "grade": "9b",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "name": "Janja Garnbret",
+          "country": "SLO",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "American Hustle",
+            "grade": "9a+",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "American Hustle",
+              "grade": "9a+",
+              "year": 2024,
+              "location": "Rifle, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 12
+        }
+      ]
+    },
+    "boulder": {
+      "all_time": [
+        {
+          "name": "Elias Iagnemma",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Exodia",
+            "grade": "V18",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Exodia",
+              "grade": "V18",
+              "font_grade": "9A+",
+              "year": 2025,
+              "location": "Val Pellice, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Daniel Woods",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 8,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Return of the Sleepwalker",
+            "grade": "V17",
+            "year": 2021,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2021,
+              "location": "Red Rocks, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Sleepwalker",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2018,
+              "location": "Red Rocks, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2019,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Game",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2010,
+              "location": "Boulder Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Process",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2015,
+              "location": "Bishop, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Creature from the Black Lagoon",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2017,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Jade",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2007,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "In Search of Time Lost",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2012,
+              "location": "Magic Wood, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "name": "Shawn Raboutou",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Alphane",
+            "grade": "V17",
+            "year": 2022,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Chironico, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Black Mountain, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2018,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Sleepwalker",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2019,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2021,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Simon Lorenzi",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Soudain Seul",
+            "grade": "V17",
+            "year": 2021,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2021,
+              "location": "Fontainebleau, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Shaolin",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2026,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Big Island Sit",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2020,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Will Bosi",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 5,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Realm of Tor'ment",
+            "grade": "V17",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Realm of Tor'ment",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Raven Tor, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Aidan Roberts",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Spots of Time",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Chironico, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "name": "Nathaniel Coleman",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No One Mourns the Wicked",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No One Mourns the Wicked",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Thunder Ridge, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Grand Illusion",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2020,
+              "location": "Little Cottonwood Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Sleepwalker",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2019,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Ryuichi Murai",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2023,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Shiobara, Japan",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Byaku-Dou",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2022,
+              "location": "Mizugaki, Japan",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Charles Albert",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No Kpote Only",
+            "grade": "V17",
+            "year": 2018,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2018,
+              "location": "Fontainebleau, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "La Force Tranquille",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2017,
+              "location": "Fontainebleau, France",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Jakob Schubert",
+          "country": "AUT",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Soudain Seul",
+            "grade": "V17",
+            "year": 2023,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "name": "Nalle Hukkataival",
+          "country": "FIN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Burden of Dreams",
+            "grade": "V17",
+            "year": 2016,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2016,
+              "location": "Lappnor, Finland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Livin' Large",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2011,
+              "location": "Rocklands, South Africa",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "name": "Sean Bailey",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Duality of Man",
+            "grade": "V17",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Duality of Man",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Dry Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "name": "Camille Coudert",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Soudain Seul",
+            "grade": "V17",
+            "year": 2022,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "name": "Mehdi Slimani",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No Kpote Only",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "name": "Tomoaki Takata",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Shiobara, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 15
+        },
+        {
+          "name": "Katie Lamb",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Box Therapy",
+            "grade": "V16",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2024,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Dark Side",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2025,
+              "location": "Yosemite, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Great Shark Hunt",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2023,
+              "location": "Mount Evans, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Fallen Angel",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Tahoe, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 16
+        },
+        {
+          "name": "Drew Ruana",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Megatron",
+            "grade": "V16",
+            "year": 2021,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2021,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2021,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Creature from the Black Lagoon",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2021,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 17
+        },
+        {
+          "name": "Adam Ondra",
+          "country": "CZE",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Terranova",
+            "grade": "V16",
+            "year": 2020,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Terranova",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2020,
+              "location": "Moravsky Kras, Czech Republic",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Gioia",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2011,
+              "location": "Varazze, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 18
+        },
+        {
+          "name": "Dave Graham",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "The Process",
+            "grade": "V16",
+            "year": 2018,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "The Story of Two Worlds",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2005,
+              "location": "Cresciano, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Process",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2018,
+              "location": "Bishop, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 19
+        },
+        {
+          "name": "Giuliano Cameroni",
+          "country": "SUI",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Off the Wagon Low",
+            "grade": "V16",
+            "year": 2018,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2018,
+              "location": "Val Bavona, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Poison the Well",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2020,
+              "location": "Magic Wood, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 20
+        },
+        {
+          "name": "Tomoa Narasaki",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Byaku-Dou",
+            "grade": "V16",
+            "year": 2023,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Byaku-Dou",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2023,
+              "location": "Mizugaki, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 21
+        },
+        {
+          "name": "Yannick Floh\u00e9",
+          "country": "GER",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Off the Wagon Low",
+            "grade": "V16",
+            "year": 2022,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2022,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 22
+        },
+        {
+          "name": "Janja Garnbret",
+          "country": "SLO",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "B\u00fcgeleisen Sit",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "B\u00fcgeleisen Sit",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Magic Wood, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2023,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 23
+        },
+        {
+          "name": "Jimmy Webb",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Livin' Large",
+            "grade": "V15",
+            "year": 2014,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Livin' Large",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2014,
+              "location": "Rocklands, South Africa",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Lucid Dreaming",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2015,
+              "location": "Bishop, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 24
+        },
+        {
+          "name": "Ashima Shiraishi",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Horizon",
+            "grade": "V15",
+            "year": 2016,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Horizon",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2016,
+              "location": "Mount Hiei, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 25
+        },
+        {
+          "name": "Camilla Moroni",
+          "country": "ITA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Off the Wagon Low",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 26
+        },
+        {
+          "name": "Michaela Kiersch",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "The Penrose Step",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "The Penrose Step",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Joe's Valley, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 27
+        },
+        {
+          "name": "Oriane Bertone",
+          "country": "FRA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Satan i Helvete",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Satan i Helvete",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 28
+        }
+      ],
+      "current": [
+        {
+          "name": "Elias Iagnemma",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Exodia",
+            "grade": "V18",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Exodia",
+              "grade": "V18",
+              "font_grade": "9A+",
+              "year": 2025,
+              "location": "Val Pellice, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Aidan Roberts",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Spots of Time",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Chironico, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "name": "Will Bosi",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Realm of Tor'ment",
+            "grade": "V17",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Realm of Tor'ment",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Raven Tor, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Simon Lorenzi",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Burden of Dreams",
+            "grade": "V17",
+            "year": 2023,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Shaolin",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2026,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Jakob Schubert",
+          "country": "AUT",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Soudain Seul",
+            "grade": "V17",
+            "year": 2023,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Nathaniel Coleman",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No One Mourns the Wicked",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No One Mourns the Wicked",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Thunder Ridge, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "name": "Ryuichi Murai",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2023,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Shiobara, Japan",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Sean Bailey",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Duality of Man",
+            "grade": "V17",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Duality of Man",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Dry Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Mehdi Slimani",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No Kpote Only",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Shawn Raboutou",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Return of the Sleepwalker",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "name": "Tomoaki Takata",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Shiobara, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "name": "Katie Lamb",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Box Therapy",
+            "grade": "V16",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2024,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Dark Side",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2025,
+              "location": "Yosemite, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Great Shark Hunt",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2023,
+              "location": "Mount Evans, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Fallen Angel",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Tahoe, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "name": "Tomoa Narasaki",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Byaku-Dou",
+            "grade": "V16",
+            "year": 2023,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Byaku-Dou",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2023,
+              "location": "Mizugaki, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "name": "Janja Garnbret",
+          "country": "SLO",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "B\u00fcgeleisen Sit",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "B\u00fcgeleisen Sit",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Magic Wood, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2023,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "name": "Camilla Moroni",
+          "country": "ITA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Off the Wagon Low",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 15
+        },
+        {
+          "name": "Michaela Kiersch",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "The Penrose Step",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "The Penrose Step",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Joe's Valley, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 16
+        },
+        {
+          "name": "Oriane Bertone",
+          "country": "FRA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Satan i Helvete",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Satan i Helvete",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 17
+        }
+      ]
+    },
+    "overall": {
+      "all_time": [
+        {
+          "name": "Adam Ondra",
+          "country": "CZE",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 11,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Silence",
+            "grade": "9c",
+            "year": 2017,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Silence",
+              "grade": "9c",
+              "year": 2017,
+              "location": "Hanshelleren, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Change",
+              "grade": "9b+",
+              "year": 2012,
+              "location": "Hanshelleren, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Vasil Vasil",
+              "grade": "9b+",
+              "year": 2013,
+              "location": "Sloup, Czech Republic",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Dura Dura",
+              "grade": "9b+",
+              "year": 2013,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Project Hard",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Move Hard",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "C.R.S.",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2011,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Stoking the Fire",
+              "grade": "9b",
+              "year": 2013,
+              "location": "Santa Linya, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Terranova",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2020,
+              "location": "Moravsky Kras, Czech Republic",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Gioia",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2011,
+              "location": "Varazze, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Jakob Schubert",
+          "country": "AUT",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 5,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "B.I.G.",
+            "grade": "9c",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "B.I.G.",
+              "grade": "9c",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Perfecto Mundo",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Margalef, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2018,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "name": "Alex Megos",
+          "country": "GER",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 16.0,
+          "hard_flash_count": 1,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9c",
+            "year": 2020,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "Estado Critico",
+            "grade": "9a+",
+            "year": 2014,
+            "style": "onsight",
+            "discipline": "sport"
+          },
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9c",
+              "year": 2020,
+              "location": "Ceuse, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Perfecto Mundo",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Margalef, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Fight or Flight",
+              "grade": "9b",
+              "year": 2017,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Estado Critico",
+              "grade": "9a+",
+              "year": 2014,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "onsight"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "name": "S\u00e9bastien Bouin",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "DNA",
+            "grade": "9c",
+            "year": 2022,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "DNA",
+              "grade": "9c",
+              "year": 2022,
+              "location": "Verdon Gorge, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Nordic Flower",
+              "grade": "9b+",
+              "year": 2022,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Beyond Integral",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Pic Saint Loup, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Rambla",
+              "grade": "9a+",
+              "year": 2014,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Jorge D\u00edaz-Rullo",
+          "country": "ESP",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Caf\u00e9 Colombia",
+            "grade": "9c",
+            "year": 2025,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Caf\u00e9 Colombia",
+              "grade": "9c",
+              "year": 2025,
+              "location": "Margalef, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2022,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Will Bosi",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 7,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "King Capella",
+            "grade": "9b+",
+            "year": 2022,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "King Capella",
+              "grade": "9b+",
+              "year": 2022,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Realm of Tor'ment",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Raven Tor, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "name": "Chris Sharma",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Dura Dura",
+            "grade": "9b+",
+            "year": 2013,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Dura Dura",
+              "grade": "9b+",
+              "year": 2013,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Jumbo Love",
+              "grade": "9b",
+              "year": 2008,
+              "location": "Clark Mountain, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "First Round First Minute",
+              "grade": "9b",
+              "year": 2011,
+              "location": "Margalef, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Sleeping Lion",
+              "grade": "9b",
+              "year": 2018,
+              "location": "Siurana, Spain",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Realization (Biographie)",
+              "grade": "9a+",
+              "year": 2001,
+              "location": "Ceuse, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Catxasa",
+              "grade": "9a+",
+              "year": 2014,
+              "location": "Santa Linya, Spain",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Stefano Ghisolfi",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b+",
+              "year": 2021,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2021,
+              "location": "Ceuse, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Perfecto Mundo",
+              "grade": "9b+",
+              "year": 2019,
+              "location": "Margalef, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Change",
+              "grade": "9b+",
+              "year": 2018,
+              "location": "Hanshelleren, Norway",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2015,
+              "location": "Andonno, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Seb Berthe",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Ceuse, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Rambla",
+              "grade": "9a+",
+              "year": 2018,
+              "location": "Siurana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Brooke Raboutou",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2025,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "name": "Elias Iagnemma",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Exodia",
+            "grade": "V18",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Exodia",
+              "grade": "V18",
+              "font_grade": "9A+",
+              "year": 2025,
+              "location": "Val Pellice, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "name": "Daniel Woods",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 8,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Return of the Sleepwalker",
+            "grade": "V17",
+            "year": 2021,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2021,
+              "location": "Red Rocks, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Sleepwalker",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2018,
+              "location": "Red Rocks, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2019,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Game",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2010,
+              "location": "Boulder Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Process",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2015,
+              "location": "Bishop, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Creature from the Black Lagoon",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2017,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Jade",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2007,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "In Search of Time Lost",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2012,
+              "location": "Magic Wood, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "name": "Shawn Raboutou",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Alphane",
+            "grade": "V17",
+            "year": 2022,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Chironico, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Black Mountain, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2018,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Sleepwalker",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2019,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2021,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "name": "Simon Lorenzi",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 6,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Soudain Seul",
+            "grade": "V17",
+            "year": 2021,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2021,
+              "location": "Fontainebleau, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Shaolin",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2026,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Big Island Sit",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2020,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "name": "Aidan Roberts",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Spots of Time",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Chironico, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 15
+        },
+        {
+          "name": "Laura Rogora",
+          "country": "ITA",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Erebor",
+            "grade": "9b",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Ali Hulk Sit Extension Total",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Rodellar, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Pure Dreaming Mallorca",
+              "grade": "9a+",
+              "year": 2018,
+              "location": "Mallorca, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 16
+        },
+        {
+          "name": "Nathaniel Coleman",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No One Mourns the Wicked",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No One Mourns the Wicked",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Thunder Ridge, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Grand Illusion",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2020,
+              "location": "Little Cottonwood Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Sleepwalker",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2019,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 17
+        },
+        {
+          "name": "Ryuichi Murai",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2023,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Shiobara, Japan",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Byaku-Dou",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2022,
+              "location": "Mizugaki, Japan",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 18
+        },
+        {
+          "name": "Angela Eiter",
+          "country": "AUT",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Planta de Shiva",
+            "grade": "9b",
+            "year": 2017,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2017,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Madame Ching",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Imst, Austria",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 19
+        },
+        {
+          "name": "Buster Martin",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Hubble",
+              "grade": "9a+",
+              "year": 2024,
+              "location": "Raven Tor, UK",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 20
+        },
+        {
+          "name": "Charles Albert",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No Kpote Only",
+            "grade": "V17",
+            "year": 2018,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2018,
+              "location": "Fontainebleau, France",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "La Force Tranquille",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2017,
+              "location": "Fontainebleau, France",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 21
+        },
+        {
+          "name": "Edu Marin",
+          "country": "ESP",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Planta de Shiva",
+            "grade": "9b",
+            "year": 2014,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Planta de Shiva",
+              "grade": "9b",
+              "year": 2014,
+              "location": "Villanueva del Rosario, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Seleccio Anal",
+              "grade": "9a+",
+              "year": 2008,
+              "location": "Perles, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 22
+        },
+        {
+          "name": "Nalle Hukkataival",
+          "country": "FIN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Burden of Dreams",
+            "grade": "V17",
+            "year": 2016,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2016,
+              "location": "Lappnor, Finland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Livin' Large",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2011,
+              "location": "Rocklands, South Africa",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 23
+        },
+        {
+          "name": "Sachi Amma",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "La Dura Complete",
+            "grade": "9b",
+            "year": 2014,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "La Dura Complete",
+              "grade": "9b",
+              "year": 2014,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Fight or Flight",
+              "grade": "9b",
+              "year": 2014,
+              "location": "Oliana, Spain",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 24
+        },
+        {
+          "name": "Sean Bailey",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Duality of Man",
+            "grade": "V17",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Duality of Man",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Dry Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 25
+        },
+        {
+          "name": "Ai Mori",
+          "country": "JPN",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 26
+        },
+        {
+          "name": "Camille Coudert",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Soudain Seul",
+            "grade": "V17",
+            "year": 2022,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2022,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 27
+        },
+        {
+          "name": "Julia Chanourdie",
+          "country": "FRA",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Eagle-4",
+            "grade": "9b",
+            "year": 2020,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Eagle-4",
+              "grade": "9b",
+              "year": 2020,
+              "location": "Saint Loup, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 28
+        },
+        {
+          "name": "Mehdi Slimani",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No Kpote Only",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 29
+        },
+        {
+          "name": "Tomoaki Takata",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Shiobara, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 30
+        }
+      ],
+      "current": [
+        {
+          "name": "Jakob Schubert",
+          "country": "AUT",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "B.I.G.",
+            "grade": "9c",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "B.I.G.",
+              "grade": "9c",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Jorge D\u00edaz-Rullo",
+          "country": "ESP",
+          "gender": "M",
+          "hardest_send_idx": 19.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Caf\u00e9 Colombia",
+            "grade": "9c",
+            "year": 2025,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Caf\u00e9 Colombia",
+              "grade": "9c",
+              "year": 2025,
+              "location": "Margalef, Spain",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "name": "Will Bosi",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 5,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2025,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Realm of Tor'ment",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Raven Tor, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Adam Ondra",
+          "country": "CZE",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Move Hard",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Move Hard",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Flatanger, Norway",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "C.R.S.",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Brooke Raboutou",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2025,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2025,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Elias Iagnemma",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Exodia",
+            "grade": "V18",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Exodia",
+              "grade": "V18",
+              "font_grade": "9A+",
+              "year": 2025,
+              "location": "Val Pellice, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 6
+        },
+        {
+          "name": "Seb Berthe",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Ceuse, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Stefano Ghisolfi",
+          "country": "ITA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Excalibur",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Excalibur",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "name": "S\u00e9bastien Bouin",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 18.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Beyond Integral",
+            "grade": "9b+",
+            "year": 2023,
+            "fa": true,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Beyond Integral",
+              "grade": "9b+",
+              "year": 2023,
+              "location": "Pic Saint Loup, France",
+              "fa": true,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Aidan Roberts",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Spots of Time",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Spots of Time",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Helvellyn, UK",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Chironico, Switzerland",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Megatron",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Black Mountain, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Alphane",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 10
+        },
+        {
+          "name": "Simon Lorenzi",
+          "country": "BEL",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Burden of Dreams",
+            "grade": "V17",
+            "year": 2023,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Burden of Dreams",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Lappnor, Finland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Shaolin",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2026,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 11
+        },
+        {
+          "name": "Buster Martin",
+          "country": "GBR",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "sport",
+              "route": "Hubble",
+              "grade": "9a+",
+              "year": 2024,
+              "location": "Raven Tor, UK",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 12
+        },
+        {
+          "name": "Nathaniel Coleman",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No One Mourns the Wicked",
+            "grade": "V17",
+            "year": 2024,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No One Mourns the Wicked",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Thunder Ridge, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 13
+        },
+        {
+          "name": "Ryuichi Murai",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2023,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Shiobara, Japan",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Soudain Seul",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2023,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 14
+        },
+        {
+          "name": "Sean Bailey",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 2,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Duality of Man",
+            "grade": "V17",
+            "year": 2025,
+            "fa": true,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Duality of Man",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Dry Canyon, USA",
+              "fa": true,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Arrival of the Birds",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2025,
+              "location": "Chironico, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 15
+        },
+        {
+          "name": "Ai Mori",
+          "country": "JPN",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Lapsus",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Lapsus",
+              "grade": "9b",
+              "year": 2024,
+              "location": "Andonno, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 16
+        },
+        {
+          "name": "Laura Rogora",
+          "country": "ITA",
+          "gender": "F",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Erebor",
+            "grade": "9b",
+            "year": 2023,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2023,
+              "location": "Arco, Italy",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 17
+        },
+        {
+          "name": "Mehdi Slimani",
+          "country": "FRA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "No Kpote Only",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 18
+        },
+        {
+          "name": "Shawn Raboutou",
+          "country": "USA",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Return of the Sleepwalker",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Return of the Sleepwalker",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Red Rocks, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 19
+        },
+        {
+          "name": "Tomoaki Takata",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 17.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Hydrangea",
+            "grade": "V17",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Hydrangea",
+              "grade": "V17",
+              "font_grade": "9A",
+              "year": 2024,
+              "location": "Shiobara, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 20
+        },
+        {
+          "name": "Katie Lamb",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 4,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Box Therapy",
+            "grade": "V16",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Box Therapy",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2024,
+              "location": "Rocky Mountain National Park, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Dark Side",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2025,
+              "location": "Yosemite, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Great Shark Hunt",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2023,
+              "location": "Mount Evans, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Fallen Angel",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Tahoe, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 21
+        },
+        {
+          "name": "Janja Garnbret",
+          "country": "SLO",
+          "gender": "F",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 3,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "American Hustle",
+            "grade": "9a+",
+            "year": 2024,
+            "fa": false,
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "sport",
+              "route": "American Hustle",
+              "grade": "9a+",
+              "year": 2024,
+              "location": "Rifle, USA",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "B\u00fcgeleisen Sit",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Magic Wood, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            },
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2023,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 22
+        },
+        {
+          "name": "Tomoa Narasaki",
+          "country": "JPN",
+          "gender": "M",
+          "hardest_send_idx": 16.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Byaku-Dou",
+            "grade": "V16",
+            "year": 2023,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Byaku-Dou",
+              "grade": "V16",
+              "font_grade": "8C+",
+              "year": 2023,
+              "location": "Mizugaki, Japan",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 23
+        },
+        {
+          "name": "Camilla Moroni",
+          "country": "ITA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Off the Wagon Low",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Off the Wagon Low",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Val Bavona, Switzerland",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 24
+        },
+        {
+          "name": "Michaela Kiersch",
+          "country": "USA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "The Penrose Step",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "The Penrose Step",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Joe's Valley, USA",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 25
+        },
+        {
+          "name": "Oriane Bertone",
+          "country": "FRA",
+          "gender": "F",
+          "hardest_send_idx": 15.0,
+          "hard_send_count": 1,
+          "hardest_flash_idx": 0.0,
+          "hard_flash_count": 0,
+          "hardest_send": {
+            "route": "Satan i Helvete",
+            "grade": "V15",
+            "year": 2024,
+            "fa": false,
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "sends": [
+            {
+              "discipline": "boulder",
+              "route": "Satan i Helvete",
+              "grade": "V15",
+              "font_grade": "8C",
+              "year": 2024,
+              "location": "Fontainebleau, France",
+              "fa": false,
+              "style": "redpoint"
+            }
+          ],
+          "rank": 26
+        }
+      ]
+    }
+  }
+}
