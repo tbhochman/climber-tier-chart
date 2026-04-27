@@ -14,18 +14,25 @@ config:
   top_n_flashes: 5
 
   # Flash credit multiplier on top of the redpoint score.
-  flash_multiplier: 0.5
+  # At 1.0, a flash earns full grade-points as flash bonus, on top of
+  # whatever it earns as a send. So a flash at grade X is worth 2x a same-
+  # grade redpoint, but still less than a redpoint one full grade harder.
+  flash_multiplier: 1.0
 
-  # Per-grade points (3^x — each step = 3x the previous).
-  # Sport flashes use the same scale; only the qualifying grade differs.
+  # Per-grade points: 3^x where x is a unified grade index, anchored at V14 = 0.
+  # Sport grades sit +0.7 above the same-numbered V grade (per Thomas: "9c is
+  # roughly V17.7, 9b+ is V16.7, 9b is V15.7"). So 9c (58.3) > V17 (27) but
+  # < V18 (81), and so on. This only matters for the Overall leaderboard's
+  # cross-discipline ranking — within sport or boulder alone, scaling is
+  # monotonic so ranks are unchanged.
   sport_points:
-    "8c+": 0.111   # below redpoint floor; only used for flash scoring
-    "9a":  0.333
-    "9a+": 1
-    "9b":  3
-    "9b+": 9
-    "9c":  27
-    "9c+": 81
+    "8c+": 0.25   # V12.7
+    "9a":  0.74   # V13.7
+    "9a+": 2.16   # V14.7
+    "9b":  6.47   # V15.7
+    "9b+": 19.42  # V16.7
+    "9c":  58.27  # V17.7
+    "9c+": 174.86 # V18.7
   boulder_points:
     "V13": 0.333
     "8B+": 0.333
