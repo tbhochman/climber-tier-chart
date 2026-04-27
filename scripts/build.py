@@ -187,6 +187,78 @@ def filter_sends_by_year(sends: list[dict], year_cutoff: int | None) -> list[dic
     return [s for s in sends if (s.get("year") or 0) >= year_cutoff]
 
 
+def score_climber_overall(sends: list[dict], cfg: dict) -> dict:
+    """Overall scoring: sends pooled across disciplines (top-N), flashes split.
+
+    score = sum(top-10 hardest sends across sport+boulder)
+          + flash_multiplier * (sum(top-5 sport flashes) + sum(top-5 boulder flashes))
+    """
+    rp_pool: list[tuple[float, dict]] = []      # all qualifying sends, mixed
+    fl_sport: list[tuple[float, dict]] = []
+    fl_boulder: list[tuple[float, dict]] = []
+
+    for s in sends:
+        qrp, qfl = meets_threshold(s, cfg)
+        pts = grade_points(s["grade"], s["discipline"], cfg)
+        if qrp:
+            rp_pool.append((pts, s))
+        if qfl:
+            (fl_sport if s["discipline"] == "sport" else fl_boulder).append((pts, s))
+
+    rp_pool.sort(key=lambda x: x[0], reverse=True)
+    fl_sport.sort(key=lambda x: x[0], reverse=True)
+    fl_boulder.sort(key=lambda x: x[0], reverse=True)
+
+    n_sends = int(cfg["top_n_sends"])
+    n_flashes = int(cfg["top_n_flashes"])
+    top_sends = rp_pool[:n_sends]
+    top_fl_sport = fl_sport[:n_flashes]
+    top_fl_boulder = fl_boulder[:n_flashes]
+
+    redpoint_score = sum(p for p, _ in top_sends)
+    flash_score = (
+        sum(p for p, _ in top_fl_sport) + sum(p for p, _ in top_fl_boulder)
+    )
+    total_score = redpoint_score + float(cfg["flash_multiplier"]) * flash_score
+
+    hardest_send  = top_sends[0][1] if top_sends else None
+    flash_candidates = [
+        top_fl_sport[0][1] if top_fl_sport else None,
+        top_fl_boulder[0][1] if top_fl_boulder else None,
+    ]
+    flash_candidates = [f for f in flash_candidates if f]
+    hardest_flash = max(
+        flash_candidates,
+        key=lambda s: grade_rank(s["grade"], s["discipline"]),
+        default=None,
+    )
+
+    qualifying = [s for _, s in rp_pool]
+    # Make sure flash-only sends below the redpoint floor are surfaced too.
+    seen_ids = {id(s) for s in qualifying}
+    for _, s in fl_sport + fl_boulder:
+        if id(s) not in seen_ids:
+            qualifying.append(s)
+            seen_ids.add(id(s))
+    qualifying.sort(
+        key=lambda s: (
+            -grade_rank(s["grade"], s["discipline"]),
+            -(s.get("year") or 0),
+        ),
+    )
+
+    return {
+        "score":          round(total_score, 2),
+        "redpoint_score": round(redpoint_score, 2),
+        "flash_score":    round(flash_score, 2),
+        "hard_send_count":   len(rp_pool),
+        "hard_flash_count":  len(fl_sport) + len(fl_boulder),
+        "hardest_send":  _summarize(hardest_send),
+        "hardest_flash": _summarize(hardest_flash),
+        "qualifying_sends": qualifying,
+    }
+
+
 def build_one_leaderboard(
     climbers: list[dict],
     *,
@@ -202,53 +274,16 @@ def build_one_leaderboard(
 
         if discipline in ("sport", "boulder"):
             stats = score_climber_in_discipline(sends, discipline, cfg)
-            if stats["score"] <= 0:
-                continue
-            rows.append({
-                "name":  c["name"],
-                "climbing_history_id": c.get("climbing_history_id"),
-                **stats,
-            })
         else:
-            sport = score_climber_in_discipline(sends, "sport", cfg)
-            boulder = score_climber_in_discipline(sends, "boulder", cfg)
-            total = sport["score"] + boulder["score"]
-            if total <= 0:
-                continue
-            # Pick the discipline-hardest send overall to display.
-            candidates = [sport["hardest_send"], boulder["hardest_send"]]
-            candidates = [c for c in candidates if c]
-            hardest = max(
-                candidates,
-                key=lambda s: grade_rank(s["grade"], s["discipline"]),
-                default=None,
-            )
-            flashes = [sport["hardest_flash"], boulder["hardest_flash"]]
-            flashes = [f for f in flashes if f]
-            hardest_flash = max(
-                flashes,
-                key=lambda s: grade_rank(s["grade"], s["discipline"]),
-                default=None,
-            )
-            qualifying = sport["qualifying_sends"] + boulder["qualifying_sends"]
-            qualifying.sort(
-                key=lambda s: (
-                    -grade_rank(s["grade"], s["discipline"]),
-                    -(s.get("year") or 0),
-                ),
-            )
-            rows.append({
-                "name": c["name"],
-                "climbing_history_id": c.get("climbing_history_id"),
-                "score": round(total, 2),
-                "sport_score":   sport["score"],
-                "boulder_score": boulder["score"],
-                "hard_send_count":  sport["hard_send_count"] + boulder["hard_send_count"],
-                "hard_flash_count": sport["hard_flash_count"] + boulder["hard_flash_count"],
-                "hardest_send":  hardest,
-                "hardest_flash": hardest_flash,
-                "qualifying_sends": qualifying,
-            })
+            stats = score_climber_overall(sends, cfg)
+
+        if stats["score"] <= 0:
+            continue
+        rows.append({
+            "name":  c["name"],
+            "climbing_history_id": c.get("climbing_history_id"),
+            **stats,
+        })
 
     rows.sort(
         key=lambda r: (
