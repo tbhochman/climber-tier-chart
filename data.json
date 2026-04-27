@@ -28,8 +28,10 @@
           "score": 84.83,
           "redpoint_score": 84.0,
           "flash_score": 1.67,
-          "hard_send_count": 27,
-          "hard_flash_count": 25,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 5,
+          "total_qualifying_sends": 27,
+          "total_qualifying_flashes": 25,
           "hardest_send": {
             "route": "Silence",
             "grade": "9c",
@@ -46,7 +48,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Silence",
@@ -139,159 +141,6 @@
             },
             {
               "discipline": "sport",
-              "route": "The Lonely Mountain",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1711
-            },
-            {
-              "discipline": "sport",
-              "route": "Neanderthal",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 496
-            },
-            {
-              "discipline": "sport",
-              "route": "Eagle-4",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 484
-            },
-            {
-              "discipline": "sport",
-              "route": "Disbelief",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 483
-            },
-            {
-              "discipline": "sport",
-              "route": "Mamichula",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 494
-            },
-            {
-              "discipline": "sport",
-              "route": "Queen Line",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 498
-            },
-            {
-              "discipline": "sport",
-              "route": "Move Hard",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 495
-            },
-            {
-              "discipline": "sport",
-              "route": "One Slap",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 497
-            },
-            {
-              "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
-              "route": "Robin úd",
-              "grade": "9b",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 499
-            },
-            {
-              "discipline": "sport",
-              "route": "C.R.S.",
-              "grade": "9b",
-              "year": 2015,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 480
-            },
-            {
-              "discipline": "sport",
-              "route": "First Round, First Minute",
-              "grade": "9b",
-              "year": 2014,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 487
-            },
-            {
-              "discipline": "sport",
-              "route": "Fight or Flight",
-              "grade": "9b",
-              "year": 2013,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 486
-            },
-            {
-              "discipline": "sport",
-              "route": "Move",
-              "grade": "9b",
-              "year": 2013,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 474
-            },
-            {
-              "discipline": "sport",
-              "route": "Chaxiraxi",
-              "grade": "9b",
-              "year": 2011,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 479
-            },
-            {
-              "discipline": "sport",
-              "route": "La Planta de Shiva",
-              "grade": "9b",
-              "year": 2011,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 492
-            },
-            {
-              "discipline": "sport",
-              "route": "Golpe de Estado",
-              "grade": "9b",
-              "year": 2010,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 488
-            },
-            {
-              "discipline": "sport",
               "route": "El Gran Bellanco",
               "grade": "9a",
               "year": 2023,
@@ -334,186 +183,6 @@
               "style": "onsight",
               "fa": false,
               "climbing_history_climb_id": 397
-            },
-            {
-              "discipline": "sport",
-              "route": "Solitary Souls",
-              "grade": "8c+",
-              "year": 2022,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1914
-            },
-            {
-              "discipline": "sport",
-              "route": "Warmduscher",
-              "grade": "8c+",
-              "year": 2020,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1129
-            },
-            {
-              "discipline": "sport",
-              "route": "Blut und Honig",
-              "grade": "8c+",
-              "year": 2019,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3888
-            },
-            {
-              "discipline": "sport",
-              "route": "First Flight",
-              "grade": "8c+",
-              "year": 2018,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3887
-            },
-            {
-              "discipline": "sport",
-              "route": "Just Do It",
-              "grade": "8c+",
-              "year": 2018,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 69
-            },
-            {
-              "discipline": "sport",
-              "route": "Gimmel Express",
-              "grade": "8c+",
-              "year": 2016,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3884
-            },
-            {
-              "discipline": "sport",
-              "route": "Barracuda",
-              "grade": "8c+",
-              "year": 2016,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3885
-            },
-            {
-              "discipline": "sport",
-              "route": "C’est la Vie",
-              "grade": "8c+",
-              "year": 2016,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3886
-            },
-            {
-              "discipline": "sport",
-              "route": "Le Super Plafond",
-              "grade": "8c+",
-              "year": 2014,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 776
-            },
-            {
-              "discipline": "sport",
-              "route": "Chambao",
-              "grade": "8c+",
-              "year": 2013,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3883
-            },
-            {
-              "discipline": "sport",
-              "route": "Deltaplane Man Direct",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3882
-            },
-            {
-              "discipline": "sport",
-              "route": "Odin's Eye",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 100
-            },
-            {
-              "discipline": "sport",
-              "route": "Pure Imagination",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1334
-            },
-            {
-              "discipline": "sport",
-              "route": "The Golden Ticket",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1333
-            },
-            {
-              "discipline": "sport",
-              "route": "Kidetasunaren Balio Erantsia",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 2833
-            },
-            {
-              "discipline": "sport",
-              "route": "Bizi Euskaraz Extension",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1604
-            },
-            {
-              "discipline": "sport",
-              "route": "Powerade",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3876
-            },
-            {
-              "discipline": "sport",
-              "route": "Blanquita",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3879
-            },
-            {
-              "discipline": "sport",
-              "route": "La Rubia",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 2200
-            },
-            {
-              "discipline": "sport",
-              "route": "L’Avaro",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3880
             }
           ],
           "rank": 1
@@ -524,8 +193,10 @@
           "score": 78.0,
           "redpoint_score": 78.0,
           "flash_score": 0,
-          "hard_send_count": 20,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 20,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "DNA",
             "grade": "9c",
@@ -535,7 +206,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "DNA",
@@ -625,96 +296,6 @@
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 2459
-            },
-            {
-              "discipline": "sport",
-              "route": "Move Hard",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 495
-            },
-            {
-              "discipline": "sport",
-              "route": "Jamming Destruction",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 2701
-            },
-            {
-              "discipline": "sport",
-              "route": "Nordic Marathon",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1986
-            },
-            {
-              "discipline": "sport",
-              "route": "Jumbo Love",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 490
-            },
-            {
-              "discipline": "sport",
-              "route": "Beyond Integral",
-              "grade": "9b",
-              "year": 2020,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 836
-            },
-            {
-              "discipline": "sport",
-              "route": "Mamichula",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 494
-            },
-            {
-              "discipline": "sport",
-              "route": "Move",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 474
-            },
-            {
-              "discipline": "sport",
-              "route": "La Rage d'Adam",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 473
-            },
-            {
-              "discipline": "sport",
-              "route": "The Dream",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 503
-            },
-            {
-              "discipline": "sport",
-              "route": "Les Yeux Plus Gros que l'Antre",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 504
             }
           ],
           "rank": 2
@@ -725,8 +306,10 @@
           "score": 72.0,
           "redpoint_score": 72.0,
           "flash_score": 0,
-          "hard_send_count": 12,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 12,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Café Colombia",
             "grade": "9c",
@@ -736,7 +319,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Café Colombia",
@@ -826,24 +409,6 @@
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 1567
-            },
-            {
-              "discipline": "sport",
-              "route": "El Bon Combat",
-              "grade": "9b",
-              "year": 2020,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 564
-            },
-            {
-              "discipline": "sport",
-              "route": "La Planta de Shiva",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 492
             }
           ],
           "rank": 3
@@ -854,8 +419,10 @@
           "score": 60.0,
           "redpoint_score": 60.0,
           "flash_score": 0,
-          "hard_send_count": 10,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 10,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "B.I.G",
             "grade": "9c",
@@ -865,7 +432,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "B.I.G",
@@ -965,8 +532,10 @@
           "score": 54.0,
           "redpoint_score": 54.0,
           "flash_score": 0,
-          "hard_send_count": 15,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 15,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -976,7 +545,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -1066,51 +635,6 @@
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 678
-            },
-            {
-              "discipline": "sport",
-              "route": "The Lonely Mountain",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1711
-            },
-            {
-              "discipline": "sport",
-              "route": "Queen Line",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 498
-            },
-            {
-              "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
-              "route": "First Round, First Minute",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 487
-            },
-            {
-              "discipline": "sport",
-              "route": "One Slap",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 497
             }
           ],
           "rank": 5
@@ -1121,8 +645,10 @@
           "score": 48.5,
           "redpoint_score": 48.0,
           "flash_score": 1.0,
-          "hard_send_count": 12,
-          "hard_flash_count": 5,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 5,
+          "total_qualifying_sends": 12,
+          "total_qualifying_flashes": 5,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -1139,7 +665,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Change",
@@ -1232,24 +758,6 @@
             },
             {
               "discipline": "sport",
-              "route": "Fight Club",
-              "grade": "9b",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 485
-            },
-            {
-              "discipline": "sport",
-              "route": "First Round, First Minute",
-              "grade": "9b",
-              "year": 2015,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 487
-            },
-            {
-              "discipline": "sport",
               "route": "TCT",
               "grade": "9a",
               "year": 2017,
@@ -1302,8 +810,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Duality of Man",
             "grade": "9c",
@@ -1313,7 +823,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Duality of Man",
@@ -1341,8 +851,10 @@
           "score": 33.0,
           "redpoint_score": 33.0,
           "flash_score": 0,
-          "hard_send_count": 9,
-          "hard_flash_count": 0,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "La Dura Dura",
             "grade": "9b+",
@@ -1352,7 +864,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "La Dura Dura",
@@ -1443,8 +955,10 @@
           "score": 21.0,
           "redpoint_score": 21.0,
           "flash_score": 0,
-          "hard_send_count": 7,
-          "hard_flash_count": 0,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
@@ -1454,7 +968,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Erebor",
@@ -1527,8 +1041,10 @@
           "score": 18.0,
           "redpoint_score": 18.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Sistema de Creenicas",
             "grade": "9b",
@@ -1538,7 +1054,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Sistema de Creenicas",
@@ -1602,8 +1118,10 @@
           "score": 18.0,
           "redpoint_score": 18.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Brooklyn",
             "grade": "9b",
@@ -1613,7 +1131,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Brooklyn",
@@ -1677,8 +1195,10 @@
           "score": 12.0,
           "redpoint_score": 12.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -1688,7 +1208,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -1716,8 +1236,10 @@
           "score": 12.0,
           "redpoint_score": 12.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -1727,7 +1249,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -1755,8 +1277,10 @@
           "score": 12.0,
           "redpoint_score": 12.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Sleeping Lion",
             "grade": "9b",
@@ -1766,7 +1290,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Sleeping Lion",
@@ -1812,8 +1336,10 @@
           "score": 9.0,
           "redpoint_score": 9.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -1823,7 +1349,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -1842,8 +1368,10 @@
           "score": 9.0,
           "redpoint_score": 9.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -1853,7 +1381,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Change",
@@ -1872,8 +1400,10 @@
           "score": 6.0,
           "redpoint_score": 6.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Madame Ching",
             "grade": "9b",
@@ -1883,7 +1413,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Madame Ching",
@@ -1911,8 +1441,10 @@
           "score": 6.0,
           "redpoint_score": 6.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Abaporu",
             "grade": "9b",
@@ -1922,7 +1454,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Abaporu",
@@ -1950,8 +1482,10 @@
           "score": 3.11,
           "redpoint_score": 3.0,
           "flash_score": 0.22,
-          "hard_send_count": 1,
-          "hard_flash_count": 2,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
@@ -1968,7 +1502,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Erebor",
@@ -2005,8 +1539,10 @@
           "score": 3.06,
           "redpoint_score": 3.0,
           "flash_score": 0.11,
-          "hard_send_count": 1,
-          "hard_flash_count": 1,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Move",
             "grade": "9b",
@@ -2023,7 +1559,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Move",
@@ -2051,8 +1587,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "El Bon Combat",
             "grade": "9b",
@@ -2062,7 +1600,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "El Bon Combat",
@@ -2081,8 +1619,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Cryptography",
             "grade": "9b",
@@ -2092,7 +1632,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Cryptography",
@@ -2111,8 +1651,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "The Lord of Darkness",
             "grade": "9b",
@@ -2122,7 +1664,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "The Lord of Darkness",
@@ -2141,8 +1683,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "La Planta de Shiva",
             "grade": "9b",
@@ -2152,7 +1696,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "La Planta de Shiva",
@@ -2171,8 +1715,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "The Full Journey",
             "grade": "9b",
@@ -2182,7 +1728,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "The Full Journey",
@@ -2201,8 +1747,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Fantasia",
             "grade": "9b",
@@ -2212,7 +1760,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Fantasia",
@@ -2231,8 +1779,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Delincuente Natural (extension)",
             "grade": "9b",
@@ -2242,7 +1792,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Delincuente Natural (extension)",
@@ -2261,8 +1811,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Move",
             "grade": "9b",
@@ -2272,7 +1824,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Move",
@@ -2291,8 +1843,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Rainman",
             "grade": "9b",
@@ -2302,7 +1856,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Rainman",
@@ -2321,8 +1875,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "The Full Journey",
             "grade": "9b",
@@ -2332,7 +1888,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "The Full Journey",
@@ -2353,8 +1909,10 @@
           "score": 66.0,
           "redpoint_score": 66.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Café Colombia",
             "grade": "9c",
@@ -2364,7 +1922,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Café Colombia",
@@ -2446,8 +2004,10 @@
           "score": 39.0,
           "redpoint_score": 39.0,
           "flash_score": 0,
-          "hard_send_count": 9,
-          "hard_flash_count": 0,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Wolf Kingdom",
             "grade": "9b+",
@@ -2457,7 +2017,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Wolf Kingdom",
@@ -2548,8 +2108,10 @@
           "score": 30.0,
           "redpoint_score": 30.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "B.I.G",
             "grade": "9c",
@@ -2559,7 +2121,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "B.I.G",
@@ -2587,8 +2149,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Duality of Man",
             "grade": "9c",
@@ -2598,7 +2162,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Duality of Man",
@@ -2617,8 +2181,10 @@
           "score": 21.11,
           "redpoint_score": 21.0,
           "flash_score": 0.22,
-          "hard_send_count": 5,
-          "hard_flash_count": 2,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -2635,7 +2201,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Change",
@@ -2708,8 +2274,10 @@
           "score": 18.0,
           "redpoint_score": 18.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -2719,7 +2287,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -2765,8 +2333,10 @@
           "score": 12.0,
           "redpoint_score": 12.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -2776,7 +2346,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -2804,8 +2374,10 @@
           "score": 9.0,
           "redpoint_score": 9.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -2815,7 +2387,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -2834,8 +2406,10 @@
           "score": 9.0,
           "redpoint_score": 9.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -2845,7 +2419,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Change",
@@ -2864,8 +2438,10 @@
           "score": 9.0,
           "redpoint_score": 9.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -2875,7 +2451,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -2894,8 +2470,10 @@
           "score": 9.0,
           "redpoint_score": 9.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
@@ -2905,7 +2483,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Erebor",
@@ -2942,8 +2520,10 @@
           "score": 9.0,
           "redpoint_score": 9.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Brooklyn",
             "grade": "9b",
@@ -2953,7 +2533,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Brooklyn",
@@ -2990,8 +2570,10 @@
           "score": 6.0,
           "redpoint_score": 6.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Sistema de Creenicas",
             "grade": "9b",
@@ -3001,7 +2583,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Sistema de Creenicas",
@@ -3029,8 +2611,10 @@
           "score": 3.17,
           "redpoint_score": 3.0,
           "flash_score": 0.33,
-          "hard_send_count": 1,
-          "hard_flash_count": 1,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "B je to!",
             "grade": "9b",
@@ -3047,7 +2631,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "B je to!",
@@ -3075,8 +2659,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "El Bon Combat",
             "grade": "9b",
@@ -3086,7 +2672,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "El Bon Combat",
@@ -3105,8 +2691,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "La Planta de Shiva",
             "grade": "9b",
@@ -3116,7 +2704,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "La Planta de Shiva",
@@ -3135,8 +2723,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "The Full Journey",
             "grade": "9b",
@@ -3146,7 +2736,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "The Full Journey",
@@ -3165,8 +2755,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Sleeping Lion",
             "grade": "9b",
@@ -3176,7 +2768,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Sleeping Lion",
@@ -3195,8 +2787,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Fantasia",
             "grade": "9b",
@@ -3206,7 +2800,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Fantasia",
@@ -3225,8 +2819,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Move",
             "grade": "9b",
@@ -3236,7 +2832,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Move",
@@ -3255,8 +2851,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Move",
             "grade": "9b",
@@ -3266,7 +2864,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Move",
@@ -3285,8 +2883,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "The Full Journey",
             "grade": "9b",
@@ -3296,7 +2896,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "The Full Journey",
@@ -3315,8 +2915,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Le Bombé Bleu",
             "grade": "9b",
@@ -3326,7 +2928,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Le Bombé Bleu",
@@ -3345,8 +2947,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Abaporu",
             "grade": "9b",
@@ -3356,7 +2960,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Abaporu",
@@ -3375,8 +2979,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
@@ -3386,7 +2992,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Erebor",
@@ -3405,8 +3011,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
@@ -3416,7 +3024,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Erebor",
@@ -3435,8 +3043,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
@@ -3446,7 +3056,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Erebor",
@@ -3465,8 +3075,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Le Bruit de l’Acid",
             "grade": "9b",
@@ -3476,7 +3088,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Le Bruit de l’Acid",
@@ -3495,8 +3107,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "La Planta de Shiva",
             "grade": "9b",
@@ -3506,7 +3120,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "La Planta de Shiva",
@@ -3525,8 +3139,10 @@
           "score": 3.0,
           "redpoint_score": 3.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Soul Mate",
             "grade": "9b",
@@ -3536,7 +3152,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Soul Mate",
@@ -3559,8 +3175,10 @@
           "score": 182.0,
           "redpoint_score": 180.0,
           "flash_score": 4.0,
-          "hard_send_count": 10,
-          "hard_flash_count": 4,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 4,
+          "total_qualifying_sends": 10,
+          "total_qualifying_flashes": 4,
           "hardest_send": {
             "route": "Realm of Tor’ment",
             "grade": "9A",
@@ -3577,7 +3195,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Realm of Tor’ment",
@@ -3713,8 +3331,10 @@
           "score": 171.5,
           "redpoint_score": 171.0,
           "flash_score": 1.0,
-          "hard_send_count": 9,
-          "hard_flash_count": 1,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -3731,7 +3351,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -3831,8 +3451,10 @@
           "score": 162.0,
           "redpoint_score": 162.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Exodia",
             "grade": "9A+",
@@ -3842,7 +3464,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Exodia",
@@ -3906,8 +3528,10 @@
           "score": 126.0,
           "redpoint_score": 126.0,
           "flash_score": 0,
-          "hard_send_count": 11,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 11,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
             "grade": "9A",
@@ -3917,7 +3541,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Alphane",
@@ -4007,15 +3631,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 1091
-            },
-            {
-              "discipline": "boulder",
-              "route": "Off the Wagon Low",
-              "grade": "8C+",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 830
             }
           ],
           "rank": 4
@@ -4026,8 +3641,10 @@
           "score": 126.0,
           "redpoint_score": 126.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -4037,7 +3654,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -4119,8 +3736,10 @@
           "score": 118.5,
           "redpoint_score": 117.0,
           "flash_score": 3.0,
-          "hard_send_count": 7,
-          "hard_flash_count": 3,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 3,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 3,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -4137,7 +3756,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Shaolin",
@@ -4237,8 +3856,10 @@
           "score": 118.0,
           "redpoint_score": 117.0,
           "flash_score": 2.0,
-          "hard_send_count": 7,
-          "hard_flash_count": 2,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Spots of Time",
             "grade": "9A",
@@ -4255,7 +3876,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Spots of Time",
@@ -4346,8 +3967,10 @@
           "score": 108.0,
           "redpoint_score": 108.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Arrival of the Birds",
             "grade": "9A",
@@ -4357,7 +3980,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Arrival of the Birds",
@@ -4421,8 +4044,10 @@
           "score": 100.0,
           "redpoint_score": 99.0,
           "flash_score": 2.0,
-          "hard_send_count": 9,
-          "hard_flash_count": 2,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -4439,7 +4064,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -4548,8 +4173,10 @@
           "score": 90.0,
           "redpoint_score": 90.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
             "grade": "9A",
@@ -4559,7 +4186,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Alphane",
@@ -4623,8 +4250,10 @@
           "score": 72.0,
           "redpoint_score": 72.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Maxwell's Demon Low",
             "grade": "8C+",
@@ -4634,7 +4263,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Maxwell's Demon Low",
@@ -4716,8 +4345,10 @@
           "score": 72.0,
           "redpoint_score": 72.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Deep Fake",
             "grade": "8C+",
@@ -4727,7 +4358,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Deep Fake",
@@ -4809,8 +4440,10 @@
           "score": 69.5,
           "redpoint_score": 63.0,
           "flash_score": 13.0,
-          "hard_send_count": 5,
-          "hard_flash_count": 11,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 5,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 11,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -4827,7 +4460,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Soudain Seul",
@@ -4917,60 +4550,6 @@
               "style": "flash",
               "fa": false,
               "climbing_history_climb_id": 1768
-            },
-            {
-              "discipline": "boulder",
-              "route": "Imothep (du Sol)",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 2522
-            },
-            {
-              "discipline": "boulder",
-              "route": "La Ligne de Bête",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 1785
-            },
-            {
-              "discipline": "boulder",
-              "route": "Atom",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 5450
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gliese 581",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 6370
-            },
-            {
-              "discipline": "boulder",
-              "route": "Jade",
-              "grade": "8B+",
-              "year": 2015,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 507
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gecko (assis)",
-              "grade": "8B+",
-              "year": 2011,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 145
             }
           ],
           "rank": 13
@@ -4981,8 +4560,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -4999,7 +4580,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -5045,8 +4626,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -5063,7 +4646,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Shaolin",
@@ -5109,8 +4692,10 @@
           "score": 63.0,
           "redpoint_score": 63.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -5120,7 +4705,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -5175,8 +4760,10 @@
           "score": 54.5,
           "redpoint_score": 54.0,
           "flash_score": 1.0,
-          "hard_send_count": 6,
-          "hard_flash_count": 1,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Insomniac",
             "grade": "8C+",
@@ -5193,7 +4780,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Insomniac",
@@ -5266,8 +4853,10 @@
           "score": 54.0,
           "redpoint_score": 54.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Charlatan",
             "grade": "9A",
@@ -5277,7 +4866,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Charlatan",
@@ -5323,8 +4912,10 @@
           "score": 46.0,
           "redpoint_score": 45.0,
           "flash_score": 2.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 2,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Mount Doom",
             "grade": "9A",
@@ -5341,7 +4932,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Mount Doom",
@@ -5396,8 +4987,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Burden of Dreams",
             "grade": "9A",
@@ -5407,7 +5000,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Burden of Dreams",
@@ -5444,8 +5037,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Curve Ball",
             "grade": "8C+",
@@ -5455,7 +5050,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Curve Ball",
@@ -5510,8 +5105,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Curve Ball",
             "grade": "8C+",
@@ -5521,7 +5118,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Curve Ball",
@@ -5576,8 +5173,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Pneuma",
             "grade": "8C+",
@@ -5587,7 +5186,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Pneuma",
@@ -5642,8 +5241,10 @@
           "score": 37.5,
           "redpoint_score": 36.0,
           "flash_score": 3.0,
-          "hard_send_count": 4,
-          "hard_flash_count": 1,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "The Story of Three Worlds",
             "grade": "8C+",
@@ -5660,7 +5261,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "The Story of Three Worlds",
@@ -5715,8 +5316,10 @@
           "score": 36.5,
           "redpoint_score": 36.0,
           "flash_score": 1.0,
-          "hard_send_count": 2,
-          "hard_flash_count": 1,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -5733,7 +5336,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -5770,8 +5373,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "No One Mourns the Wicked",
             "grade": "9A",
@@ -5781,7 +5386,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "No One Mourns the Wicked",
@@ -5809,8 +5414,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -5820,7 +5427,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Soudain Seul",
@@ -5848,8 +5455,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -5859,7 +5468,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -5887,8 +5496,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "No One Mourns the Wicked",
             "grade": "9A",
@@ -5898,7 +5509,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "No One Mourns the Wicked",
@@ -5926,8 +5537,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -5937,7 +5550,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Soudain Seul",
@@ -5967,8 +5580,10 @@
           "score": 144.0,
           "redpoint_score": 144.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Exodia",
             "grade": "9A+",
@@ -5978,7 +5593,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Exodia",
@@ -6024,8 +5639,10 @@
           "score": 136.5,
           "redpoint_score": 135.0,
           "flash_score": 3.0,
-          "hard_send_count": 7,
-          "hard_flash_count": 3,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 3,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 3,
           "hardest_send": {
             "route": "Realm of Tor’ment",
             "grade": "9A",
@@ -6042,7 +5659,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Realm of Tor’ment",
@@ -6142,8 +5759,10 @@
           "score": 117.0,
           "redpoint_score": 117.0,
           "flash_score": 0,
-          "hard_send_count": 7,
-          "hard_flash_count": 0,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -6153,7 +5772,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Shaolin",
@@ -6226,8 +5845,10 @@
           "score": 117.0,
           "redpoint_score": 117.0,
           "flash_score": 0,
-          "hard_send_count": 7,
-          "hard_flash_count": 0,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -6237,7 +5858,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -6310,8 +5931,10 @@
           "score": 99.0,
           "redpoint_score": 99.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Arrival of the Birds",
             "grade": "9A",
@@ -6321,7 +5944,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Arrival of the Birds",
@@ -6376,8 +5999,10 @@
           "score": 90.5,
           "redpoint_score": 90.0,
           "flash_score": 1.0,
-          "hard_send_count": 4,
-          "hard_flash_count": 1,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -6394,7 +6019,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -6449,8 +6074,10 @@
           "score": 90.0,
           "redpoint_score": 90.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
             "grade": "9A",
@@ -6460,7 +6087,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Alphane",
@@ -6524,8 +6151,10 @@
           "score": 64.0,
           "redpoint_score": 63.0,
           "flash_score": 2.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 2,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Spots of Time",
             "grade": "9A",
@@ -6542,7 +6171,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Spots of Time",
@@ -6597,8 +6226,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -6615,7 +6246,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -6661,8 +6292,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -6679,7 +6312,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Shaolin",
@@ -6725,8 +6358,10 @@
           "score": 46.0,
           "redpoint_score": 45.0,
           "flash_score": 2.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 2,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Mount Doom",
             "grade": "9A",
@@ -6743,7 +6378,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Mount Doom",
@@ -6798,8 +6433,10 @@
           "score": 36.5,
           "redpoint_score": 36.0,
           "flash_score": 1.0,
-          "hard_send_count": 2,
-          "hard_flash_count": 1,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -6816,7 +6453,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -6853,8 +6490,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "No One Mourns the Wicked",
             "grade": "9A",
@@ -6864,7 +6503,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "No One Mourns the Wicked",
@@ -6892,8 +6531,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -6903,7 +6544,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -6931,8 +6572,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -6942,7 +6585,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -6970,8 +6613,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Bookkeeping",
             "grade": "8C+",
@@ -6981,7 +6626,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Bookkeeping",
@@ -7027,8 +6672,10 @@
           "score": 33.5,
           "redpoint_score": 27.0,
           "flash_score": 13.0,
-          "hard_send_count": 1,
-          "hard_flash_count": 9,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 5,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 9,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -7045,7 +6692,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Soudain Seul",
@@ -7099,42 +6746,6 @@
               "style": "flash",
               "fa": false,
               "climbing_history_climb_id": 1768
-            },
-            {
-              "discipline": "boulder",
-              "route": "Imothep (du Sol)",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 2522
-            },
-            {
-              "discipline": "boulder",
-              "route": "La Ligne de Bête",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 1785
-            },
-            {
-              "discipline": "boulder",
-              "route": "Atom",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 5450
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gliese 581",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 6370
             }
           ],
           "rank": 17
@@ -7145,8 +6756,10 @@
           "score": 28.5,
           "redpoint_score": 27.0,
           "flash_score": 3.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "The Story of Three Worlds",
             "grade": "8C+",
@@ -7163,7 +6776,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "The Story of Three Worlds",
@@ -7209,8 +6822,10 @@
           "score": 28.0,
           "redpoint_score": 27.0,
           "flash_score": 2.0,
-          "hard_send_count": 1,
-          "hard_flash_count": 2,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Blackflip SDS",
             "grade": "9A",
@@ -7227,7 +6842,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Blackflip SDS",
@@ -7264,8 +6879,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Charlatan",
             "grade": "9A",
@@ -7275,7 +6892,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Charlatan",
@@ -7294,8 +6911,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Burden of Dreams",
             "grade": "9A",
@@ -7305,7 +6924,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Burden of Dreams",
@@ -7324,8 +6943,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "No One Mourns the Wicked",
             "grade": "9A",
@@ -7335,7 +6956,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "No One Mourns the Wicked",
@@ -7354,8 +6975,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -7365,7 +6988,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Soudain Seul",
@@ -7384,8 +7007,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "REM",
             "grade": "8C+",
@@ -7395,7 +7020,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "REM",
@@ -7432,8 +7057,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Deep Fake",
             "grade": "8C+",
@@ -7443,7 +7070,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Deep Fake",
@@ -7480,8 +7107,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Tanpopo",
             "grade": "8C+",
@@ -7491,7 +7120,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Tanpopo",
@@ -7528,8 +7157,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Poison the Well",
             "grade": "8C+",
@@ -7539,7 +7170,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Poison the Well",
@@ -7576,8 +7207,10 @@
           "score": 18.0,
           "redpoint_score": 18.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Event Horizon",
             "grade": "8C+",
@@ -7587,7 +7220,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Event Horizon",
@@ -7615,8 +7248,10 @@
           "score": 18.0,
           "redpoint_score": 18.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Last Line of Defense",
             "grade": "8C+",
@@ -7626,7 +7261,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Last Line of Defense",
@@ -7654,8 +7289,10 @@
           "score": 18.0,
           "redpoint_score": 18.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Maxwell's Demon Low",
             "grade": "8C+",
@@ -7665,7 +7302,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Maxwell's Demon Low",
@@ -7697,8 +7334,10 @@
           "score": 182.0,
           "redpoint_score": 180.0,
           "flash_score": 4.0,
-          "hard_send_count": 12,
-          "hard_flash_count": 4,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 4,
+          "total_qualifying_sends": 12,
+          "total_qualifying_flashes": 4,
           "hardest_send": {
             "route": "Realm of Tor’ment",
             "grade": "9A",
@@ -7715,7 +7354,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -7724,15 +7363,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 2384
-            },
-            {
-              "discipline": "sport",
-              "route": "King Capella",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1108
             },
             {
               "discipline": "boulder",
@@ -7817,15 +7447,6 @@
             },
             {
               "discipline": "boulder",
-              "route": "Ephyra",
-              "grade": "8C+",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1132
-            },
-            {
-              "discipline": "boulder",
               "route": "Dune",
               "grade": "8B+",
               "year": 2024,
@@ -7869,8 +7490,10 @@
           "score": 171.5,
           "redpoint_score": 171.0,
           "flash_score": 1.0,
-          "hard_send_count": 9,
-          "hard_flash_count": 1,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -7887,7 +7510,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -7987,8 +7610,10 @@
           "score": 162.0,
           "redpoint_score": 162.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Exodia",
             "grade": "9A+",
@@ -7998,7 +7623,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Exodia",
@@ -8062,8 +7687,10 @@
           "score": 157.5,
           "redpoint_score": 156.0,
           "flash_score": 3.0,
-          "hard_send_count": 17,
-          "hard_flash_count": 3,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 3,
+          "total_qualifying_sends": 17,
+          "total_qualifying_flashes": 3,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -8080,7 +7707,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "B.I.G",
@@ -8107,69 +7734,6 @@
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 3045
-            },
-            {
-              "discipline": "sport",
-              "route": "Erebor",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 678
-            },
-            {
-              "discipline": "sport",
-              "route": "King Capella",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1108
-            },
-            {
-              "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
-              "route": "El Bon Combat",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 564
-            },
-            {
-              "discipline": "sport",
-              "route": "Neanderthal",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 496
-            },
-            {
-              "discipline": "sport",
-              "route": "La Planta de Shiva",
-              "grade": "9b",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 492
-            },
-            {
-              "discipline": "sport",
-              "route": "Fight or Flight",
-              "grade": "9b",
-              "year": 2014,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 486
             },
             {
               "discipline": "boulder",
@@ -8270,8 +7834,10 @@
           "score": 144.0,
           "redpoint_score": 144.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Duality of Man",
             "grade": "9c",
@@ -8281,7 +7847,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Duality of Man",
@@ -8363,8 +7929,10 @@
           "score": 133.33,
           "redpoint_score": 126.0,
           "flash_score": 14.66,
-          "hard_send_count": 32,
-          "hard_flash_count": 36,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 10,
+          "total_qualifying_sends": 32,
+          "total_qualifying_flashes": 36,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -8381,7 +7949,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Silence",
@@ -8438,195 +8006,6 @@
             },
             {
               "discipline": "sport",
-              "route": "B je to!",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 2757
-            },
-            {
-              "discipline": "sport",
-              "route": "Bomba",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1812
-            },
-            {
-              "discipline": "sport",
-              "route": "Erebor",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 678
-            },
-            {
-              "discipline": "sport",
-              "route": "Taurus",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1737
-            },
-            {
-              "discipline": "sport",
-              "route": "The Lonely Mountain",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1711
-            },
-            {
-              "discipline": "sport",
-              "route": "Neanderthal",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 496
-            },
-            {
-              "discipline": "sport",
-              "route": "Eagle-4",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 484
-            },
-            {
-              "discipline": "sport",
-              "route": "Disbelief",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 483
-            },
-            {
-              "discipline": "sport",
-              "route": "Mamichula",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 494
-            },
-            {
-              "discipline": "sport",
-              "route": "Queen Line",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 498
-            },
-            {
-              "discipline": "sport",
-              "route": "Move Hard",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 495
-            },
-            {
-              "discipline": "sport",
-              "route": "One Slap",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 497
-            },
-            {
-              "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
-              "route": "Robin úd",
-              "grade": "9b",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 499
-            },
-            {
-              "discipline": "sport",
-              "route": "C.R.S.",
-              "grade": "9b",
-              "year": 2015,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 480
-            },
-            {
-              "discipline": "sport",
-              "route": "First Round, First Minute",
-              "grade": "9b",
-              "year": 2014,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 487
-            },
-            {
-              "discipline": "sport",
-              "route": "Fight or Flight",
-              "grade": "9b",
-              "year": 2013,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 486
-            },
-            {
-              "discipline": "sport",
-              "route": "Move",
-              "grade": "9b",
-              "year": 2013,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 474
-            },
-            {
-              "discipline": "sport",
-              "route": "Chaxiraxi",
-              "grade": "9b",
-              "year": 2011,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 479
-            },
-            {
-              "discipline": "sport",
-              "route": "La Planta de Shiva",
-              "grade": "9b",
-              "year": 2011,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 492
-            },
-            {
-              "discipline": "sport",
-              "route": "Golpe de Estado",
-              "grade": "9b",
-              "year": 2010,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 488
-            },
-            {
-              "discipline": "sport",
               "route": "El Gran Bellanco",
               "grade": "9a",
               "year": 2023,
@@ -8671,186 +8050,6 @@
               "climbing_history_climb_id": 397
             },
             {
-              "discipline": "sport",
-              "route": "Solitary Souls",
-              "grade": "8c+",
-              "year": 2022,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1914
-            },
-            {
-              "discipline": "sport",
-              "route": "Warmduscher",
-              "grade": "8c+",
-              "year": 2020,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1129
-            },
-            {
-              "discipline": "sport",
-              "route": "Blut und Honig",
-              "grade": "8c+",
-              "year": 2019,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3888
-            },
-            {
-              "discipline": "sport",
-              "route": "First Flight",
-              "grade": "8c+",
-              "year": 2018,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3887
-            },
-            {
-              "discipline": "sport",
-              "route": "Just Do It",
-              "grade": "8c+",
-              "year": 2018,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 69
-            },
-            {
-              "discipline": "sport",
-              "route": "Gimmel Express",
-              "grade": "8c+",
-              "year": 2016,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3884
-            },
-            {
-              "discipline": "sport",
-              "route": "Barracuda",
-              "grade": "8c+",
-              "year": 2016,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3885
-            },
-            {
-              "discipline": "sport",
-              "route": "C’est la Vie",
-              "grade": "8c+",
-              "year": 2016,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3886
-            },
-            {
-              "discipline": "sport",
-              "route": "Le Super Plafond",
-              "grade": "8c+",
-              "year": 2014,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 776
-            },
-            {
-              "discipline": "sport",
-              "route": "Chambao",
-              "grade": "8c+",
-              "year": 2013,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3883
-            },
-            {
-              "discipline": "sport",
-              "route": "Deltaplane Man Direct",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3882
-            },
-            {
-              "discipline": "sport",
-              "route": "Odin's Eye",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 100
-            },
-            {
-              "discipline": "sport",
-              "route": "Pure Imagination",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1334
-            },
-            {
-              "discipline": "sport",
-              "route": "The Golden Ticket",
-              "grade": "8c+",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1333
-            },
-            {
-              "discipline": "sport",
-              "route": "Kidetasunaren Balio Erantsia",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 2833
-            },
-            {
-              "discipline": "sport",
-              "route": "Bizi Euskaraz Extension",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 1604
-            },
-            {
-              "discipline": "sport",
-              "route": "Powerade",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3876
-            },
-            {
-              "discipline": "sport",
-              "route": "Blanquita",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3879
-            },
-            {
-              "discipline": "sport",
-              "route": "La Rubia",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 2200
-            },
-            {
-              "discipline": "sport",
-              "route": "L’Avaro",
-              "grade": "8c+",
-              "year": 2011,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 3880
-            },
-            {
               "discipline": "boulder",
               "route": "Soudain Seul",
               "grade": "9A",
@@ -8885,15 +8084,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 1681
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gioia",
-              "grade": "8C+",
-              "year": 2011,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 550
             },
             {
               "discipline": "boulder",
@@ -8939,60 +8129,6 @@
               "style": "flash",
               "fa": false,
               "climbing_history_climb_id": 1768
-            },
-            {
-              "discipline": "boulder",
-              "route": "Imothep (du Sol)",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 2522
-            },
-            {
-              "discipline": "boulder",
-              "route": "La Ligne de Bête",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 1785
-            },
-            {
-              "discipline": "boulder",
-              "route": "Atom",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 5450
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gliese 581",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 6370
-            },
-            {
-              "discipline": "boulder",
-              "route": "Jade",
-              "grade": "8B+",
-              "year": 2015,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 507
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gecko (assis)",
-              "grade": "8B+",
-              "year": 2011,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 145
             }
           ],
           "rank": 6
@@ -9003,8 +8139,10 @@
           "score": 126.0,
           "redpoint_score": 126.0,
           "flash_score": 0,
-          "hard_send_count": 11,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 11,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
             "grade": "9A",
@@ -9014,7 +8152,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Alphane",
@@ -9104,15 +8242,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 1091
-            },
-            {
-              "discipline": "boulder",
-              "route": "Off the Wagon Low",
-              "grade": "8C+",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 830
             }
           ],
           "rank": 7
@@ -9123,8 +8252,10 @@
           "score": 126.0,
           "redpoint_score": 126.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -9134,7 +8265,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -9216,8 +8347,10 @@
           "score": 118.0,
           "redpoint_score": 117.0,
           "flash_score": 2.0,
-          "hard_send_count": 7,
-          "hard_flash_count": 2,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Spots of Time",
             "grade": "9A",
@@ -9234,7 +8367,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Spots of Time",
@@ -9325,8 +8458,10 @@
           "score": 100.0,
           "redpoint_score": 99.0,
           "flash_score": 2.0,
-          "hard_send_count": 9,
-          "hard_flash_count": 2,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -9343,7 +8478,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -9452,8 +8587,10 @@
           "score": 90.0,
           "redpoint_score": 90.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
             "grade": "9A",
@@ -9463,7 +8600,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Alphane",
@@ -9527,8 +8664,10 @@
           "score": 78.0,
           "redpoint_score": 78.0,
           "flash_score": 0,
-          "hard_send_count": 13,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 13,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Café Colombia",
             "grade": "9c",
@@ -9538,7 +8677,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Café Colombia",
@@ -9621,33 +8760,6 @@
               "climbing_history_climb_id": 487
             },
             {
-              "discipline": "sport",
-              "route": "Café Solo",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1567
-            },
-            {
-              "discipline": "sport",
-              "route": "El Bon Combat",
-              "grade": "9b",
-              "year": 2020,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 564
-            },
-            {
-              "discipline": "sport",
-              "route": "La Planta de Shiva",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 492
-            },
-            {
               "discipline": "boulder",
               "route": "Muerte por Asfixia",
               "grade": "8C+",
@@ -9665,8 +8777,10 @@
           "score": 78.0,
           "redpoint_score": 78.0,
           "flash_score": 0,
-          "hard_send_count": 20,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 20,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "DNA",
             "grade": "9c",
@@ -9676,7 +8790,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "DNA",
@@ -9766,96 +8880,6 @@
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 2459
-            },
-            {
-              "discipline": "sport",
-              "route": "Move Hard",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 495
-            },
-            {
-              "discipline": "sport",
-              "route": "Jamming Destruction",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 2701
-            },
-            {
-              "discipline": "sport",
-              "route": "Nordic Marathon",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1986
-            },
-            {
-              "discipline": "sport",
-              "route": "Jumbo Love",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 490
-            },
-            {
-              "discipline": "sport",
-              "route": "Beyond Integral",
-              "grade": "9b",
-              "year": 2020,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 836
-            },
-            {
-              "discipline": "sport",
-              "route": "Mamichula",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 494
-            },
-            {
-              "discipline": "sport",
-              "route": "Move",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 474
-            },
-            {
-              "discipline": "sport",
-              "route": "La Rage d'Adam",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 473
-            },
-            {
-              "discipline": "sport",
-              "route": "The Dream",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 503
-            },
-            {
-              "discipline": "sport",
-              "route": "Les Yeux Plus Gros que l'Antre",
-              "grade": "9b",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 504
             }
           ],
           "rank": 13
@@ -9866,8 +8890,10 @@
           "score": 72.0,
           "redpoint_score": 72.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Maxwell's Demon Low",
             "grade": "8C+",
@@ -9877,7 +8903,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Maxwell's Demon Low",
@@ -9959,8 +8985,10 @@
           "score": 72.0,
           "redpoint_score": 72.0,
           "flash_score": 0,
-          "hard_send_count": 8,
-          "hard_flash_count": 0,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Deep Fake",
             "grade": "8C+",
@@ -9970,7 +8998,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Deep Fake",
@@ -10052,8 +9080,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -10070,7 +9100,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -10116,8 +9146,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -10134,7 +9166,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Shaolin",
@@ -10180,8 +9212,10 @@
           "score": 63.0,
           "redpoint_score": 63.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -10191,7 +9225,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -10246,8 +9280,10 @@
           "score": 60.0,
           "redpoint_score": 60.0,
           "flash_score": 0,
-          "hard_send_count": 16,
-          "hard_flash_count": 0,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 16,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Gioia",
             "grade": "8C+",
@@ -10257,7 +9293,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -10340,60 +9376,6 @@
               "climbing_history_climb_id": 495
             },
             {
-              "discipline": "sport",
-              "route": "Erebor",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 678
-            },
-            {
-              "discipline": "sport",
-              "route": "The Lonely Mountain",
-              "grade": "9b",
-              "year": 2021,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1711
-            },
-            {
-              "discipline": "sport",
-              "route": "Queen Line",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 498
-            },
-            {
-              "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
-              "route": "First Round, First Minute",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 487
-            },
-            {
-              "discipline": "sport",
-              "route": "One Slap",
-              "grade": "9b",
-              "year": 2017,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 497
-            },
-            {
               "discipline": "boulder",
               "route": "Gioia",
               "grade": "8C+",
@@ -10411,8 +9393,10 @@
           "score": 54.5,
           "redpoint_score": 54.0,
           "flash_score": 1.0,
-          "hard_send_count": 6,
-          "hard_flash_count": 1,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Insomniac",
             "grade": "8C+",
@@ -10429,7 +9413,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Insomniac",
@@ -10502,8 +9486,10 @@
           "score": 54.0,
           "redpoint_score": 54.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Charlatan",
             "grade": "9A",
@@ -10513,7 +9499,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Charlatan",
@@ -10559,8 +9545,10 @@
           "score": 49.5,
           "redpoint_score": 48.0,
           "flash_score": 3.0,
-          "hard_send_count": 6,
-          "hard_flash_count": 1,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -10577,7 +9565,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -10650,8 +9638,10 @@
           "score": 48.5,
           "redpoint_score": 48.0,
           "flash_score": 1.0,
-          "hard_send_count": 12,
-          "hard_flash_count": 5,
+          "scoring_send_count": 10,
+          "scoring_flash_count": 5,
+          "total_qualifying_sends": 12,
+          "total_qualifying_flashes": 5,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -10668,7 +9658,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Change",
@@ -10761,24 +9751,6 @@
             },
             {
               "discipline": "sport",
-              "route": "Fight Club",
-              "grade": "9b",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 485
-            },
-            {
-              "discipline": "sport",
-              "route": "First Round, First Minute",
-              "grade": "9b",
-              "year": 2015,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 487
-            },
-            {
-              "discipline": "sport",
               "route": "TCT",
               "grade": "9a",
               "year": 2017,
@@ -10831,8 +9803,10 @@
           "score": 46.0,
           "redpoint_score": 45.0,
           "flash_score": 2.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 2,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Mount Doom",
             "grade": "9A",
@@ -10849,7 +9823,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Mount Doom",
@@ -10904,8 +9878,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Burden of Dreams",
             "grade": "9A",
@@ -10915,7 +9891,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Burden of Dreams",
@@ -10952,8 +9928,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Curve Ball",
             "grade": "8C+",
@@ -10963,7 +9941,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Curve Ball",
@@ -11018,8 +9996,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Curve Ball",
             "grade": "8C+",
@@ -11029,7 +10009,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Curve Ball",
@@ -11084,8 +10064,10 @@
           "score": 45.0,
           "redpoint_score": 45.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Pneuma",
             "grade": "8C+",
@@ -11095,7 +10077,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Pneuma",
@@ -11150,8 +10132,10 @@
           "score": 36.5,
           "redpoint_score": 36.0,
           "flash_score": 1.0,
-          "hard_send_count": 2,
-          "hard_flash_count": 1,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -11168,7 +10152,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -11205,8 +10189,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "No One Mourns the Wicked",
             "grade": "9A",
@@ -11216,7 +10202,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "No One Mourns the Wicked",
@@ -11246,8 +10232,10 @@
           "score": 147.0,
           "redpoint_score": 147.0,
           "flash_score": 0,
-          "hard_send_count": 9,
-          "hard_flash_count": 0,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -11257,7 +10245,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "B.I.G",
@@ -11348,8 +10336,10 @@
           "score": 145.5,
           "redpoint_score": 144.0,
           "flash_score": 3.0,
-          "hard_send_count": 8,
-          "hard_flash_count": 3,
+          "scoring_send_count": 8,
+          "scoring_flash_count": 3,
+          "total_qualifying_sends": 8,
+          "total_qualifying_flashes": 3,
           "hardest_send": {
             "route": "Realm of Tor’ment",
             "grade": "9A",
@@ -11366,7 +10356,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -11475,8 +10465,10 @@
           "score": 144.0,
           "redpoint_score": 144.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Exodia",
             "grade": "9A+",
@@ -11486,7 +10478,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Exodia",
@@ -11532,8 +10524,10 @@
           "score": 126.0,
           "redpoint_score": 126.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Duality of Man",
             "grade": "9c",
@@ -11543,7 +10537,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Duality of Man",
@@ -11607,8 +10601,10 @@
           "score": 117.0,
           "redpoint_score": 117.0,
           "flash_score": 0,
-          "hard_send_count": 7,
-          "hard_flash_count": 0,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -11618,7 +10614,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -11691,8 +10687,10 @@
           "score": 90.5,
           "redpoint_score": 90.0,
           "flash_score": 1.0,
-          "hard_send_count": 4,
-          "hard_flash_count": 1,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -11709,7 +10707,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -11764,8 +10762,10 @@
           "score": 90.0,
           "redpoint_score": 90.0,
           "flash_score": 0,
-          "hard_send_count": 6,
-          "hard_flash_count": 0,
+          "scoring_send_count": 6,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 6,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
             "grade": "9A",
@@ -11775,7 +10775,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Alphane",
@@ -11839,8 +10839,10 @@
           "score": 75.0,
           "redpoint_score": 75.0,
           "flash_score": 0,
-          "hard_send_count": 9,
-          "hard_flash_count": 0,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Café Colombia",
             "grade": "9c",
@@ -11850,7 +10852,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Café Colombia",
@@ -11941,8 +10943,10 @@
           "score": 64.0,
           "redpoint_score": 63.0,
           "flash_score": 2.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 2,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Spots of Time",
             "grade": "9A",
@@ -11959,7 +10963,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Spots of Time",
@@ -12014,8 +11018,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Megatron",
             "grade": "9A",
@@ -12032,7 +11038,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Megatron",
@@ -12078,8 +11084,10 @@
           "score": 63.5,
           "redpoint_score": 63.0,
           "flash_score": 1.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 1,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Shaolin",
             "grade": "9A",
@@ -12096,7 +11104,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Shaolin",
@@ -12142,8 +11150,10 @@
           "score": 46.0,
           "redpoint_score": 45.0,
           "flash_score": 2.0,
-          "hard_send_count": 3,
-          "hard_flash_count": 2,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Mount Doom",
             "grade": "9A",
@@ -12160,7 +11170,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Mount Doom",
@@ -12215,8 +11225,10 @@
           "score": 40.5,
           "redpoint_score": 39.0,
           "flash_score": 3.0,
-          "hard_send_count": 5,
-          "hard_flash_count": 1,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Excalibur",
             "grade": "9b+",
@@ -12233,7 +11245,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",
@@ -12297,8 +11309,10 @@
           "score": 39.0,
           "redpoint_score": 39.0,
           "flash_score": 0,
-          "hard_send_count": 9,
-          "hard_flash_count": 0,
+          "scoring_send_count": 9,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 9,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Wolf Kingdom",
             "grade": "9b+",
@@ -12308,7 +11322,7 @@
             "discipline": "sport"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Wolf Kingdom",
@@ -12399,8 +11413,10 @@
           "score": 36.67,
           "redpoint_score": 30.0,
           "flash_score": 13.33,
-          "hard_send_count": 2,
-          "hard_flash_count": 10,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 6,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 10,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -12417,7 +11433,7 @@
             "style": "onsight",
             "discipline": "sport"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "B je to!",
@@ -12489,42 +11505,6 @@
               "style": "flash",
               "fa": false,
               "climbing_history_climb_id": 1768
-            },
-            {
-              "discipline": "boulder",
-              "route": "Imothep (du Sol)",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 2522
-            },
-            {
-              "discipline": "boulder",
-              "route": "La Ligne de Bête",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 1785
-            },
-            {
-              "discipline": "boulder",
-              "route": "Atom",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 5450
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gliese 581",
-              "grade": "8B+",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 6370
             }
           ],
           "rank": 15
@@ -12535,8 +11515,10 @@
           "score": 36.5,
           "redpoint_score": 36.0,
           "flash_score": 1.0,
-          "hard_send_count": 2,
-          "hard_flash_count": 1,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 1,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -12553,7 +11535,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -12590,8 +11572,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "No One Mourns the Wicked",
             "grade": "9A",
@@ -12601,7 +11585,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "No One Mourns the Wicked",
@@ -12629,8 +11613,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -12640,7 +11626,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -12668,8 +11654,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 2,
-          "hard_flash_count": 0,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Return of the Sleepwalker",
             "grade": "9A",
@@ -12679,7 +11667,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Return of the Sleepwalker",
@@ -12707,8 +11695,10 @@
           "score": 36.0,
           "redpoint_score": 36.0,
           "flash_score": 0,
-          "hard_send_count": 4,
-          "hard_flash_count": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Bookkeeping",
             "grade": "8C+",
@@ -12718,7 +11708,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Bookkeeping",
@@ -12764,8 +11754,10 @@
           "score": 28.0,
           "redpoint_score": 27.0,
           "flash_score": 2.0,
-          "hard_send_count": 1,
-          "hard_flash_count": 2,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Blackflip SDS",
             "grade": "9A",
@@ -12782,7 +11774,7 @@
             "style": "flash",
             "discipline": "boulder"
           },
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Blackflip SDS",
@@ -12819,8 +11811,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Charlatan",
             "grade": "9A",
@@ -12830,7 +11824,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Charlatan",
@@ -12849,8 +11843,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Burden of Dreams",
             "grade": "9A",
@@ -12860,7 +11856,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Burden of Dreams",
@@ -12879,8 +11875,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "No One Mourns the Wicked",
             "grade": "9A",
@@ -12890,7 +11888,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "No One Mourns the Wicked",
@@ -12909,8 +11907,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 1,
-          "hard_flash_count": 0,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Soudain Seul",
             "grade": "9A",
@@ -12920,7 +11920,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Soudain Seul",
@@ -12939,8 +11939,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "REM",
             "grade": "8C+",
@@ -12950,7 +11952,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "REM",
@@ -12987,8 +11989,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Deep Fake",
             "grade": "8C+",
@@ -12998,7 +12002,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Deep Fake",
@@ -13035,8 +12039,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Tanpopo",
             "grade": "8C+",
@@ -13046,7 +12052,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Tanpopo",
@@ -13083,8 +12089,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 3,
-          "hard_flash_count": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Poison the Well",
             "grade": "8C+",
@@ -13094,7 +12102,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "boulder",
               "route": "Poison the Well",
@@ -13131,8 +12139,10 @@
           "score": 27.0,
           "redpoint_score": 27.0,
           "flash_score": 0,
-          "hard_send_count": 5,
-          "hard_flash_count": 0,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Gioia",
             "grade": "8C+",
@@ -13142,7 +12152,7 @@
             "discipline": "boulder"
           },
           "hardest_flash": null,
-          "qualifying_sends": [
+          "scoring_sends": [
             {
               "discipline": "sport",
               "route": "Excalibur",

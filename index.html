@@ -140,9 +140,9 @@
         <th>Climber</th>
         <th class="num" title="Top-10 sends (weighted, 3^x) + 0.5 × top-5 flashes">Score</th>
         <th>Hardest send</th>
-        <th class="num hide-sm" id="th-sends"># hard sends</th>
+        <th class="num hide-sm" id="th-sends"># scoring sends</th>
         <th class="hide-sm">Hardest flash</th>
-        <th class="num hide-sm" id="th-flashes"># hard flashes</th>
+        <th class="num hide-sm" id="th-flashes"># scoring flashes</th>
       </tr>
     </thead>
     <tbody id="rows">
@@ -250,7 +250,7 @@ function render() {
   tbody.innerHTML = rows
     .map((r, i) => {
       const rankClass = i < 3 ? `r${i + 1}` : "";
-      const sends = r.qualifying_sends || [];
+      const sends = r.scoring_sends || [];
       const sendsList = sends
         .map(
           s =>
@@ -275,13 +275,13 @@ function render() {
         `<td><div class="climber">${nameHtml}</div></td>` +
         `<td class="num"><strong>${r.score.toFixed(1)}</strong></td>` +
         `<td>${gradeBadge(r.hardest_send)}</td>` +
-        `<td class="num hide-sm">${r.hard_send_count}</td>` +
+        `<td class="num hide-sm">${r.scoring_send_count}</td>` +
         `<td class="hide-sm">${gradeBadge(r.hardest_flash)}</td>` +
-        `<td class="num hide-sm">${r.hard_flash_count}</td>` +
+        `<td class="num hide-sm">${r.scoring_flash_count}</td>` +
         `</tr>` +
         `<tr class="detail-row" data-detail="${i}" hidden>` +
         `<td colspan="7"><div class="detail-inner">` +
-        `<h4>Qualifying sends (${sends.length})</h4><ul>${sendsList}</ul>` +
+        `<h4>Scoring climbs (${sends.length})</h4><ul>${sendsList}</ul>` +
         `</div></td></tr>`
       );
     })

@@ -107,14 +107,14 @@ def meets_threshold(send: dict, cfg: dict) -> tuple[bool, bool]:
 def score_climber_in_discipline(
     sends: list[dict], discipline: str, cfg: dict
 ) -> dict:
-    """Compute the score for one climber in one discipline.
+    """Per-discipline score: top-N sends + flash_multiplier * top-M flashes.
 
-    Returns a dict with score, sub-scores, hardest send / flash, counts,
-    and the qualifying sends list.
+    `scoring_sends` is the deduped list of sends that actually contribute
+    to the score — top-N redpoints and top-M flashes (a flash that's also
+    a top-N redpoint appears once).
     """
     rp_pts: list[tuple[float, dict]] = []
     fl_pts: list[tuple[float, dict]] = []
-    qualifying: list[dict] = []
 
     for s in sends:
         if s["discipline"] != discipline:
@@ -123,49 +123,57 @@ def score_climber_in_discipline(
         pts = grade_points(s["grade"], discipline, cfg)
         if qrp:
             rp_pts.append((pts, s))
-            qualifying.append(s)
         if qfl:
             fl_pts.append((pts, s))
-            # Make sure flash-only sends (below redpoint floor) are still
-            # surfaced in the route list.
-            if not qrp:
-                qualifying.append(s)
 
     rp_pts.sort(key=lambda x: x[0], reverse=True)
     fl_pts.sort(key=lambda x: x[0], reverse=True)
 
-    top_sends = rp_pts[: int(cfg["top_n_sends"])]
+    top_sends   = rp_pts[: int(cfg["top_n_sends"])]
     top_flashes = fl_pts[: int(cfg["top_n_flashes"])]
 
     redpoint_score = sum(p for p, _ in top_sends)
     flash_score    = sum(p for p, _ in top_flashes)
     total_score    = redpoint_score + float(cfg["flash_multiplier"]) * flash_score
 
-    def hardest(items):
-        if not items:
-            return None
-        # Items are (points, send); items are sorted by points desc.
-        return items[0][1]
+    hardest_send  = top_sends[0][1] if top_sends else None
+    hardest_flash = top_flashes[0][1] if top_flashes else None
 
-    hardest_send  = hardest(rp_pts)
-    hardest_flash = hardest(fl_pts)
+    scoring_sends = _dedupe_scoring([top_sends, top_flashes])
 
     return {
         "score":          round(total_score, 2),
         "redpoint_score": round(redpoint_score, 2),
         "flash_score":    round(flash_score, 2),
-        "hard_send_count":   len(rp_pts),
-        "hard_flash_count":  len(fl_pts),
+        "scoring_send_count":  len(top_sends),
+        "scoring_flash_count": len(top_flashes),
+        "total_qualifying_sends":   len(rp_pts),
+        "total_qualifying_flashes": len(fl_pts),
         "hardest_send":  _summarize(hardest_send),
         "hardest_flash": _summarize(hardest_flash),
-        "qualifying_sends": sorted(
-            qualifying,
-            key=lambda s: (
-                -grade_rank(s["grade"], s["discipline"]),
-                -(s.get("year") or 0),
-            ),
-        ),
+        "scoring_sends": scoring_sends,
     }
+
+
+def _dedupe_scoring(buckets: list[list[tuple[float, dict]]]) -> list[dict]:
+    """Flatten (points, send) bucket lists into one list of sends, deduped
+    by object identity, sorted hardest-first."""
+    seen: set[int] = set()
+    rows: list[tuple[int, dict]] = []  # (grade_rank, send)
+    for bucket in buckets:
+        for _, s in bucket:
+            sid = id(s)
+            if sid in seen:
+                continue
+            seen.add(sid)
+            rows.append(s)
+    rows.sort(
+        key=lambda s: (
+            -grade_rank(s["grade"], s["discipline"]),
+            -(s.get("year") or 0),
+        ),
+    )
+    return rows
 
 
 def _summarize(s: dict | None) -> dict | None:
@@ -233,29 +241,19 @@ def score_climber_overall(sends: list[dict], cfg: dict) -> dict:
         default=None,
     )
 
-    qualifying = [s for _, s in rp_pool]
-    # Make sure flash-only sends below the redpoint floor are surfaced too.
-    seen_ids = {id(s) for s in qualifying}
-    for _, s in fl_sport + fl_boulder:
-        if id(s) not in seen_ids:
-            qualifying.append(s)
-            seen_ids.add(id(s))
-    qualifying.sort(
-        key=lambda s: (
-            -grade_rank(s["grade"], s["discipline"]),
-            -(s.get("year") or 0),
-        ),
-    )
+    scoring_sends = _dedupe_scoring([top_sends, top_fl_sport, top_fl_boulder])
 
     return {
         "score":          round(total_score, 2),
         "redpoint_score": round(redpoint_score, 2),
         "flash_score":    round(flash_score, 2),
-        "hard_send_count":   len(rp_pool),
-        "hard_flash_count":  len(fl_sport) + len(fl_boulder),
+        "scoring_send_count":  len(top_sends),
+        "scoring_flash_count": len(top_fl_sport) + len(top_fl_boulder),
+        "total_qualifying_sends":   len(rp_pool),
+        "total_qualifying_flashes": len(fl_sport) + len(fl_boulder),
         "hardest_send":  _summarize(hardest_send),
         "hardest_flash": _summarize(hardest_flash),
-        "qualifying_sends": qualifying,
+        "scoring_sends": scoring_sends,
     }
 
 
