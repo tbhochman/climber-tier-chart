@@ -6,7 +6,38 @@ _generated_lists:
 - /list/20/
 - /list/37/
 - /list/42/
-config: {}
+config:
+  leaderboard_size: 30
+  current_years: 3
+  thresholds:
+    sport_redpoint: 9b
+    sport_flash: 8c+
+    boulder_redpoint: V16
+    boulder_flash: V14
+  top_n_sends: 10
+  top_n_flashes: 5
+  flash_multiplier: 0.5
+  sport_points:
+    8c+: 0.111
+    9a: 0.333
+    9a+: 1
+    9b: 3
+    9b+: 9
+    9c: 27
+    9c+: 81
+  boulder_points:
+    V13: 0.333
+    8B+: 0.333
+    V14: 1
+    8C: 3
+    V15: 3
+    V16: 9
+    8C+: 9
+    V17: 27
+    9A: 27
+    V18: 81
+    9A+: 81
+    V19: 243
 climbers:
 - name: Adam Ondra
   climbing_history_id: 467
