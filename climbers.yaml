@@ -18,13 +18,13 @@ config:
   top_n_flashes: 5
   flash_multiplier: 1.0
   sport_points:
-    8c+: 0.111
-    9a: 0.333
-    9a+: 1
-    9b: 3
-    9b+: 9
-    9c: 27
-    9c+: 81
+    8c+: 0.25
+    9a: 0.74
+    9a+: 2.16
+    9b: 6.47
+    9b+: 19.42
+    9c: 58.27
+    9c+: 174.86
   boulder_points:
     V13: 0.333
     8B+: 0.333
@@ -50,19 +50,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 2477
   - discipline: boulder
-    route: Celestite
-    grade: 8C
-    year: 2026
-    style: flash
-    fa: false
-    climbing_history_climb_id: 2574
-  - discipline: boulder
     route: Captain Nemo
     grade: 8C
     year: 2026
     style: redpoint
     fa: false
     climbing_history_climb_id: 3031
+  - discipline: boulder
+    route: Celestite
+    grade: 8C
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2574
   - discipline: boulder
     route: Emotional Landscapes
     grade: 8C
@@ -127,13 +127,6 @@ climbers:
     fa: false
     climbing_history_climb_id: 841
   - discipline: boulder
-    route: Elemental
-    grade: 8B+
-    year: 2025
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 4670
-  - discipline: boulder
     route: El Elegido
     grade: 8B+
     year: 2025
@@ -141,12 +134,12 @@ climbers:
     fa: false
     climbing_history_climb_id: 1768
   - discipline: boulder
-    route: Imothep (du Sol)
+    route: Elemental
     grade: 8B+
     year: 2025
-    style: flash
-    fa: false
-    climbing_history_climb_id: 2522
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 4670
   - discipline: boulder
     route: La Ligne de Bête
     grade: 8B+
@@ -154,6 +147,13 @@ climbers:
     style: flash
     fa: false
     climbing_history_climb_id: 1785
+  - discipline: boulder
+    route: Imothep (du Sol)
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2522
   - discipline: boulder
     route: Atom
     grade: 8B+
@@ -2906,19 +2906,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 5270
   - discipline: sport
-    route: Thor's Hammer
-    grade: 9a
-    year: 2016
-    style: redpoint
-    fa: false
-    climbing_history_climb_id: 1985
-  - discipline: sport
     route: Flat Mountain
     grade: 9a
     year: 2016
     style: redpoint
     fa: false
     climbing_history_climb_id: 1357
+  - discipline: sport
+    route: Thor's Hammer
+    grade: 9a
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1985
   - discipline: sport
     route: Becoming
     grade: 9a
@@ -3874,19 +3874,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 4986
   - discipline: boulder
-    route: Gojira
-    grade: 8C
-    year: 2025
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 6447
-  - discipline: boulder
     route: Don't Fear the Reaper
     grade: 8C
     year: 2025
     style: redpoint
     fa: true
     climbing_history_climb_id: 6448
+  - discipline: boulder
+    route: Gojira
+    grade: 8C
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 6447
   - discipline: boulder
     route: Seventh Circle
     grade: 8B+
@@ -9287,19 +9287,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 2195
   - discipline: sport
-    route: Ten
-    grade: 9a+
-    year: 2021
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 6933
-  - discipline: sport
     route: Ultimo Tango a Zagarolo
     grade: 9a+
     year: 2021
     style: redpoint
     fa: true
     climbing_history_climb_id: 6934
+  - discipline: sport
+    route: Ten
+    grade: 9a+
+    year: 2021
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 6933
   - discipline: boulder
     route: Gioia
     grade: 8C+
@@ -12749,19 +12749,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 2736
   - discipline: boulder
+    route: Tomba
+    grade: 8B+
+    year: null
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3626
+  - discipline: boulder
     route: Line of Fire
     grade: 8B+
     year: null
     style: redpoint
     fa: true
     climbing_history_climb_id: 3993
-  - discipline: boulder
-    route: Third Eye Awakening
-    grade: 8B+
-    year: null
-    style: redpoint
-    fa: false
-    climbing_history_climb_id: 3912
   - discipline: boulder
     route: Matinée
     grade: 8B+
@@ -12770,12 +12770,26 @@ climbers:
     fa: true
     climbing_history_climb_id: 7459
   - discipline: boulder
-    route: Tomba
+    route: Motorhead
     grade: 8B+
     year: null
     style: redpoint
     fa: true
-    climbing_history_climb_id: 3626
+    climbing_history_climb_id: 3670
+  - discipline: boulder
+    route: Lost in the Hood
+    grade: 8B+
+    year: null
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3932
+  - discipline: boulder
+    route: Third Eye Awakening
+    grade: 8B+
+    year: null
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3912
   - discipline: boulder
     route: Old Man Winter
     grade: 8B+
@@ -12784,26 +12798,12 @@ climbers:
     fa: true
     climbing_history_climb_id: 2974
   - discipline: boulder
-    route: Motorhead
-    grade: 8B+
-    year: null
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 3670
-  - discipline: boulder
     route: La Guerra
     grade: 8B+
     year: null
     style: redpoint
     fa: true
     climbing_history_climb_id: 3161
-  - discipline: boulder
-    route: Lost in the Hood
-    grade: 8B+
-    year: null
-    style: redpoint
-    fa: false
-    climbing_history_climb_id: 3932
 - name: Jonatan Flor
   climbing_history_id: 499
   sends:
@@ -17541,12 +17541,12 @@ climbers:
     fa: false
     climbing_history_climb_id: 107
   - discipline: boulder
-    route: Get Railed
+    route: Rule of Thumb
     grade: 8B+
     year: 2016
     style: redpoint
     fa: true
-    climbing_history_climb_id: 2667
+    climbing_history_climb_id: 6609
   - discipline: boulder
     route: Believe in Two
     grade: 8B+
@@ -17555,19 +17555,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 3368
   - discipline: boulder
+    route: Get Railed
+    grade: 8B+
+    year: 2016
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2667
+  - discipline: boulder
     route: Mind Games
     grade: 8B+
     year: 2016
     style: redpoint
     fa: true
     climbing_history_climb_id: 6608
-  - discipline: boulder
-    route: Rule of Thumb
-    grade: 8B+
-    year: 2016
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 6609
   - discipline: boulder
     route: Trieste Low
     grade: 8B+
@@ -17597,19 +17597,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 2653
   - discipline: boulder
-    route: Road Sweet Home
-    grade: 8C
-    year: 2015
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 6611
-  - discipline: boulder
     route: Emotional Landscapes (Pre-Break)
     grade: 8C
     year: 2015
     style: redpoint
     fa: false
     climbing_history_climb_id: 3105
+  - discipline: boulder
+    route: Road Sweet Home
+    grade: 8C
+    year: 2015
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 6611
   - discipline: boulder
     route: The Nest
     grade: 8C
@@ -17632,19 +17632,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 2526
   - discipline: boulder
-    route: The Lonely Crowd
-    grade: 8B+
-    year: 2015
-    style: redpoint
-    fa: false
-    climbing_history_climb_id: 6610
-  - discipline: boulder
     route: The World Is Not Flat
     grade: 8B+
     year: 2015
     style: redpoint
     fa: true
     climbing_history_climb_id: 4721
+  - discipline: boulder
+    route: The Lonely Crowd
+    grade: 8B+
+    year: 2015
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 6610
   - discipline: boulder
     route: Kintsugi
     grade: 8B+
@@ -17751,19 +17751,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 837
   - discipline: boulder
-    route: Modified Limited Rampage
-    grade: 8B+
-    year: 2013
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 7458
-  - discipline: boulder
     route: Off the Wagon
     grade: 8B+
     year: 2013
     style: redpoint
     fa: true
     climbing_history_climb_id: 1146
+  - discipline: boulder
+    route: Modified Limited Rampage
+    grade: 8B+
+    year: 2013
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 7458
   - discipline: boulder
     route: Entlinge
     grade: 8B+
@@ -18308,19 +18308,19 @@ climbers:
     fa: false
     climbing_history_climb_id: 1041
   - discipline: boulder
-    route: Aeropressing
-    grade: 8B+
-    year: 2025
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 3253
-  - discipline: boulder
     route: Monk Life
     grade: 8B+
     year: 2025
     style: redpoint
     fa: false
     climbing_history_climb_id: 117
+  - discipline: boulder
+    route: Aeropressing
+    grade: 8B+
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3253
   - discipline: boulder
     route: La Toupie Carnivore (assis)
     grade: 8B+
@@ -18336,19 +18336,19 @@ climbers:
     fa: true
     climbing_history_climb_id: 6260
   - discipline: boulder
-    route: Bombadil
-    grade: 8B+
-    year: 2024
-    style: redpoint
-    fa: false
-    climbing_history_climb_id: 131
-  - discipline: boulder
     route: Star Power
     grade: 8B+
     year: 2024
     style: redpoint
     fa: false
     climbing_history_climb_id: 428
+  - discipline: boulder
+    route: Bombadil
+    grade: 8B+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 131
   - discipline: boulder
     route: Hōtō
     grade: 8B+
@@ -22404,19 +22404,19 @@ climbers:
   climbing_history_id: 496
   sends:
   - discipline: sport
-    route: Vidra la Vida
-    grade: 9b
-    year: 2026
-    style: redpoint
-    fa: true
-    climbing_history_climb_id: 5308
-  - discipline: sport
     route: El Gran Cabrón
     grade: 9b
     year: 2026
     style: redpoint
     fa: true
     climbing_history_climb_id: 4716
+  - discipline: sport
+    route: Vidra la Vida
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 5308
   - discipline: sport
     route: Le Chant des Muses
     grade: 9b
@@ -23015,19 +23015,19 @@ climbers:
     fa: true
     climbing_history_climb_id: 1998
   - discipline: boulder
-    route: Spray of Light
-    grade: 8C
-    year: 2016
-    style: redpoint
-    fa: false
-    climbing_history_climb_id: 103
-  - discipline: boulder
     route: Monkey Wedding
     grade: 8C
     year: 2016
     style: redpoint
     fa: false
     climbing_history_climb_id: 107
+  - discipline: boulder
+    route: Spray of Light
+    grade: 8C
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 103
   - discipline: boulder
     route: Fallen Angel
     grade: 8C
