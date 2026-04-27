@@ -1,408 +1,6112 @@
-# =====================================================================
-# climbers.yaml — source of truth for the climber tier chart
-#
-# Threshold for "hard" sends (counted in volume metrics):
-#   Boulder: V15 / 8C and up
-#   Sport:   9a+ and up
-#
-# Only include sends at or above the threshold. (Lower-graded sends
-# are climbing achievements but won't move the needle on a tier list
-# of the world's hardest climbers.)
-#
-# Each send needs:
-#   discipline:   "boulder" | "sport"
-#   route:        Route name (string)
-#   grade:        For boulder: V15..V18.   For sport: 9a+..9c+.
-#   font_grade:   (boulder only, optional) e.g. 8C, 8C+, 9A, 9A+
-#   year:         Year of the ascent
-#   location:     Crag, Country
-#   fa:           true if first ascent, false otherwise (default false)
-#   style:        "redpoint" | "flash" | "onsight"
-#                  Use "flash"/"onsight" sparingly — these are rare
-#                  at this grade.
-#
-# To add a new climber: copy a block, fill in the sends list.
-# To log a new send for an existing climber: append to their `sends`.
-# =====================================================================
-
-config:
-  current_years: 3            # Sends within last N years count toward "Current" leaderboard
-  leaderboard_size: 30        # Rows per leaderboard
-  hard_threshold:
-    boulder: V15              # V15 / 8C
-    sport: 9a+                # 9a+
-
+_source: climbing-history.org
+_generated_lists:
+- /list/5/
+- /list/13/
+- /list/14/
+- /list/20/
+- /list/37/
+- /list/42/
+config: {}
 climbers:
-
-  # ===== SPORT — MEN =================================================
-
-  - name: Adam Ondra
-    country: CZE
-    gender: M
-    sends:
-      - { discipline: sport, route: Silence, grade: 9c, year: 2017, location: "Hanshelleren, Norway", fa: true, style: redpoint }
-      - { discipline: sport, route: Change, grade: 9b+, year: 2012, location: "Hanshelleren, Norway", fa: true, style: redpoint }
-      - { discipline: sport, route: Vasil Vasil, grade: 9b+, year: 2013, location: "Sloup, Czech Republic", fa: true, style: redpoint }
-      - { discipline: sport, route: La Dura Dura, grade: 9b+, year: 2013, location: "Oliana, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Project Hard, grade: 9b+, year: 2018, location: "Flatanger, Norway", fa: true, style: redpoint }
-      - { discipline: sport, route: Move Hard, grade: 9b+, year: 2023, location: "Flatanger, Norway", fa: true, style: redpoint }
-      - { discipline: sport, route: C.R.S., grade: 9b+, year: 2023, location: "Arco, Italy", fa: true, style: redpoint }
-      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2011, location: "Villanueva del Rosario, Spain", fa: true, style: redpoint }
-      - { discipline: sport, route: Stoking the Fire, grade: 9b, year: 2013, location: "Santa Linya, Spain", fa: true, style: redpoint }
-      - { discipline: boulder, route: Terranova, grade: V16, font_grade: 8C+, year: 2020, location: "Moravsky Kras, Czech Republic", fa: true, style: redpoint }
-      - { discipline: boulder, route: Gioia, grade: V15, font_grade: 8C, year: 2011, location: "Varazze, Italy", fa: false, style: redpoint }
-
-  - name: Alex Megos
-    country: GER
-    gender: M
-    sends:
-      - { discipline: sport, route: Bibliographie, grade: 9c, year: 2020, location: "Ceuse, France", fa: true, style: redpoint }
-      - { discipline: sport, route: Perfecto Mundo, grade: 9b+, year: 2018, location: "Margalef, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Fight or Flight, grade: 9b, year: 2017, location: "Oliana, Spain", fa: false, style: redpoint }
-      # Megos famously onsighted Estado Critico in 2014 — first 9a+ onsight.
-      - { discipline: sport, route: Estado Critico, grade: 9a+, year: 2014, location: "Siurana, Spain", fa: false, style: onsight }
-
-  - name: Stefano Ghisolfi
-    country: ITA
-    gender: M
-    sends:
-      - { discipline: sport, route: Excalibur, grade: 9b+, year: 2023, location: "Arco, Italy", fa: true, style: redpoint }
-      - { discipline: sport, route: Erebor, grade: 9b+, year: 2021, location: "Arco, Italy", fa: true, style: redpoint }
-      - { discipline: sport, route: Bibliographie, grade: 9b+, year: 2021, location: "Ceuse, France", fa: false, style: redpoint }
-      - { discipline: sport, route: Perfecto Mundo, grade: 9b+, year: 2019, location: "Margalef, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Change, grade: 9b+, year: 2018, location: "Hanshelleren, Norway", fa: false, style: redpoint }
-      - { discipline: sport, route: Lapsus, grade: 9b, year: 2015, location: "Andonno, Italy", fa: true, style: redpoint }
-
-  - name: Jakob Schubert
-    country: AUT
-    gender: M
-    sends:
-      - { discipline: sport, route: B.I.G., grade: 9c, year: 2023, location: "Flatanger, Norway", fa: true, style: redpoint }
-      - { discipline: sport, route: Perfecto Mundo, grade: 9b+, year: 2018, location: "Margalef, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2018, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
-      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2023, location: "Fontainebleau, France", fa: false, style: redpoint }
-      - { discipline: boulder, route: Megatron, grade: V17, font_grade: 9A, year: 2023, location: "Black Mountain, USA", fa: false, style: redpoint }
-
-  - name: Sébastien Bouin
-    country: FRA
-    gender: M
-    sends:
-      - { discipline: sport, route: DNA, grade: 9c, year: 2022, location: "Verdon Gorge, France", fa: true, style: redpoint }
-      - { discipline: sport, route: Nordic Flower, grade: 9b+, year: 2022, location: "Flatanger, Norway", fa: true, style: redpoint }
-      - { discipline: sport, route: Beyond Integral, grade: 9b+, year: 2023, location: "Pic Saint Loup, France", fa: true, style: redpoint }
-      - { discipline: sport, route: La Rambla, grade: 9a+, year: 2014, location: "Siurana, Spain", fa: false, style: redpoint }
-
-  - name: Will Bosi
-    country: GBR
-    gender: M
-    sends:
-      - { discipline: sport, route: King Capella, grade: 9b+, year: 2022, location: "Siurana, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Excalibur, grade: 9b+, year: 2025, location: "Arco, Italy", fa: false, style: redpoint }
-      - { discipline: boulder, route: Realm of Tor'ment, grade: V17, font_grade: 9A, year: 2025, location: "Raven Tor, UK", fa: true, style: redpoint }
-      - { discipline: boulder, route: Spots of Time, grade: V17, font_grade: 9A, year: 2024, location: "Helvellyn, UK", fa: false, style: redpoint }
-      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2024, location: "Red Rocks, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Burden of Dreams, grade: V17, font_grade: 9A, year: 2023, location: "Lappnor, Finland", fa: false, style: redpoint }
-      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2022, location: "Chironico, Switzerland", fa: false, style: redpoint }
-
-  - name: Buster Martin
-    country: GBR
-    gender: M
-    sends:
-      - { discipline: sport, route: Lapsus, grade: 9b, year: 2024, location: "Andonno, Italy", fa: false, style: redpoint }
-      - { discipline: sport, route: Hubble, grade: 9a+, year: 2024, location: "Raven Tor, UK", fa: false, style: redpoint }
-
-  - name: Chris Sharma
-    country: USA
-    gender: M
-    sends:
-      - { discipline: sport, route: La Dura Dura, grade: 9b+, year: 2013, location: "Oliana, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Jumbo Love, grade: 9b, year: 2008, location: "Clark Mountain, USA", fa: true, style: redpoint }
-      - { discipline: sport, route: First Round First Minute, grade: 9b, year: 2011, location: "Margalef, Spain", fa: true, style: redpoint }
-      - { discipline: sport, route: Sleeping Lion, grade: 9b, year: 2018, location: "Siurana, Spain", fa: true, style: redpoint }
-      - { discipline: sport, route: Realization (Biographie), grade: 9a+, year: 2001, location: "Ceuse, France", fa: true, style: redpoint }
-      - { discipline: sport, route: Catxasa, grade: 9a+, year: 2014, location: "Santa Linya, Spain", fa: true, style: redpoint }
-
-  - name: Sachi Amma
-    country: JPN
-    gender: M
-    sends:
-      - { discipline: sport, route: La Dura Complete, grade: 9b, year: 2014, location: "Oliana, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Fight or Flight, grade: 9b, year: 2014, location: "Oliana, Spain", fa: false, style: redpoint }
-
-  - name: Seb Berthe
-    country: BEL
-    gender: M
-    sends:
-      - { discipline: sport, route: Bibliographie, grade: 9b+, year: 2023, location: "Ceuse, France", fa: false, style: redpoint }
-      - { discipline: sport, route: La Rambla, grade: 9a+, year: 2018, location: "Siurana, Spain", fa: false, style: redpoint }
-
-  - name: Sean Bailey
-    country: USA
-    gender: M
-    sends:
-      # Bailey's high-end project at Dry Canyon AZ — proposed grade
-      # under debate (V17 vs 9c). Treating as V17 boulder until clarified.
-      - { discipline: boulder, route: Duality of Man, grade: V17, font_grade: 9A, year: 2025, location: "Dry Canyon, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Arrival of the Birds, grade: V17, font_grade: 9A, year: 2025, location: "Chironico, Switzerland", fa: false, style: redpoint }
-
-  - name: Jorge Díaz-Rullo
-    country: ESP
-    gender: M
-    sends:
-      - { discipline: sport, route: Café Colombia, grade: 9c, year: 2025, location: "Margalef, Spain", fa: true, style: redpoint }
-      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2022, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
-
-  - name: Edu Marin
-    country: ESP
-    gender: M
-    sends:
-      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2014, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Seleccio Anal, grade: 9a+, year: 2008, location: "Perles, Spain", fa: false, style: redpoint }
-
-  - name: Domen Skofic
-    country: SLO
-    gender: M
-    sends:
-      - { discipline: sport, route: Vicious Circle, grade: 9a+, year: 2017, location: "Misja Pec, Slovenia", fa: true, style: redpoint }
-
-  # ===== SPORT — WOMEN ===============================================
-
-  - name: Brooke Raboutou
-    country: USA
-    gender: F
-    sends:
-      # First woman to climb 9b+ — Excalibur, April 5, 2025.
-      - { discipline: sport, route: Excalibur, grade: 9b+, year: 2025, location: "Arco, Italy", fa: false, style: redpoint }
-
-  - name: Janja Garnbret
-    country: SLO
-    gender: F
-    sends:
-      - { discipline: sport, route: American Hustle, grade: 9a+, year: 2024, location: "Rifle, USA", fa: false, style: redpoint }
-      - { discipline: sport, route: Fish Eye, grade: 9a+, year: 2022, location: "Oliana, Spain", fa: false, style: redpoint }
-      - { discipline: boulder, route: Bügeleisen Sit, grade: V15, font_grade: 8C, year: 2024, location: "Magic Wood, Switzerland", fa: false, style: redpoint }
-      - { discipline: boulder, route: Off the Wagon Low, grade: V15, font_grade: 8C, year: 2023, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
-
-  - name: Margo Hayes
-    country: USA
-    gender: F
-    sends:
-      - { discipline: sport, route: La Rambla, grade: 9a+, year: 2017, location: "Siurana, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Biographie, grade: 9a+, year: 2017, location: "Ceuse, France", fa: false, style: redpoint }
-      - { discipline: sport, route: Papichulo, grade: 9a+, year: 2018, location: "Oliana, Spain", fa: false, style: redpoint }
-
-  - name: Laura Rogora
-    country: ITA
-    gender: F
-    sends:
-      - { discipline: sport, route: Erebor, grade: 9b, year: 2023, location: "Arco, Italy", fa: false, style: redpoint }
-      - { discipline: sport, route: Ali Hulk Sit Extension Total, grade: 9b, year: 2020, location: "Rodellar, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2020, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Pure Dreaming Mallorca, grade: 9a+, year: 2018, location: "Mallorca, Spain", fa: false, style: redpoint }
-
-  - name: Angela Eiter
-    country: AUT
-    gender: F
-    sends:
-      - { discipline: sport, route: La Planta de Shiva, grade: 9b, year: 2017, location: "Villanueva del Rosario, Spain", fa: false, style: redpoint }
-      - { discipline: sport, route: Madame Ching, grade: 9b, year: 2020, location: "Imst, Austria", fa: true, style: redpoint }
-
-  - name: Julia Chanourdie
-    country: FRA
-    gender: F
-    sends:
-      - { discipline: sport, route: Eagle-4, grade: 9b, year: 2020, location: "Saint Loup, France", fa: false, style: redpoint }
-
-  - name: Anak Verhoeven
-    country: BEL
-    gender: F
-    sends:
-      - { discipline: sport, route: Sweet Neuf, grade: 9a+, year: 2017, location: "Pierrot Beach, France", fa: true, style: redpoint }
-
-  - name: Ai Mori
-    country: JPN
-    gender: F
-    sends:
-      - { discipline: sport, route: Lapsus, grade: 9b, year: 2024, location: "Andonno, Italy", fa: false, style: redpoint }
-
-  # ===== BOULDER — MEN ===============================================
-
-  - name: Daniel Woods
-    country: USA
-    gender: M
-    sends:
-      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2021, location: "Red Rocks, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Sleepwalker, grade: V16, font_grade: 8C+, year: 2018, location: "Red Rocks, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2019, location: "Rocky Mountain National Park, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: The Game, grade: V16, font_grade: 8C+, year: 2010, location: "Boulder Canyon, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: The Process, grade: V16, font_grade: 8C+, year: 2015, location: "Bishop, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Creature from the Black Lagoon, grade: V16, font_grade: 8C+, year: 2017, location: "Rocky Mountain National Park, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Jade, grade: V15, font_grade: 8C, year: 2007, location: "Rocky Mountain National Park, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: In Search of Time Lost, grade: V15, font_grade: 8C, year: 2012, location: "Magic Wood, Switzerland", fa: false, style: redpoint }
-
-  - name: Nalle Hukkataival
-    country: FIN
-    gender: M
-    sends:
-      - { discipline: boulder, route: Burden of Dreams, grade: V17, font_grade: 9A, year: 2016, location: "Lappnor, Finland", fa: true, style: redpoint }
-      - { discipline: boulder, route: Livin' Large, grade: V15, font_grade: 8C, year: 2011, location: "Rocklands, South Africa", fa: true, style: redpoint }
-
-  - name: Simon Lorenzi
-    country: BEL
-    gender: M
-    sends:
-      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2021, location: "Fontainebleau, France", fa: true, style: redpoint }
-      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2022, location: "Chironico, Switzerland", fa: false, style: redpoint }
-      - { discipline: boulder, route: Burden of Dreams, grade: V17, font_grade: 9A, year: 2023, location: "Lappnor, Finland", fa: false, style: redpoint }
-      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2025, location: "Red Rocks, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Shaolin, grade: V17, font_grade: 9A, year: 2026, location: "Red Rocks, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Big Island Sit, grade: V16, font_grade: 8C+, year: 2020, location: "Fontainebleau, France", fa: false, style: redpoint }
-
-  - name: Shawn Raboutou
-    country: USA
-    gender: M
-    sends:
-      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2022, location: "Chironico, Switzerland", fa: true, style: redpoint }
-      - { discipline: boulder, route: Megatron, grade: V17, font_grade: 9A, year: 2022, location: "Black Mountain, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2024, location: "Red Rocks, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Off the Wagon Low, grade: V16, font_grade: 8C+, year: 2018, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
-      - { discipline: boulder, route: Sleepwalker, grade: V16, font_grade: 8C+, year: 2019, location: "Red Rocks, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2021, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
-
-  - name: Aidan Roberts
-    country: GBR
-    gender: M
-    sends:
-      - { discipline: boulder, route: Spots of Time, grade: V17, font_grade: 9A, year: 2024, location: "Helvellyn, UK", fa: true, style: redpoint }
-      - { discipline: boulder, route: Arrival of the Birds, grade: V17, font_grade: 9A, year: 2024, location: "Chironico, Switzerland", fa: true, style: redpoint }
-      - { discipline: boulder, route: Megatron, grade: V17, font_grade: 9A, year: 2023, location: "Black Mountain, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Alphane, grade: V17, font_grade: 9A, year: 2023, location: "Chironico, Switzerland", fa: false, style: redpoint }
-
-  - name: Ryuichi Murai
-    country: JPN
-    gender: M
-    sends:
-      - { discipline: boulder, route: Hydrangea, grade: V17, font_grade: 9A, year: 2023, location: "Shiobara, Japan", fa: true, style: redpoint }
-      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2023, location: "Fontainebleau, France", fa: false, style: redpoint }
-      - { discipline: boulder, route: Byaku-Dou, grade: V16, font_grade: 8C+, year: 2022, location: "Mizugaki, Japan", fa: true, style: redpoint }
-
-  - name: Charles Albert
-    country: FRA
-    gender: M
-    sends:
-      - { discipline: boulder, route: No Kpote Only, grade: V17, font_grade: 9A, year: 2018, location: "Fontainebleau, France", fa: true, style: redpoint }
-      - { discipline: boulder, route: La Force Tranquille, grade: V16, font_grade: 8C+, year: 2017, location: "Fontainebleau, France", fa: true, style: redpoint }
-
-  - name: Nathaniel Coleman
-    country: USA
-    gender: M
-    sends:
-      - { discipline: boulder, route: No One Mourns the Wicked, grade: V17, font_grade: 9A, year: 2024, location: "Thunder Ridge, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Return of the Sleepwalker, grade: V17, font_grade: 9A, year: 2023, location: "Red Rocks, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Grand Illusion, grade: V16, font_grade: 8C+, year: 2020, location: "Little Cottonwood Canyon, USA", fa: true, style: redpoint }
-      - { discipline: boulder, route: Sleepwalker, grade: V16, font_grade: 8C+, year: 2019, location: "Red Rocks, USA", fa: false, style: redpoint }
-
-  - name: Drew Ruana
-    country: USA
-    gender: M
-    sends:
-      - { discipline: boulder, route: Megatron, grade: V16, font_grade: 8C+, year: 2021, location: "Black Mountain, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2021, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Creature from the Black Lagoon, grade: V16, font_grade: 8C+, year: 2021, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
-
-  - name: Giuliano Cameroni
-    country: SUI
-    gender: M
-    sends:
-      - { discipline: boulder, route: Off the Wagon Low, grade: V16, font_grade: 8C+, year: 2018, location: "Val Bavona, Switzerland", fa: true, style: redpoint }
-      - { discipline: boulder, route: Poison the Well, grade: V16, font_grade: 8C+, year: 2020, location: "Magic Wood, Switzerland", fa: true, style: redpoint }
-
-  - name: Jimmy Webb
-    country: USA
-    gender: M
-    sends:
-      - { discipline: boulder, route: Livin' Large, grade: V15, font_grade: 8C, year: 2014, location: "Rocklands, South Africa", fa: false, style: redpoint }
-      - { discipline: boulder, route: Lucid Dreaming, grade: V15, font_grade: 8C, year: 2015, location: "Bishop, USA", fa: false, style: redpoint }
-
-  - name: Dave Graham
-    country: USA
-    gender: M
-    sends:
-      - { discipline: boulder, route: The Story of Two Worlds, grade: V15, font_grade: 8C, year: 2005, location: "Cresciano, Switzerland", fa: true, style: redpoint }
-      - { discipline: boulder, route: The Process, grade: V16, font_grade: 8C+, year: 2018, location: "Bishop, USA", fa: false, style: redpoint }
-
-  - name: Camille Coudert
-    country: FRA
-    gender: M
-    sends:
-      - { discipline: boulder, route: Soudain Seul, grade: V17, font_grade: 9A, year: 2022, location: "Fontainebleau, France", fa: false, style: redpoint }
-
-  - name: Mehdi Slimani
-    country: FRA
-    gender: M
-    sends:
-      - { discipline: boulder, route: No Kpote Only, grade: V17, font_grade: 9A, year: 2024, location: "Fontainebleau, France", fa: false, style: redpoint }
-
-  - name: Tomoaki Takata
-    country: JPN
-    gender: M
-    sends:
-      - { discipline: boulder, route: Hydrangea, grade: V17, font_grade: 9A, year: 2024, location: "Shiobara, Japan", fa: false, style: redpoint }
-
-  - name: Tomoa Narasaki
-    country: JPN
-    gender: M
-    sends:
-      - { discipline: boulder, route: Byaku-Dou, grade: V16, font_grade: 8C+, year: 2023, location: "Mizugaki, Japan", fa: false, style: redpoint }
-
-  - name: Yannick Flohé
-    country: GER
-    gender: M
-    sends:
-      - { discipline: boulder, route: Off the Wagon Low, grade: V16, font_grade: 8C+, year: 2022, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
-
-  - name: Elias Iagnemma
-    country: ITA
-    gender: M
-    sends:
-      # Proposed first V18 / 9A+ ascent — November 2025, Val Pellice, Italy.
-      # Awaiting repeats; some sources flag the grade as not yet confirmed.
-      - { discipline: boulder, route: Exodia, grade: V18, font_grade: 9A+, year: 2025, location: "Val Pellice, Italy", fa: true, style: redpoint }
-
-  # ===== BOULDER — WOMEN =============================================
-
-  - name: Katie Lamb
-    country: USA
-    gender: F
-    sends:
-      # First woman to climb V16 — Box Therapy, March 2024.
-      - { discipline: boulder, route: Box Therapy, grade: V16, font_grade: 8C+, year: 2024, location: "Rocky Mountain National Park, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: The Dark Side, grade: V16, font_grade: 8C+, year: 2025, location: "Yosemite, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: The Great Shark Hunt, grade: V15, font_grade: 8C, year: 2023, location: "Mount Evans, USA", fa: false, style: redpoint }
-      - { discipline: boulder, route: Fallen Angel, grade: V15, font_grade: 8C, year: 2024, location: "Tahoe, USA", fa: false, style: redpoint }
-
-  - name: Oriane Bertone
-    country: FRA
-    gender: F
-    sends:
-      - { discipline: boulder, route: Satan i Helvete, grade: V15, font_grade: 8C, year: 2024, location: "Fontainebleau, France", fa: false, style: redpoint }
-
-  - name: Camilla Moroni
-    country: ITA
-    gender: F
-    sends:
-      - { discipline: boulder, route: Off the Wagon Low, grade: V15, font_grade: 8C, year: 2024, location: "Val Bavona, Switzerland", fa: false, style: redpoint }
-
-  - name: Michaela Kiersch
-    country: USA
-    gender: F
-    sends:
-      # First woman to do both 5.15 and V15 — V15 in Oct 2024.
-      - { discipline: boulder, route: The Penrose Step, grade: V15, font_grade: 8C, year: 2024, location: "Joe's Valley, USA", fa: false, style: redpoint }
-
-  - name: Ashima Shiraishi
-    country: USA
-    gender: F
-    sends:
-      - { discipline: boulder, route: Horizon, grade: V15, font_grade: 8C, year: 2016, location: "Mount Hiei, Japan", fa: false, style: redpoint }
-      - { discipline: sport, route: Open Your Mind Direct, grade: 9a+, year: 2015, location: "Santa Linya, Spain", fa: false, style: redpoint }
+- name: Adam Ondra
+  climbing_history_id: 467
+  sends:
+  - discipline: boulder
+    route: The Lion's Share
+    grade: 8C
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2477
+  - discipline: boulder
+    route: Celestite
+    grade: 8C
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2574
+  - discipline: boulder
+    route: Emotional Landscapes
+    grade: 8C
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3104
+  - discipline: boulder
+    route: Flash Flood
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2248
+  - discipline: boulder
+    route: Air
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 7299
+  - discipline: boulder
+    route: Wrestling With an Alligator
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1832
+  - discipline: boulder
+    route: Soudain Seul
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 849
+  - discipline: boulder
+    route: Foundation's Edge
+    grade: 8C
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 841
+  - discipline: boulder
+    route: El Elegido
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1768
+  - discipline: boulder
+    route: Imothep (du Sol)
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2522
+  - discipline: boulder
+    route: La Ligne de Bête
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1785
+  - discipline: boulder
+    route: Atom
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5450
+  - discipline: boulder
+    route: Gliese 581
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 6370
+  - discipline: boulder
+    route: Versace
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1656
+  - discipline: boulder
+    route: Ubik (assis)
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1775
+  - discipline: boulder
+    route: Poprava
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5451
+  - discipline: boulder
+    route: Luftig Kö Till Nålens Öga
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3261
+  - discipline: boulder
+    route: Grizzly
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3759
+  - discipline: boulder
+    route: Felberqueen
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3813
+  - discipline: boulder
+    route: Konec Světa Direct
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3854
+  - discipline: sport
+    route: B je to!
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2757
+  - discipline: sport
+    route: El Gran Bellanco
+    grade: 9a
+    year: 2023
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2838
+  - discipline: boulder
+    route: The Ace
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 157
+  - discipline: sport
+    route: Wonderland
+    grade: 9b+
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1834
+  - discipline: sport
+    route: Zvěřinec
+    grade: 9b+
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2211
+  - discipline: sport
+    route: Bomba
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1812
+  - discipline: sport
+    route: Vodni Svet
+    grade: 9a
+    year: 2022
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2238
+  - discipline: sport
+    route: Solitary Souls
+    grade: 8c+
+    year: 2022
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1914
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+  - discipline: sport
+    route: Taurus
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1737
+  - discipline: sport
+    route: The Lonely Mountain
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1711
+  - discipline: sport
+    route: Warmduscher
+    grade: 8c+
+    year: 2020
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1129
+  - discipline: boulder
+    route: Ledoborec
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1680
+  - discipline: boulder
+    route: Brutal Rider
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1679
+  - discipline: sport
+    route: Neanderthal
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 496
+  - discipline: sport
+    route: Blut und Honig
+    grade: 8c+
+    year: 2019
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3888
+  - discipline: sport
+    route: Eagle-4
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 484
+  - discipline: sport
+    route: Disbelief
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 483
+  - discipline: sport
+    route: First Flight
+    grade: 8c+
+    year: 2018
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3887
+  - discipline: sport
+    route: Just Do It
+    grade: 8c+
+    year: 2018
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 69
+  - discipline: sport
+    route: Silence
+    grade: 9c
+    year: 2017
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 465
+  - discipline: sport
+    route: Mamichula
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 494
+  - discipline: sport
+    route: Queen Line
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 498
+  - discipline: sport
+    route: Move Hard
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 495
+  - discipline: sport
+    route: One Slap
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 497
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 502
+  - discipline: sport
+    route: Robin úd
+    grade: 9b
+    year: 2016
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 499
+  - discipline: sport
+    route: Gimmel Express
+    grade: 8c+
+    year: 2016
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3884
+  - discipline: sport
+    route: Barracuda
+    grade: 8c+
+    year: 2016
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3885
+  - discipline: sport
+    route: C’est la Vie
+    grade: 8c+
+    year: 2016
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3886
+  - discipline: sport
+    route: C.R.S.
+    grade: 9b
+    year: 2015
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 480
+  - discipline: boulder
+    route: Jade
+    grade: 8B+
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 507
+  - discipline: boulder
+    route: Bear Toss
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3599
+  - discipline: boulder
+    route: Don't Get Too Greedy
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3384
+  - discipline: sport
+    route: First Round, First Minute
+    grade: 9b
+    year: 2014
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 487
+  - discipline: sport
+    route: Il Domani
+    grade: 9a
+    year: 2014
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 594
+  - discipline: sport
+    route: TCT
+    grade: 9a
+    year: 2014
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 593
+  - discipline: sport
+    route: Le Super Plafond
+    grade: 8c+
+    year: 2014
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 776
+  - discipline: sport
+    route: La Dura Dura
+    grade: 9b+
+    year: 2013
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 470
+  - discipline: sport
+    route: Vasil Vasil
+    grade: 9b+
+    year: 2013
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 472
+  - discipline: sport
+    route: Fight or Flight
+    grade: 9b
+    year: 2013
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 486
+  - discipline: sport
+    route: Move
+    grade: 9b
+    year: 2013
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 474
+  - discipline: sport
+    route: La Cabane au Canada
+    grade: 9a
+    year: 2013
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 397
+  - discipline: sport
+    route: Chambao
+    grade: 8c+
+    year: 2013
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3883
+  - discipline: sport
+    route: Change
+    grade: 9b+
+    year: 2012
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 469
+  - discipline: sport
+    route: Deltaplane Man Direct
+    grade: 8c+
+    year: 2012
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3882
+  - discipline: sport
+    route: Odin's Eye
+    grade: 8c+
+    year: 2012
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 100
+  - discipline: sport
+    route: Pure Imagination
+    grade: 8c+
+    year: 2012
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1334
+  - discipline: sport
+    route: The Golden Ticket
+    grade: 8c+
+    year: 2012
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1333
+  - discipline: boulder
+    route: The Vice
+    grade: 8B
+    year: 2012
+    style: flash
+    fa: false
+    climbing_history_climb_id: 165
+  - discipline: sport
+    route: Chaxiraxi
+    grade: 9b
+    year: 2011
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 479
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2011
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 492
+  - discipline: sport
+    route: Kidetasunaren Balio Erantsia
+    grade: 8c+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2833
+  - discipline: sport
+    route: Bizi Euskaraz Extension
+    grade: 8c+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1604
+  - discipline: sport
+    route: Powerade
+    grade: 8c+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3876
+  - discipline: sport
+    route: Blanquita
+    grade: 8c+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3879
+  - discipline: sport
+    route: La Rubia
+    grade: 8c+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2200
+  - discipline: sport
+    route: L’Avaro
+    grade: 8c+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3880
+  - discipline: boulder
+    route: Terranova
+    grade: 8C+
+    year: 2011
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1681
+  - discipline: boulder
+    route: Gioia
+    grade: 8C+
+    year: 2011
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 550
+  - discipline: boulder
+    route: Gecko (assis)
+    grade: 8B+
+    year: 2011
+    style: flash
+    fa: false
+    climbing_history_climb_id: 145
+  - discipline: boulder
+    route: The Power of One
+    grade: 8B
+    year: 2011
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3598
+  - discipline: sport
+    route: Golpe de Estado
+    grade: 9b
+    year: 2010
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 488
+  - discipline: boulder
+    route: Confessions
+    grade: 8B
+    year: 2009
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1712
+- name: Adam Shahar
+  climbing_history_id: 1944
+  sends:
+  - discipline: boulder
+    route: The Globalist
+    grade: 8B+
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1714
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: The Process
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1151
+  - discipline: boulder
+    route: Blood Meridian
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2297
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+- name: Aidan Roberts
+  climbing_history_id: 227
+  sends:
+  - discipline: boulder
+    route: The Dark Side
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2977
+  - discipline: boulder
+    route: Bügeleisen
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 684
+  - discipline: boulder
+    route: The Abattoir
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5085
+  - discipline: boulder
+    route: Spots of Time
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2862
+  - discipline: boulder
+    route: Arrival of the Birds
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2596
+  - discipline: boulder
+    route: Momentum
+    grade: 8B+
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2454
+  - discipline: boulder
+    route: Alphane
+    grade: 9A
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1919
+  - discipline: boulder
+    route: Isles of Wonder SDS
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1989
+  - discipline: boulder
+    route: Vecchio Leone SDS
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2194
+  - discipline: boulder
+    route: Vecchio Leone
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 180
+  - discipline: boulder
+    route: Superpowers
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 101
+  - discipline: boulder
+    route: Master Key
+    grade: 8B
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 380
+- name: Ainhize Belar
+  climbing_history_id: 1590
+  sends:
+  - discipline: sport
+    route: Iñi Ameriketan
+    grade: 9a+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3849
+  - discipline: sport
+    route: Txirrin Txirran
+    grade: 8b+
+    year: 2024
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3773
+- name: Alberto Ginés López
+  climbing_history_id: 1004
+  sends:
+  - discipline: sport
+    route: El Bon Combat
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 564
+- name: Alberto Rocasolano Jaudenes
+  climbing_history_id: 797
+  sends:
+  - discipline: boulder
+    route: Jaro
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3613
+  - discipline: boulder
+    route: Pin y Pon
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3206
+- name: Alessandro Zeni
+  climbing_history_id: 507
+  sends:
+  - discipline: sport
+    route: Cryptography
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 481
+- name: Alex Megos
+  climbing_history_id: 472
+  sends:
+  - discipline: sport
+    route: Le Bruit de l’Acid
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5170
+  - discipline: sport
+    route: Nadesdja
+    grade: 8c+
+    year: 2026
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 7209
+  - discipline: sport
+    route: Tuareg Blanco
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 4492
+  - discipline: sport
+    route: Dévers Sévère
+    grade: 8c+
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2218
+  - discipline: boulder
+    route: Trinity Sitt
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4644
+  - discipline: sport
+    route: Change
+    grade: 9b+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 469
+  - discipline: sport
+    route: Sleeping Lion
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2449
+  - discipline: sport
+    route: Move
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 474
+  - discipline: boulder
+    route: Hulefesten
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3593
+  - discipline: boulder
+    route: Ormen Lange
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3590
+  - discipline: boulder
+    route: Verden På Lørdag
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3591
+  - discipline: boulder
+    route: Wrestling With an Alligator
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1832
+  - discipline: sport
+    route: Ratstaman Vibrations
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1991
+  - discipline: sport
+    route: The Full Journey
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2117
+  - discipline: sport
+    route: King Capella
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1108
+  - discipline: sport
+    route: Bibliographie
+    grade: 9b+
+    year: 2020
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 466
+  - discipline: boulder
+    route: Kalokagathia
+    grade: 8B
+    year: 2020
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3592
+  - discipline: sport
+    route: Victimes del Passat R2
+    grade: 8c+
+    year: 2019
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3390
+  - discipline: sport
+    route: Perfecto Mundo
+    grade: 9b+
+    year: 2018
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 471
+  - discipline: sport
+    route: TCT
+    grade: 9a
+    year: 2017
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 593
+  - discipline: sport
+    route: Fight Club
+    grade: 9b
+    year: 2016
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 485
+  - discipline: sport
+    route: First Round, First Minute
+    grade: 9b
+    year: 2015
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 487
+  - discipline: boulder
+    route: Blood Meridian
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2297
+  - discipline: sport
+    route: Estado Crítico
+    grade: 9a
+    year: 2012
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 98
+- name: Alexander Feichter
+  climbing_history_id: 978
+  sends:
+  - discipline: sport
+    route: The Lord of Darkness
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3110
+- name: Anak Verhoeven
+  climbing_history_id: 686
+  sends:
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 492
+  - discipline: sport
+    route: No Pain No Gain
+    grade: 9a+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2153
+  - discipline: sport
+    route: Joe Mama
+    grade: 9a+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1489
+  - discipline: sport
+    route: Sweet Neuf
+    grade: 9a+
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 861
+- name: Andrew Nimmer
+  climbing_history_id: 2273
+  sends:
+  - discipline: boulder
+    route: Sky
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 796
+  - discipline: boulder
+    route: Guest List
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1417
+  - discipline: boulder
+    route: Steppenwolf
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 183
+- name: Andy Lamb
+  climbing_history_id: 1032
+  sends:
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+  - discipline: boulder
+    route: Guest List
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1417
+  - discipline: boulder
+    route: Event Horizon
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3852
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+  - discipline: boulder
+    route: Blackout
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3091
+- name: Angela Eiter
+  climbing_history_id: 517
+  sends:
+  - discipline: sport
+    route: Madame Ching
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 549
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 492
+- name: Anthony Gullsten
+  climbing_history_id: 942
+  sends:
+  - discipline: boulder
+    route: King of Limbs
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 195
+- name: Antoine Girard
+  climbing_history_id: 1352
+  sends:
+  - discipline: boulder
+    route: The Arch
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3631
+- name: Arthur Le Bris
+  climbing_history_id: 1953
+  sends:
+  - discipline: boulder
+    route: The Dagger
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 683
+- name: Austin Hoyt
+  climbing_history_id: 1672
+  sends:
+  - discipline: boulder
+    route: The Process
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1151
+- name: Austin Purdy
+  climbing_history_id: 1224
+  sends:
+  - discipline: boulder
+    route: Bookkeeping
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2279
+  - discipline: boulder
+    route: Distortion
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2001
+  - discipline: boulder
+    route: Sword of Damocles
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4038
+  - discipline: boulder
+    route: Deep Throat
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3588
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+- name: Barbara Zangerl
+  climbing_history_id: 787
+  sends:
+  - discipline: sport
+    route: Bombardino
+    grade: 9a+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1866
+- name: Beckett Hsin
+  climbing_history_id: 1845
+  sends:
+  - discipline: boulder
+    route: No One Mourns the Wicked
+    grade: 9A
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4158
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Ben Hanna
+  climbing_history_id: 1980
+  sends:
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+- name: Ben Herrington
+  climbing_history_id: 1349
+  sends:
+  - discipline: boulder
+    route: Kaizen
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2009
+- name: Brian Nugent
+  climbing_history_id: 1153
+  sends:
+  - discipline: boulder
+    route: Spectre
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1706
+- name: Brian Squire
+  climbing_history_id: 2038
+  sends:
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+  - discipline: boulder
+    route: After Hours
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2856
+- name: Brooke Raboutou
+  climbing_history_id: 874
+  sends:
+  - discipline: sport
+    route: Excalibur
+    grade: 9b+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2384
+- name: Buster Martin
+  climbing_history_id: 133
+  sends:
+  - discipline: sport
+    route: The Full Journey
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2117
+- name: Camille Coudert
+  climbing_history_id: 1237
+  sends:
+  - discipline: boulder
+    route: Deep Fake
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4374
+  - discipline: boulder
+    route: Soudain Seul
+    grade: 9A
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 849
+- name: Carlo Traversi
+  climbing_history_id: 770
+  sends:
+  - discipline: boulder
+    route: The Dark Side
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2977
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Chaehyun Seo
+  climbing_history_id: 1448
+  sends:
+  - discipline: sport
+    route: Papichulo
+    grade: 9a+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 860
+  - discipline: sport
+    route: T1 Full Equip
+    grade: 8c
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 14
+  - discipline: sport
+    route: Los Humildes pa Casa
+    grade: 8b+
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2554
+  - discipline: sport
+    route: Fish Eye
+    grade: 8c
+    year: 2024
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 84
+  - discipline: sport
+    route: La Rambla
+    grade: 9a+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 514
+  - discipline: sport
+    route: L'Antagonista
+    grade: 8c
+    year: 2022
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2227
+  - discipline: sport
+    route: Hidrofóbia (L2)
+    grade: 8b+
+    year: 2022
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1550
+- name: Charles Albert
+  climbing_history_id: 600
+  sends:
+  - discipline: boulder
+    route: Charlatan
+    grade: 9A
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2942
+  - discipline: boulder
+    route: No Kpote Only
+    grade: 8C+
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 827
+  - discipline: boulder
+    route: Hypothèse (assis)
+    grade: 8C+
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1549
+  - discipline: boulder
+    route: La Révolutionnaire
+    grade: 8C+
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1547
+- name: Charlotte Durif
+  climbing_history_id: 1001
+  sends:
+  - discipline: sport
+    route: Les Rois du Pétrole
+    grade: 8b+
+    year: 2010
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2674
+- name: Chon Jongwon
+  climbing_history_id: 919
+  sends:
+  - discipline: boulder
+    route: Bear Toss
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3599
+- name: Chris Sharma
+  climbing_history_id: 493
+  sends:
+  - discipline: sport
+    route: Sleeping Lion
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2449
+  - discipline: sport
+    route: El Bon Combat
+    grade: 9b
+    year: 2015
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 564
+  - discipline: sport
+    route: La Dura Dura
+    grade: 9b+
+    year: 2013
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 470
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2013
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 502
+  - discipline: sport
+    route: First Round, First Minute
+    grade: 9b
+    year: 2011
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 487
+  - discipline: sport
+    route: Fight or Flight
+    grade: 9b
+    year: 2011
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 486
+  - discipline: sport
+    route: Neanderthal
+    grade: 9b
+    year: 2009
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 496
+  - discipline: sport
+    route: Jumbo Love
+    grade: 9b
+    year: 2008
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 490
+  - discipline: sport
+    route: Golpe de Estado
+    grade: 9b
+    year: 2008
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 488
+- name: Christian Core
+  climbing_history_id: 944
+  sends:
+  - discipline: boulder
+    route: Gioia
+    grade: 8C+
+    year: 2008
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 550
+  - discipline: boulder
+    route: Shadowfax
+    grade: 8B
+    year: 2002
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1807
+- name: Christopher Cosser
+  climbing_history_id: 2292
+  sends:
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Clément Lechaptois
+  climbing_history_id: 873
+  sends:
+  - discipline: boulder
+    route: Permanent Midnight Low
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5362
+  - discipline: boulder
+    route: Fuck the System
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1906
+  - discipline: boulder
+    route: Heritage
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1676
+- name: Colin Duffy
+  climbing_history_id: 1472
+  sends:
+  - discipline: boulder
+    route: Bookkeeping
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2279
+- name: Cyrus Johnston
+  climbing_history_id: 2144
+  sends:
+  - discipline: boulder
+    route: Magic Touch
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2748
+- name: Cédric Lachat
+  climbing_history_id: 993
+  sends:
+  - discipline: sport
+    route: Fantasia
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2541
+- name: Dai Koyamada
+  climbing_history_id: 680
+  sends:
+  - discipline: boulder
+    route: Nayuta
+    grade: 8C+
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1961
+- name: Daisuke Ichimiya
+  climbing_history_id: 768
+  sends:
+  - discipline: boulder
+    route: United
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 832
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Dani Andrada
+  climbing_history_id: 504
+  sends:
+  - discipline: sport
+    route: Delincuente Natural (extension)
+    grade: 9b
+    year: 2008
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 482
+- name: Daniel Fisher
+  climbing_history_id: 1496
+  sends:
+  - discipline: boulder
+    route: Gandalf the Grey
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3630
+- name: Daniel Fong
+  climbing_history_id: 960
+  sends:
+  - discipline: boulder
+    route: Shelter
+    grade: 8B
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3775
+- name: Daniel Woods
+  climbing_history_id: 516
+  sends:
+  - discipline: boulder
+    route: After Hours
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2856
+  - discipline: boulder
+    route: Adrenaline
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3088
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+  - discipline: boulder
+    route: Compass North
+    grade: 8B+
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2033
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: Eskimo Brothers
+    grade: 8B
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3601
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+  - discipline: boulder
+    route: The Process
+    grade: 8C+
+    year: 2015
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1151
+  - discipline: boulder
+    route: Palabraz
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3603
+  - discipline: boulder
+    route: El Infierno
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3602
+  - discipline: boulder
+    route: The Escapist
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3600
+  - discipline: boulder
+    route: The Ice Knife SDS
+    grade: 8C+
+    year: 2013
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1731
+  - discipline: boulder
+    route: Entlinge
+    grade: 8B+
+    year: 2011
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1713
+  - discipline: boulder
+    route: Hypnotized Minds
+    grade: 8C+
+    year: 2010
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 580
+- name: Dave Graham
+  climbing_history_id: 503
+  sends:
+  - discipline: boulder
+    route: Curve Ball
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4995
+  - discipline: boulder
+    route: Euclase
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1898
+  - discipline: boulder
+    route: Fuck the System
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1906
+  - discipline: boulder
+    route: Hypnotized Minds
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 580
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: David Firnenburg
+  climbing_history_id: 897
+  sends:
+  - discipline: boulder
+    route: Blå Blomster Sitstart
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4545
+  - discipline: boulder
+    route: Din Dean
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4557
+  - discipline: boulder
+    route: Antidote
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1913
+- name: David Fitzgerald
+  climbing_history_id: 591
+  sends:
+  - discipline: boulder
+    route: Last Line of Defense
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5236
+  - discipline: boulder
+    route: Big Z
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1406
+  - discipline: boulder
+    route: Shuriken
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4289
+- name: Davide Bassotto
+  climbing_history_id: 2196
+  sends:
+  - discipline: boulder
+    route: Versace
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1656
+  - discipline: boulder
+    route: Kingda Ka
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2651
+- name: Diego Cameroni
+  climbing_history_id: 1642
+  sends:
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+  - discipline: boulder
+    route: Hipster Whale
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3587
+- name: Domen Škofic
+  climbing_history_id: 1085
+  sends:
+  - discipline: sport
+    route: Move
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 474
+  - discipline: sport
+    route: Reini's Vibes
+    grade: 8c+
+    year: 2015
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3749
+- name: Drew Gomberg
+  climbing_history_id: 2195
+  sends:
+  - discipline: boulder
+    route: King Slayer
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3594
+- name: Drew Ruana
+  climbing_history_id: 767
+  sends:
+  - discipline: boulder
+    route: Maxwell's Demon Low
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2403
+  - discipline: boulder
+    route: Howl at the Moon SDS
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2543
+  - discipline: boulder
+    route: Distortion
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2001
+  - discipline: boulder
+    route: The Ice Knife SDS
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1731
+  - discipline: boulder
+    route: Bookkeeping
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2279
+  - discipline: boulder
+    route: Bloody Sunday SDS
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1208
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Dylan Barks
+  climbing_history_id: 1026
+  sends:
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Dylan Chuat
+  climbing_history_id: 1158
+  sends:
+  - discipline: sport
+    route: Move
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 474
+- name: Eder Lomba
+  climbing_history_id: 791
+  sends:
+  - discipline: sport
+    route: Rainman
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4
+- name: Eli Perry
+  climbing_history_id: 2402
+  sends:
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+- name: Elias Iagnemma
+  climbing_history_id: 913
+  sends:
+  - discipline: boulder
+    route: Exodia
+    grade: 9A+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 6431
+  - discipline: boulder
+    route: The Big Slamm
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4493
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Burden of Dreams
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 826
+  - discipline: boulder
+    route: Ganesh
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1777
+  - discipline: boulder
+    route: Gioia
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 550
+- name: Enrique Beltrán Blasco
+  climbing_history_id: 2181
+  sends:
+  - discipline: sport
+    route: The Full Journey
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2117
+- name: Erwan Legrand
+  climbing_history_id: 1451
+  sends:
+  - discipline: sport
+    route: Le Bombé Bleu
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 4932
+- name: Ethan Pringle
+  climbing_history_id: 513
+  sends:
+  - discipline: sport
+    route: Jumbo Love
+    grade: 9b
+    year: 2015
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 490
+  - discipline: boulder
+    route: Monkey Business
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3581
+- name: Ethan Salvo
+  climbing_history_id: 1804
+  sends:
+  - discipline: boulder
+    route: Event Horizon
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3852
+- name: Eva Hammelmüller
+  climbing_history_id: 1403
+  sends:
+  - discipline: sport
+    route: Bombardino
+    grade: 9a+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1866
+- name: Facundo Langbehn
+  climbing_history_id: 851
+  sends:
+  - discipline: boulder
+    route: King Slayer
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3594
+- name: Felipe Camargo
+  climbing_history_id: 545
+  sends:
+  - discipline: sport
+    route: Abaporu
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 5827
+  - discipline: sport
+    route: El Bon Combat
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 564
+- name: Filip Schenk
+  climbing_history_id: 3407
+  sends:
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+- name: Florian Schmalzl
+  climbing_history_id: 912
+  sends:
+  - discipline: boulder
+    route: Gioia Stand
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3614
+  - discipline: boulder
+    route: Alphacentauri
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3625
+- name: Florian Wientjes
+  climbing_history_id: 1219
+  sends:
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: Floatin
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1691
+  - discipline: boulder
+    route: Amandla
+    grade: 8B+
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 148
+- name: Francesco Berardino
+  climbing_history_id: 1595
+  sends:
+  - discipline: boulder
+    route: REM
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1135
+  - discipline: boulder
+    route: Return of the Dreamtime
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2380
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+- name: Gabriele Moroni
+  climbing_history_id: 918
+  sends:
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+  - discipline: boulder
+    route: The Power of One
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3598
+- name: Georg Parma
+  climbing_history_id: 2264
+  sends:
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+- name: Giovanni Placci
+  climbing_history_id: 1899
+  sends:
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+- name: Giuliano Cameroni
+  climbing_history_id: 789
+  sends:
+  - discipline: boulder
+    route: The Missing Piece
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 7280
+  - discipline: boulder
+    route: Curve Ball
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4995
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: Poison the Well
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1136
+  - discipline: boulder
+    route: REM
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1135
+  - discipline: boulder
+    route: House of the Rising Sun
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1134
+- name: Griffin Whiteside
+  climbing_history_id: 769
+  sends:
+  - discipline: boulder
+    route: Howl at the Moon SDS
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2543
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Guillermo Peinado
+  climbing_history_id: 3410
+  sends:
+  - discipline: boulder
+    route: Fotofobia SDS
+    grade: 8B+
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1210
+  - discipline: boulder
+    route: Pin y Pon
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3206
+- name: Hamish McArthur
+  climbing_history_id: 152
+  sends:
+  - discipline: boulder
+    route: Megatron
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1147
+  - discipline: boulder
+    route: No One Mourns the Wicked
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4158
+  - discipline: boulder
+    route: Big Z
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1406
+  - discipline: boulder
+    route: Fool Me Once
+    grade: 8B+
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2358
+  - discipline: boulder
+    route: Bulbhaul
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2737
+- name: Hibiki Yamauchi
+  climbing_history_id: 2712
+  sends:
+  - discipline: boulder
+    route: Minerva
+    grade: 8B+
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 7276
+- name: Hugo Martin
+  climbing_history_id: 3158
+  sends:
+  - discipline: boulder
+    route: Erromako Zubia
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 6649
+- name: Hugo Parmentier
+  climbing_history_id: 508
+  sends:
+  - discipline: sport
+    route: Eagle-4
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 484
+- name: Hyunbin Min
+  climbing_history_id: 519
+  sends:
+  - discipline: boulder
+    route: United
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 832
+  - discipline: sport
+    route: Soul Rock Dance
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 501
+- name: Iker Pou
+  climbing_history_id: 676
+  sends:
+  - discipline: sport
+    route: Artaburu
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1572
+- name: J J Mah
+  climbing_history_id: 2194
+  sends:
+  - discipline: boulder
+    route: Nagual
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1652
+- name: Jabee Kim
+  climbing_history_id: 1664
+  sends:
+  - discipline: boulder
+    route: La Révolutionnaire
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1547
+- name: Jack Martinus
+  climbing_history_id: 2145
+  sends:
+  - discipline: boulder
+    route: Shelter
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3775
+- name: Jakob Schubert
+  climbing_history_id: 494
+  sends:
+  - discipline: boulder
+    route: Shaolin
+    grade: 9A
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4136
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Mount Doom
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4855
+  - discipline: boulder
+    route: The Story of Three Worlds
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1980
+  - discipline: boulder
+    route: Vecchio Leone SDS
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2194
+  - discipline: boulder
+    route: Return of the Dreamtime
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2380
+  - discipline: sport
+    route: B.I.G
+    grade: 9c
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2734
+  - discipline: sport
+    route: The Flame
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3045
+  - discipline: boulder
+    route: Alphane
+    grade: 9A
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1919
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+  - discipline: sport
+    route: King Capella
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1108
+  - discipline: boulder
+    route: Anam Cara
+    grade: 8B+
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3618
+  - discipline: boulder
+    route: The Never Ending Story (Part 1+2)
+    grade: 8B+
+    year: 2020
+    style: flash
+    fa: false
+    climbing_history_climb_id: 141
+  - discipline: sport
+    route: Perfecto Mundo
+    grade: 9b+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 471
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 502
+  - discipline: sport
+    route: El Bon Combat
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 564
+  - discipline: sport
+    route: Neanderthal
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 496
+  - discipline: boulder
+    route: Catalan Witness the Fitness
+    grade: 8B+
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 556
+  - discipline: boulder
+    route: Madiba
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3610
+  - discipline: boulder
+    route: Mooiste Meisie
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 175
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 492
+  - discipline: boulder
+    route: Wrestling With an Alligator
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1832
+  - discipline: sport
+    route: Fight or Flight
+    grade: 9b
+    year: 2014
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 486
+  - discipline: boulder
+    route: Nagual
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1652
+- name: James Kassay
+  climbing_history_id: 896
+  sends:
+  - discipline: boulder
+    route: Sideways Daze
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1747
+- name: James Litz
+  climbing_history_id: 870
+  sends:
+  - discipline: sport
+    route: Peruvian Necktie
+    grade: 9b
+    year: 2013
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1263
+- name: Jan Hojer
+  climbing_history_id: 650
+  sends:
+  - discipline: boulder
+    route: Quoi de Neuf (Acte 2)
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3609
+  - discipline: boulder
+    route: Golden Gate
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3611
+- name: Janja Garnbret
+  climbing_history_id: 1002
+  sends:
+  - discipline: sport
+    route: Popolni Mrk
+    grade: 8c
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 4786
+  - discipline: sport
+    route: Osapska Pošast Extension
+    grade: 8c
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 5291
+  - discipline: sport
+    route: Working Class Hero
+    grade: 8b+
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 5292
+  - discipline: sport
+    route: Fish Eye
+    grade: 8c
+    year: 2021
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 84
+  - discipline: sport
+    route: American Hustle
+    grade: 8c
+    year: 2021
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1574
+- name: Jenny Lavarda
+  climbing_history_id: 2537
+  sends:
+  - discipline: sport
+    route: Le Mur des Cyclopes
+    grade: 8b+
+    year: 2014
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 4223
+- name: Jernej Kruder
+  climbing_history_id: 801
+  sends:
+  - discipline: boulder
+    route: Mother Night
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3617
+  - discipline: boulder
+    route: Primitivo Stand
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1759
+- name: Jessica Pilz
+  climbing_history_id: 1748
+  sends:
+  - discipline: sport
+    route: Papichulo
+    grade: 9a+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 860
+- name: Jimmy Webb
+  climbing_history_id: 668
+  sends:
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: Poison the Well
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1136
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Vorpal Blade
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3753
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+  - discipline: boulder
+    route: Blinded by the Light
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3608
+  - discipline: boulder
+    route: Riders on the Storm
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 162
+  - discipline: boulder
+    route: The Globalist
+    grade: 8B+
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1714
+  - discipline: boulder
+    route: Barrel Rider
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3607
+  - discipline: boulder
+    route: Bleu Sacré
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4521
+  - discipline: boulder
+    route: Quoi de Neuf (Acte 2)
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3609
+  - discipline: boulder
+    route: Livin' Large
+    grade: 8C+
+    year: 2015
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 850
+  - discipline: boulder
+    route: The Power of One
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3598
+  - discipline: boulder
+    route: Ammagamma
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 196
+  - discipline: boulder
+    route: The Riverbed
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 163
+  - discipline: boulder
+    route: Life, the Universe and Everything
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3606
+  - discipline: boulder
+    route: Elephunk
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 204
+  - discipline: boulder
+    route: La Danse des Balrogs
+    grade: 8B
+    year: 2014
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1158
+  - discipline: boulder
+    route: The Vice
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 165
+  - discipline: boulder
+    route: Sky
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 796
+  - discipline: boulder
+    route: A Simple Knowing
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 809
+  - discipline: boulder
+    route: The Teacup
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3605
+  - discipline: boulder
+    route: Roses and Blue Jays
+    grade: 8B
+    year: 2012
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3604
+- name: Jonatan Flor
+  climbing_history_id: 499
+  sends:
+  - discipline: sport
+    route: Sistema de Creenicas
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 6118
+  - discipline: sport
+    route: Sin Picasso
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 6388
+  - discipline: sport
+    route: La Vie
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2011
+  - discipline: sport
+    route: Delincuente Natural (extension)
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 482
+  - discipline: sport
+    route: Picacho
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1262
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 492
+- name: Jonathan Siegrist
+  climbing_history_id: 514
+  sends:
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+  - discipline: sport
+    route: Anemology
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3439
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 502
+  - discipline: sport
+    route: Event Horizon
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1920
+  - discipline: sport
+    route: Peruvian Necktie
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1263
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 492
+  - discipline: sport
+    route: Jumbo Love
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 490
+- name: Jorg Verhoeven
+  climbing_history_id: 778
+  sends:
+  - discipline: boulder
+    route: La Proue
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1763
+- name: Jorge Díaz-Rullo
+  climbing_history_id: 500
+  sends:
+  - discipline: sport
+    route: Café Colombia
+    grade: 9c
+    year: 2026
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3080
+  - discipline: sport
+    route: Change
+    grade: 9b+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 469
+  - discipline: sport
+    route: Sleeping Lion
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2449
+  - discipline: sport
+    route: Move
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 474
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 502
+  - discipline: boulder
+    route: Muerte por Asfixia
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3265
+  - discipline: sport
+    route: Mejorando la Samfaina
+    grade: 9b+
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2387
+  - discipline: sport
+    route: Bibliographie
+    grade: 9b+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 466
+  - discipline: sport
+    route: The Full Journey
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2117
+  - discipline: sport
+    route: First Round, First Minute
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 487
+  - discipline: sport
+    route: Café Solo
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1567
+  - discipline: sport
+    route: El Bon Combat
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 564
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 492
+- name: Josh Ibbertson
+  climbing_history_id: 180
+  sends:
+  - discipline: sport
+    route: Rainman
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4
+- name: Josune Bereziartu
+  climbing_history_id: 664
+  sends:
+  - discipline: sport
+    route: Hidrofóbia (L2)
+    grade: 8b+
+    year: 2006
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1550
+  - discipline: sport
+    route: Bimbaluna
+    grade: 9a+
+    year: 2005
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 810
+- name: Jules Marchaland
+  climbing_history_id: 1547
+  sends:
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Midnight Lightning of Ticino Sit
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 7353
+  - discipline: sport
+    route: Le Bruit de l’Acid
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 5170
+  - discipline: boulder
+    route: Power of Now Direct
+    grade: 8C
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1343
+  - discipline: boulder
+    route: Vecchio Leone
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 180
+  - discipline: boulder
+    route: Ubik (assis)
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1775
+- name: Julia Chanourdie
+  climbing_history_id: 509
+  sends:
+  - discipline: sport
+    route: Eagle-4
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 484
+  - discipline: sport
+    route: Super Crackinette
+    grade: 9a+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 464
+- name: Jun Shibanuma
+  climbing_history_id: 782
+  sends:
+  - discipline: boulder
+    route: El Ovni
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4268
+- name: Kajsa Rosén
+  climbing_history_id: 1103
+  sends:
+  - discipline: sport
+    route: T1 Full Equip
+    grade: 8c
+    year: 2016
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 14
+- name: Katie Lamb
+  climbing_history_id: 815
+  sends:
+  - discipline: boulder
+    route: The Dark Side
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2977
+- name: Kazuma Ise
+  climbing_history_id: 1155
+  sends:
+  - discipline: boulder
+    route: Epitaph
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1846
+  - discipline: boulder
+    route: Hallucination
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1720
+- name: Keenan Takahashi
+  climbing_history_id: 939
+  sends:
+  - discipline: boulder
+    route: The Dark Side
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2977
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+  - discipline: boulder
+    route: Guest List
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1417
+  - discipline: boulder
+    route: The Teacup
+    grade: 8B
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3605
+  - discipline: boulder
+    route: Don't Get Too Greedy
+    grade: 8B
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3384
+- name: Keiichiro Korenaga
+  climbing_history_id: 2076
+  sends:
+  - discipline: boulder
+    route: Nexus
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1535
+- name: Keita Mogaki
+  climbing_history_id: 2500
+  sends:
+  - discipline: boulder
+    route: La Danse des Balrogs
+    grade: 8B
+    year: 2009
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1158
+- name: Killian Charbier
+  climbing_history_id: 1455
+  sends:
+  - discipline: boulder
+    route: Vecchio Leone
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 180
+- name: Kokoro Fujii
+  climbing_history_id: 1986
+  sends:
+  - discipline: boulder
+    route: Utsushiyo
+    grade: 8B+
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3283
+- name: Lasse von Freier
+  climbing_history_id: 1875
+  sends:
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+- name: Laura Rogora
+  climbing_history_id: 501
+  sends:
+  - discipline: sport
+    route: Super Crackinette
+    grade: 9a+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 464
+  - discipline: sport
+    route: La Castagne
+    grade: 9a+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2244
+  - discipline: sport
+    route: Punt'X
+    grade: 9a+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2491
+  - discipline: sport
+    route: Ultimate Sacrifice
+    grade: 8c+
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 697
+  - discipline: sport
+    route: La Ligne Claire
+    grade: 8c+
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 923
+  - discipline: sport
+    route: 7 pm JP Chaud
+    grade: 8c
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 5518
+  - discipline: sport
+    route: Leoni Alfa
+    grade: 8c
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 6238
+  - discipline: sport
+    route: Pâques Express
+    grade: 8c
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1766
+  - discipline: sport
+    route: Free Fight Intégral
+    grade: 8c
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3350
+  - discipline: sport
+    route: La Tournée du Patron L1
+    grade: 8b+
+    year: 2025
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 6346
+  - discipline: sport
+    route: Goldrake
+    grade: 9a+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3955
+  - discipline: sport
+    route: Bombardino
+    grade: 9a+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1866
+  - discipline: sport
+    route: Trofeo dell’Adriatico
+    grade: 9a+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1798
+  - discipline: sport
+    route: American Hustle
+    grade: 8c
+    year: 2024
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1574
+  - discipline: sport
+    route: Spanish Caravan
+    grade: 8c
+    year: 2024
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 3868
+  - discipline: sport
+    route: Lapsus
+    grade: 9a+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 493
+  - discipline: sport
+    route: Ajo Crudo
+    grade: 8c
+    year: 2023
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2687
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+  - discipline: sport
+    route: Terapia d'urto
+    grade: 9a+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1181
+  - discipline: sport
+    route: Puro Dreaming Plus
+    grade: 9a+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 859
+  - discipline: sport
+    route: Ali Hulk (extension total sit start)
+    grade: 9a+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 476
+  - discipline: sport
+    route: The Bow
+    grade: 9a+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 6453
+- name: Leo Bøe
+  climbing_history_id: 2625
+  sends:
+  - discipline: sport
+    route: Change
+    grade: 9b+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 469
+- name: Liam Andrews-Bancroft
+  climbing_history_id: 2043
+  sends:
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+- name: Liam Vance
+  climbing_history_id: 1154
+  sends:
+  - discipline: boulder
+    route: Sky
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 796
+- name: Loïc Zehani
+  climbing_history_id: 594
+  sends:
+  - discipline: sport
+    route: Brooklyn
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2442
+  - discipline: sport
+    route: Mossoul
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2474
+  - discipline: sport
+    route: Quartiers Nord
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2800
+  - discipline: sport
+    route: Chikane
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1885
+  - discipline: sport
+    route: Harlem
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2095
+  - discipline: sport
+    route: Obsession
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 669
+- name: Luca Rinaldi
+  climbing_history_id: 781
+  sends:
+  - discipline: boulder
+    route: Blinded by the Light
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3608
+- name: Lucas Uchida
+  climbing_history_id: 1386
+  sends:
+  - discipline: boulder
+    route: Nuthin' But Sunshine
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 222
+  - discipline: boulder
+    route: Shelter
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3775
+- name: Lukas Mayerhofer
+  climbing_history_id: 2072
+  sends:
+  - discipline: boulder
+    route: Nussnacker
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5125
+- name: Léo Favot
+  climbing_history_id: 2197
+  sends:
+  - discipline: boulder
+    route: Steppenwolf
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 183
+- name: Magnus Midtbø
+  climbing_history_id: 505
+  sends:
+  - discipline: sport
+    route: Cosi Fan Tutte
+    grade: 8c+
+    year: 2013
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1605
+- name: Maja Štremfelj
+  climbing_history_id: 1596
+  sends:
+  - discipline: sport
+    route: Los Humildes pa Casa
+    grade: 8b+
+    year: 2010
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2554
+- name: Makoto Yamauchi
+  climbing_history_id: 844
+  sends:
+  - discipline: boulder
+    route: Burden of Dreams
+    grade: 9A
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 826
+- name: Manon Hily
+  climbing_history_id: 1524
+  sends:
+  - discipline: sport
+    route: Punt'X
+    grade: 9a+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2491
+- name: Marco Müller
+  climbing_history_id: 1493
+  sends:
+  - discipline: boulder
+    route: The Story of Three Worlds
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1980
+- name: Margo Hayes
+  climbing_history_id: 663
+  sends:
+  - discipline: sport
+    route: Papichulo
+    grade: 9a+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 860
+  - discipline: sport
+    route: La Rambla
+    grade: 9a+
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 514
+  - discipline: sport
+    route: Biographie
+    grade: 9a+
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 513
+- name: Martin Keller
+  climbing_history_id: 779
+  sends:
+  - discipline: boulder
+    route: Gateway
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2768
+- name: Martin Stráník
+  climbing_history_id: 811
+  sends:
+  - discipline: boulder
+    route: Bitter Sweet
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3317
+  - discipline: boulder
+    route: Sicarios
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3615
+- name: Martin Tekles
+  climbing_history_id: 1711
+  sends:
+  - discipline: sport
+    route: La Planta de Shiva
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 492
+- name: Martina Demmel
+  climbing_history_id: 1152
+  sends:
+  - discipline: sport
+    route: Los Humildes pa Casa
+    grade: 8b+
+    year: 2021
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2554
+- name: Matt Fultz
+  climbing_history_id: 679
+  sends:
+  - discipline: boulder
+    route: Deep Fake
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4374
+  - discipline: boulder
+    route: Big Z
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1406
+  - discipline: boulder
+    route: Vecchio Leone SDS
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2194
+  - discipline: boulder
+    route: Brace For the Cure
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1955
+  - discipline: boulder
+    route: Moonlight Sonata
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1596
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+  - discipline: boulder
+    route: Hypnotized Minds
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 580
+  - discipline: boulder
+    route: Iron Resolution
+    grade: 8B
+    year: 2020
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3589
+  - discipline: boulder
+    route: Steppenwolf
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 183
+- name: Matty Hong
+  climbing_history_id: 511
+  sends:
+  - discipline: sport
+    route: Fight or Flight
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 486
+- name: Max Bertone
+  climbing_history_id: 1648
+  sends:
+  - discipline: boulder
+    route: Lazarus
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2003
+- name: Max Milne
+  climbing_history_id: 223
+  sends:
+  - discipline: boulder
+    route: Bewilderness
+    grade: 8B+
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 125
+  - discipline: boulder
+    route: The Ace
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 157
+- name: Mejdi Schalck
+  climbing_history_id: 1701
+  sends:
+  - discipline: boulder
+    route: Casavino
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3266
+  - discipline: boulder
+    route: Shelter
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3775
+- name: Michael Piccolruaz
+  climbing_history_id: 906
+  sends:
+  - discipline: boulder
+    route: The Fish-Eye Effect
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4689
+  - discipline: boulder
+    route: Shakey Warrior
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5574
+  - discipline: boulder
+    route: Antidote
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1913
+  - discipline: boulder
+    route: Wrestling With an Alligator
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1832
+- name: Michaela Kiersch
+  climbing_history_id: 1036
+  sends:
+  - discipline: sport
+    route: Víctima Perfecta
+    grade: 9a+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3346
+  - discipline: sport
+    route: Crimptonite
+    grade: 8b+
+    year: 2024
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1808
+  - discipline: sport
+    route: La Rambla
+    grade: 9a+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 514
+- name: Michiel Nieuwenhuijsen
+  climbing_history_id: 753
+  sends:
+  - discipline: boulder
+    route: ADHS
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5002
+  - discipline: boulder
+    route: Afterlife
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3525
+  - discipline: boulder
+    route: La Révolutionnaire
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1547
+- name: Miles Perry
+  climbing_history_id: 2371
+  sends:
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+- name: Minyoung Lee
+  climbing_history_id: 1830
+  sends:
+  - discipline: sport
+    route: Soul Mate
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 500
+- name: Mizuki Tajima
+  climbing_history_id: 3259
+  sends:
+  - discipline: boulder
+    route: Ammagamma
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 196
+- name: Moritz Perwitzschky
+  climbing_history_id: 953
+  sends:
+  - discipline: boulder
+    route: Amandla
+    grade: 8B+
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 148
+- name: Muriel Sarkany
+  climbing_history_id: 1570
+  sends:
+  - discipline: sport
+    route: Punt'X
+    grade: 9a+
+    year: 2013
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2491
+- name: Nacho Sánchez
+  climbing_history_id: 615
+  sends:
+  - discipline: boulder
+    route: Daños Con-Laterales
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1945
+  - discipline: boulder
+    route: I Shot Sarkonazy (assis)
+    grade: 8B
+    year: 2012
+    style: flash
+    fa: false
+    climbing_history_climb_id: 937
+- name: Nalle Hukkataival
+  climbing_history_id: 602
+  sends:
+  - discipline: boulder
+    route: Shelter
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3775
+  - discipline: boulder
+    route: Burden of Dreams
+    grade: 9A
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 826
+  - discipline: boulder
+    route: Gioia
+    grade: 8C+
+    year: 2014
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 550
+  - discipline: boulder
+    route: Crown of Aragorn
+    grade: 8B
+    year: 2011
+    style: flash
+    fa: false
+    climbing_history_climb_id: 747
+  - discipline: boulder
+    route: Livin' Large
+    grade: 8C+
+    year: 2009
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 850
+- name: Nathan Michel
+  climbing_history_id: 2275
+  sends:
+  - discipline: boulder
+    route: Vecchio Leone
+    grade: 8B
+    year: 2020
+    style: flash
+    fa: false
+    climbing_history_climb_id: 180
+- name: Nathan Phillips
+  climbing_history_id: 264
+  sends:
+  - discipline: boulder
+    route: Deep Fake
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4374
+- name: Nathan Williams
+  climbing_history_id: 1123
+  sends:
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+- name: Nathaniel Coleman
+  climbing_history_id: 979
+  sends:
+  - discipline: boulder
+    route: No One Mourns the Wicked
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4158
+  - discipline: boulder
+    route: Li
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3404
+  - discipline: boulder
+    route: Slashface
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 996
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+- name: Ned Feehally
+  climbing_history_id: 246
+  sends:
+  - discipline: boulder
+    route: Trust Issues
+    grade: 8B
+    year: 2017
+    style: flash
+    fa: false
+    climbing_history_climb_id: 379
+- name: Niccolò Ceria
+  climbing_history_id: 648
+  sends:
+  - discipline: boulder
+    route: Pneuma
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3456
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: La Révolutionnaire
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1547
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Gioia
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 550
+  - discipline: boulder
+    route: Middle Trifecta
+    grade: 8B
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 198
+  - discipline: boulder
+    route: Ubik (assis)
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1775
+  - discipline: boulder
+    route: The Hourglass
+    grade: 8B
+    year: 2013
+    style: flash
+    fa: false
+    climbing_history_climb_id: 154
+- name: Nico Pelorson
+  climbing_history_id: 674
+  sends:
+  - discipline: boulder
+    route: Soudain Seul
+    grade: 9A
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 849
+  - discipline: boulder
+    route: No Kpote Only
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 827
+- name: Nicolai Užnik
+  climbing_history_id: 831
+  sends:
+  - discipline: boulder
+    route: Full Gem
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 7028
+  - discipline: boulder
+    route: Bügelbrett
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 7409
+  - discipline: boulder
+    route: Mount Doom
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4855
+  - discipline: boulder
+    route: Amandla
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 148
+  - discipline: boulder
+    route: Stairway to Heaven Level 2
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5120
+  - discipline: boulder
+    route: Druid
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5242
+  - discipline: boulder
+    route: American Gangster
+    grade: 8B+
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3408
+- name: Nils Favre
+  climbing_history_id: 950
+  sends:
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+- name: Noah Wheeler
+  climbing_history_id: 1346
+  sends:
+  - discipline: boulder
+    route: Vecchio Leone
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 180
+  - discipline: boulder
+    route: Shaolin
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4136
+  - discipline: boulder
+    route: Brass Knuckles
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3673
+  - discipline: boulder
+    route: Crown of Aragorn
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 747
+  - discipline: boulder
+    route: Slashface
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 996
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+  - discipline: boulder
+    route: Sky
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 796
+  - discipline: boulder
+    route: Guest List
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1417
+  - discipline: boulder
+    route: Slasher
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2004
+- name: Nolwen Berthier
+  climbing_history_id: 1298
+  sends:
+  - discipline: sport
+    route: Super Crackinette
+    grade: 9a+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 464
+  - discipline: sport
+    route: Omaha Beach
+    grade: 8b+
+    year: 2022
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2121
+- name: Owen Whaley
+  climbing_history_id: 2117
+  sends:
+  - discipline: boulder
+    route: Sosa
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4334
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+- name: Pablo Hammack
+  climbing_history_id: 883
+  sends:
+  - discipline: boulder
+    route: Ear of Life
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 7341
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+  - discipline: boulder
+    route: Slashface
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 996
+- name: Pablo Zamora
+  climbing_history_id: 1593
+  sends:
+  - discipline: boulder
+    route: Muerte por Asfixia
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3265
+- name: Patxi Usobiaga
+  climbing_history_id: 992
+  sends:
+  - discipline: sport
+    route: Bizi Euskaraz Extension
+    grade: 8c+
+    year: 2007
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1604
+- name: Paul Robinson
+  climbing_history_id: 639
+  sends:
+  - discipline: boulder
+    route: REM
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1135
+  - discipline: boulder
+    route: Karoshi
+    grade: 8C+
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1653
+  - discipline: boulder
+    route: Nagual
+    grade: 8B
+    year: 2007
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1652
+- name: Peter Kuric
+  climbing_history_id: 2835
+  sends:
+  - discipline: boulder
+    route: Jabberwocky SD
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5100
+- name: Philipp Geisenhoff
+  climbing_history_id: 1464
+  sends:
+  - discipline: boulder
+    route: Monkey Business
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3581
+- name: Pierre le Cerf
+  climbing_history_id: 1238
+  sends:
+  - discipline: sport
+    route: Eagle-4
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 484
+- name: Pietro Vidi
+  climbing_history_id: 1461
+  sends:
+  - discipline: boulder
+    route: Permanent Midnight Low
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5362
+  - discipline: boulder
+    route: Fuck the System
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1906
+- name: Piotr Oleszczuk
+  climbing_history_id: 1436
+  sends:
+  - discipline: boulder
+    route: Hipster Whale
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3587
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+- name: Piotr Schab
+  climbing_history_id: 512
+  sends:
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+  - discipline: boulder
+    route: The Riverbed
+    grade: 8B
+    year: 2020
+    style: flash
+    fa: false
+    climbing_history_climb_id: 163
+  - discipline: sport
+    route: Fight or Flight
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 486
+- name: Pirmin Bertle
+  climbing_history_id: 515
+  sends:
+  - discipline: sport
+    route: La Barrière
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 491
+- name: Pol Roca Lopez
+  climbing_history_id: 916
+  sends:
+  - discipline: boulder
+    route: Mother Night
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3617
+- name: Ramón Julián Puigblanque
+  climbing_history_id: 524
+  sends:
+  - discipline: sport
+    route: The Crew
+    grade: 8c+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1606
+- name: Ritsu Kayotani
+  climbing_history_id: 2809
+  sends:
+  - discipline: boulder
+    route: Tanpopo
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 7284
+  - discipline: boulder
+    route: Nexus
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1535
+  - discipline: boulder
+    route: Floatin
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1691
+- name: Rob Denayer
+  climbing_history_id: 1249
+  sends:
+  - discipline: boulder
+    route: The Hourglass
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 154
+- name: Rolands Rugens
+  climbing_history_id: 2198
+  sends:
+  - discipline: boulder
+    route: One Summer in Paradise
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 656
+- name: Rubén Díaz Torres
+  climbing_history_id: 908
+  sends:
+  - discipline: boulder
+    route: Lemento
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3055
+- name: Rustam Gelmanov
+  climbing_history_id: 777
+  sends:
+  - discipline: boulder
+    route: Hypnotized Minds
+    grade: 8C+
+    year: 2016
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 580
+- name: Ryan Sewell
+  climbing_history_id: 2225
+  sends:
+  - discipline: boulder
+    route: Green in the Face
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2515
+- name: Ryohei Kameyama
+  climbing_history_id: 669
+  sends:
+  - discipline: boulder
+    route: Floatin
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1691
+  - discipline: boulder
+    route: No Kpote Only
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 827
+  - discipline: boulder
+    route: La Révolutionnaire
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1547
+- name: Ryuichi Murai
+  climbing_history_id: 673
+  sends:
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: Livin' Large
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 850
+  - discipline: boulder
+    route: Nexus
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1535
+  - discipline: boulder
+    route: Floatin
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1691
+  - discipline: boulder
+    route: United
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 832
+- name: Sachi Amma
+  climbing_history_id: 510
+  sends:
+  - discipline: sport
+    route: Sleeping Lion
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2449
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 502
+  - discipline: sport
+    route: Soul Mate
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 500
+  - discipline: sport
+    route: Fight or Flight
+    grade: 9b
+    year: 2015
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 486
+- name: Sam Richard
+  climbing_history_id: 2191
+  sends:
+  - discipline: boulder
+    route: Soudain Seul
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 849
+- name: Sam Weir
+  climbing_history_id: 893
+  sends:
+  - discipline: boulder
+    route: Poison the Well
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1136
+  - discipline: boulder
+    route: REM
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1135
+  - discipline: boulder
+    route: Fuck the System
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1906
+- name: Samuel Hsin
+  climbing_history_id: 2127
+  sends:
+  - discipline: boulder
+    route: The Arch
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3631
+- name: Sasha DiGiulian
+  climbing_history_id: 997
+  sends:
+  - discipline: sport
+    route: Omaha Beach
+    grade: 8b+
+    year: 2011
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2121
+- name: Sean Bailey
+  climbing_history_id: 980
+  sends:
+  - discipline: sport
+    route: Duality of Man
+    grade: 9c
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 5175
+  - discipline: boulder
+    route: Arrival of the Birds
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2596
+  - discipline: boulder
+    route: Shaolin
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4136
+  - discipline: boulder
+    route: Alphane
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1919
+  - discipline: boulder
+    route: Devilution
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3051
+  - discipline: boulder
+    route: Floatin
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1691
+  - discipline: boulder
+    route: Slasher
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2004
+  - discipline: sport
+    route: Bibliographie
+    grade: 9b+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 466
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+- name: Sean McColl
+  climbing_history_id: 915
+  sends:
+  - discipline: boulder
+    route: Elephunk
+    grade: 8B
+    year: 2015
+    style: flash
+    fa: false
+    climbing_history_climb_id: 204
+  - discipline: boulder
+    route: Nagual
+    grade: 8B
+    year: 2012
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1652
+- name: Seb Bouin
+  climbing_history_id: 496
+  sends:
+  - discipline: sport
+    route: Le Chant des Muses
+    grade: 9b
+    year: 2026
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 7411
+  - discipline: sport
+    route: Vidra la Vida
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 5308
+  - discipline: sport
+    route: El Gran Cabrón
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 4716
+  - discipline: sport
+    route: Wolf Kingdom
+    grade: 9b+
+    year: 2024
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3785
+  - discipline: sport
+    route: Les Rois du Lithium
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3398
+  - discipline: sport
+    route: Bibliographie
+    grade: 9b+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 466
+  - discipline: sport
+    route: Ariégeois Cœur Loyal
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2459
+  - discipline: sport
+    route: Move Hard
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 495
+  - discipline: sport
+    route: Jamming Destruction
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2701
+  - discipline: sport
+    route: DNA
+    grade: 9c
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1901
+  - discipline: sport
+    route: Change
+    grade: 9b+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 469
+  - discipline: sport
+    route: Suprême Jumbo Love
+    grade: 9b+
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2179
+  - discipline: sport
+    route: Nordic Marathon
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1986
+  - discipline: sport
+    route: Jumbo Love
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 490
+  - discipline: sport
+    route: Beyond Integral
+    grade: 9b
+    year: 2020
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 836
+  - discipline: sport
+    route: Mamichula
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 494
+  - discipline: sport
+    route: Move
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 474
+  - discipline: sport
+    route: La Rage d'Adam
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 473
+  - discipline: sport
+    route: The Dream
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 503
+  - discipline: sport
+    route: Les Yeux Plus Gros que l'Antre
+    grade: 9b
+    year: 2018
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 504
+- name: Sergei Skorodumov
+  climbing_history_id: 1762
+  sends:
+  - discipline: boulder
+    route: Moon Shadow
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3586
+- name: Sergii Topishko
+  climbing_history_id: 1198
+  sends:
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: Boogalagga
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1738
+- name: Shawn Raboutou
+  climbing_history_id: 671
+  sends:
+  - discipline: boulder
+    route: Devilution
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3051
+  - discipline: boulder
+    route: United
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 832
+  - discipline: boulder
+    route: Alphane
+    grade: 9A
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1919
+  - discipline: boulder
+    route: Megatron
+    grade: 9A
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1147
+  - discipline: boulder
+    route: The Story of Three Worlds
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1980
+  - discipline: boulder
+    route: Insomniac
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1341
+  - discipline: boulder
+    route: Fuck the System
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1906
+  - discipline: boulder
+    route: Spectre
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1706
+  - discipline: boulder
+    route: Big Z
+    grade: 8C+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1406
+  - discipline: boulder
+    route: Livin' Large
+    grade: 8C+
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 850
+  - discipline: boulder
+    route: Creature from the Black Lagoon
+    grade: 8C+
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1091
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+- name: Simon Boes
+  climbing_history_id: 2045
+  sends:
+  - discipline: boulder
+    route: Deep Fake
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4374
+- name: Simon Lorenzi
+  climbing_history_id: 677
+  sends:
+  - discipline: boulder
+    route: The Swarm
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1123
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: Shaolin
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4136
+  - discipline: boulder
+    route: Permanent Midnight Low
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5362
+  - discipline: boulder
+    route: Compass North
+    grade: 8B+
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2033
+  - discipline: boulder
+    route: Burden of Dreams
+    grade: 9A
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 826
+  - discipline: boulder
+    route: Alphane
+    grade: 9A
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1919
+  - discipline: boulder
+    route: Big Conviction
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1770
+  - discipline: boulder
+    route: La Révolutionnaire
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1547
+  - discipline: boulder
+    route: Soudain Seul
+    grade: 9A
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 849
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+- name: Simone Tentori
+  climbing_history_id: 800
+  sends:
+  - discipline: boulder
+    route: Deep Fake
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4374
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: The Quintessential
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3471
+  - discipline: boulder
+    route: Monkey Business
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3581
+  - discipline: boulder
+    route: The Arch
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3631
+- name: Solly Kemball-Dorey
+  climbing_history_id: 277
+  sends:
+  - discipline: boulder
+    route: The Trident
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5677
+  - discipline: boulder
+    route: Isles of Wonder SDS
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1989
+- name: Solveig Korherr
+  climbing_history_id: 1043
+  sends:
+  - discipline: sport
+    route: Los Humildes pa Casa
+    grade: 8b+
+    year: 2024
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 2554
+- name: Stefan Hochbaum
+  climbing_history_id: 2697
+  sends:
+  - discipline: boulder
+    route: Obsidan
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4738
+- name: Stefan Scarperi
+  climbing_history_id: 1907
+  sends:
+  - discipline: boulder
+    route: Wrestling With an Alligator
+    grade: 8B
+    year: 2020
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1832
+- name: Stefano Carnati
+  climbing_history_id: 1558
+  sends:
+  - discipline: boulder
+    route: Deep Fake
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4374
+  - discipline: boulder
+    route: Netsuke
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3554
+  - discipline: boulder
+    route: The Vice
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 165
+  - discipline: boulder
+    route: Quimera
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3297
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 678
+  - discipline: boulder
+    route: Vecchio Leone SDS
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2194
+  - discipline: boulder
+    route: Paradise Lost
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2866
+- name: Stefano Ghisolfi
+  climbing_history_id: 495
+  sends:
+  - discipline: boulder
+    route: Gioia
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 550
+  - discipline: sport
+    route: The Full Journey
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2117
+  - discipline: sport
+    route: Sleeping Lion
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2449
+  - discipline: sport
+    route: Neanderthal
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 496
+  - discipline: sport
+    route: Excalibur
+    grade: 9b+
+    year: 2023
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 2384
+  - discipline: sport
+    route: L'Arenauta
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1796
+  - discipline: sport
+    route: Move Hard
+    grade: 9b
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 495
+  - discipline: sport
+    route: Bibliographie
+    grade: 9b+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 466
+  - discipline: sport
+    route: Erebor
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 678
+  - discipline: sport
+    route: The Lonely Mountain
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1711
+  - discipline: sport
+    route: Change
+    grade: 9b+
+    year: 2020
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 469
+  - discipline: sport
+    route: Queen Line
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 498
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2019
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 502
+  - discipline: sport
+    route: Perfecto Mundo
+    grade: 9b+
+    year: 2018
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 471
+  - discipline: sport
+    route: First Round, First Minute
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 487
+  - discipline: sport
+    route: One Slap
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 497
+- name: Steve McClure
+  climbing_history_id: 129
+  sends:
+  - discipline: sport
+    route: Rainman
+    grade: 9b
+    year: 2017
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 4
+- name: Sungsu Lee
+  climbing_history_id: 2180
+  sends:
+  - discipline: boulder
+    route: Alphane
+    grade: 9A
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1919
+  - discipline: boulder
+    route: Burden of Dreams
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 826
+  - discipline: boulder
+    route: Sosa
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4334
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285
+  - discipline: boulder
+    route: Floatin
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1691
+  - discipline: boulder
+    route: The Process
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1151
+- name: Tamas Zupan
+  climbing_history_id: 2470
+  sends:
+  - discipline: boulder
+    route: Sputnik
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4057
+- name: Tanguy Merard
+  climbing_history_id: 1518
+  sends:
+  - discipline: sport
+    route: Hannigraal
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3381
+- name: Tanner Bauer
+  climbing_history_id: 2118
+  sends:
+  - discipline: boulder
+    route: Hipster Whale
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3587
+  - discipline: boulder
+    route: The Quintessential
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3471
+- name: Taylor McNeill
+  climbing_history_id: 977
+  sends:
+  - discipline: boulder
+    route: Moonlight Sonata
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1596
+  - discipline: boulder
+    route: The Right (via Freedom)
+    grade: 8B
+    year: null
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3616
+- name: Thilo Schröter
+  climbing_history_id: 961
+  sends:
+  - discipline: boulder
+    route: Spray and Pray
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5747
+  - discipline: boulder
+    route: Tsunami
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4010
+  - discipline: boulder
+    route: Nagual
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1652
+  - discipline: boulder
+    route: The Arch
+    grade: 8B
+    year: 2018
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3631
+  - discipline: boulder
+    route: Monkey Business
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3581
+- name: Tim Reuser
+  climbing_history_id: 1525
+  sends:
+  - discipline: boulder
+    route: Crumble Fish SDS
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3848
+  - discipline: boulder
+    route: La Révolutionnaire
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1547
+- name: Timo Užnik
+  climbing_history_id: 2722
+  sends:
+  - discipline: boulder
+    route: Stairway to Heaven Level 2
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 5120
+- name: Tom Bolger
+  climbing_history_id: 134
+  sends:
+  - discipline: sport
+    route: E.L.L.I.E
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 3273
+- name: Tomoa Narasaki
+  climbing_history_id: 672
+  sends:
+  - discipline: boulder
+    route: Gakidō
+    grade: 8B+
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1831
+  - discipline: boulder
+    route: Decided
+    grade: 8B+
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2811
+- name: Toru Nakajima
+  climbing_history_id: 715
+  sends:
+  - discipline: boulder
+    route: Regret
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3246
+  - discipline: boulder
+    route: Epitaph
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1846
+- name: Tristan Chen
+  climbing_history_id: 1347
+  sends:
+  - discipline: boulder
+    route: Crown of Aragorn
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 747
+  - discipline: boulder
+    route: L'Insoutenable Légèreté de l'être
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2007
+- name: Tyler Landman
+  climbing_history_id: 249
+  sends:
+  - discipline: boulder
+    route: Cullinan
+    grade: 8B
+    year: 2008
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3597
+- name: Vadim Timonov
+  climbing_history_id: 837
+  sends:
+  - discipline: boulder
+    route: Blackflip SDS
+    grade: 9A
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2532
+  - discipline: boulder
+    route: Cosmic Artifact
+    grade: 8B+
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2619
+  - discipline: boulder
+    route: Mirta
+    grade: 8B+
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2653
+  - discipline: boulder
+    route: Lazarus
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2003
+  - discipline: boulder
+    route: Elephunk
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 204
+  - discipline: boulder
+    route: Guest List
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1417
+  - discipline: boulder
+    route: PFC
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3612
+  - discipline: boulder
+    route: Hipster Whale
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3587
+  - discipline: boulder
+    route: The Arch
+    grade: 8B
+    year: 2019
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3631
+  - discipline: boulder
+    route: The Quintessential
+    grade: 8B
+    year: 2016
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3471
+- name: Vita Lukan
+  climbing_history_id: 1078
+  sends:
+  - discipline: sport
+    route: Géminis
+    grade: 8b+
+    year: 2021
+    style: onsight
+    fa: false
+    climbing_history_climb_id: 1512
+- name: Will Bosi
+  climbing_history_id: 132
+  sends:
+  - discipline: boulder
+    route: Pôr do Sol
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 6831
+  - discipline: boulder
+    route: The Navigator
+    grade: 8B
+    year: 2026
+    style: flash
+    fa: false
+    climbing_history_climb_id: 6833
+  - discipline: sport
+    route: Excalibur
+    grade: 9b+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2384
+  - discipline: boulder
+    route: Realm of Tor’ment
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 5246
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: Spots of Time
+    grade: 9A
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2862
+  - discipline: boulder
+    route: Dune
+    grade: 8B+
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2927
+  - discipline: boulder
+    route: Janja SD
+    grade: 8B+
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 4077
+  - discipline: boulder
+    route: Rustam Direct
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3636
+  - discipline: boulder
+    route: Burden of Dreams
+    grade: 9A
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 826
+  - discipline: boulder
+    route: The Wild South
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2482
+  - discipline: boulder
+    route: Isles of Wonder SDS
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1989
+  - discipline: boulder
+    route: Graceland
+    grade: 8B+
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2389
+  - discipline: boulder
+    route: Godzilla SDS
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 191
+  - discipline: boulder
+    route: Alphane
+    grade: 9A
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1919
+  - discipline: boulder
+    route: Honey Badger
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2000
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Charizard
+    grade: 8B+
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1881
+  - discipline: boulder
+    route: 4X+1
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1817
+  - discipline: boulder
+    route: Sviní Mor
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1873
+  - discipline: boulder
+    route: Vecchio Leone
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 180
+  - discipline: boulder
+    route: The Dagger
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 683
+  - discipline: boulder
+    route: Flash Flood
+    grade: 8B
+    year: 2022
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2248
+  - discipline: sport
+    route: King Capella
+    grade: 9b
+    year: 2021
+    style: redpoint
+    fa: true
+    climbing_history_climb_id: 1108
+  - discipline: boulder
+    route: Isla de Encanta
+    grade: 8B
+    year: 2020
+    style: flash
+    fa: false
+    climbing_history_climb_id: 199
+- name: Will Fraker
+  climbing_history_id: 2193
+  sends:
+  - discipline: boulder
+    route: Iron Resolution
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3589
+- name: Yannick Flohé
+  climbing_history_id: 1202
+  sends:
+  - discipline: sport
+    route: Excalibur
+    grade: 9b+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2384
+  - discipline: sport
+    route: Ratstaman Vibrations
+    grade: 9b
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1991
+  - discipline: boulder
+    route: The Story of Three Worlds
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1980
+  - discipline: boulder
+    route: Foundation's Edge
+    grade: 8C
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 841
+  - discipline: boulder
+    route: Ephyra
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1132
+  - discipline: boulder
+    route: Return of the Dreamtime
+    grade: 8C+
+    year: 2023
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 2380
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: Wrestling With an Alligator
+    grade: 8B
+    year: 2021
+    style: flash
+    fa: false
+    climbing_history_climb_id: 1832
+- name: Yannis Gautier
+  climbing_history_id: 1992
+  sends:
+  - discipline: boulder
+    route: Jump in the Fire
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 6296
+- name: Yu Okumura
+  climbing_history_id: 1507
+  sends:
+  - discipline: sport
+    route: Stoking the Fire
+    grade: 9b
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 502
+- name: Yuta Imaizumi
+  climbing_history_id: 1444
+  sends:
+  - discipline: boulder
+    route: Off the Wagon Low
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 830
+  - discipline: boulder
+    route: Floatin
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1691
+  - discipline: boulder
+    route: Nayuta
+    grade: 8C+
+    year: 2022
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1961
+- name: Zach Galla
+  climbing_history_id: 1116
+  sends:
+  - discipline: boulder
+    route: Megatron
+    grade: 9A
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1147
+  - discipline: boulder
+    route: Devilution
+    grade: 8C+
+    year: 2026
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 3051
+  - discipline: boulder
+    route: Shaolin
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4136
+  - discipline: boulder
+    route: Return of the Sleepwalker
+    grade: 9A
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1116
+  - discipline: boulder
+    route: Hypnotized Minds
+    grade: 8C+
+    year: 2025
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 580
+  - discipline: boulder
+    route: Army of the Dead
+    grade: 8B
+    year: 2025
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3313
+  - discipline: boulder
+    route: The Process
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1151
+  - discipline: boulder
+    route: Sosa
+    grade: 8C+
+    year: 2024
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 4334
+  - discipline: boulder
+    route: Shelter
+    grade: 8B
+    year: 2024
+    style: flash
+    fa: false
+    climbing_history_climb_id: 3775
+  - discipline: boulder
+    route: Blood Meridian
+    grade: 8B
+    year: 2023
+    style: flash
+    fa: false
+    climbing_history_climb_id: 2297
+  - discipline: boulder
+    route: Grand Illusion
+    grade: 8C+
+    year: 2021
+    style: redpoint
+    fa: false
+    climbing_history_climb_id: 1285

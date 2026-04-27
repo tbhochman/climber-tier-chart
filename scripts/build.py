@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 """
-Build data.json from climbers.yaml.
+Build data.json from climbers.yaml + config.yaml.
 
-Produces a JSON file consumed by index.html that contains:
-  - Sport leaderboard (all-time + current)
-  - Boulder leaderboard (all-time + current)
-  - Overall leaderboard (all-time + current)
+Scoring (per discipline):
+  redpoint_score = sum( top_N hardest qualifying sends, weighted by grade points )
+  flash_score    = sum( top_M hardest qualifying flashes, weighted by grade points )
+  total_score    = redpoint_score + flash_multiplier * flash_score
 
-Ranking criteria (in order, applied per leaderboard):
-  1. Highest single-send difficulty
-  2. Number of "hard" sends (V15+/9a+)
-  3. Highest single-flash difficulty (flash or onsight)
-  4. Number of "hard" flashes
+Overall leaderboard adds sport_score + boulder_score per climber.
 
 Run from repo root:
   python scripts/build.py
@@ -23,171 +19,243 @@ import json
 import sys
 from pathlib import Path
 
-try:
-    import yaml
-except ImportError:
-    sys.stderr.write(
-        "PyYAML is required. Install with: pip install pyyaml\n"
-    )
-    sys.exit(1)
+import yaml
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-YAML_PATH = REPO_ROOT / "climbers.yaml"
+CLIMBERS_PATH = REPO_ROOT / "climbers.yaml"
+CONFIG_PATH = REPO_ROOT / "config.yaml"
 JSON_PATH = REPO_ROOT / "data.json"
 
 
 # ---------------------------------------------------------------------
-# Grade scales — unified numeric "difficulty index" so we can rank
-# across disciplines for the Overall leaderboard.
-#
-# Anchor points (consensus equivalence used by 8a / climbing-history):
-#   V15 / 8C     ~  9a
-#   V16 / 8C+    ~  9a+ / 9b
-#   V17 / 9A     ~  9b / 9b+
-#   V18 / 9A+    ~  9b+ / 9c
+# Grade ordering — for hardest_send / hardest_flash display, and for
+# applying the qualifying threshold. Higher index = harder.
 # ---------------------------------------------------------------------
-BOULDER_INDEX = {
-    "V15": 15.0, "8C":   15.0,
-    "V16": 16.0, "8C+":  16.0,
-    "V17": 17.0, "9A":   17.0,
-    "V18": 18.0, "9A+":  18.0,
+SPORT_ORDER = ["7a", "7a+", "7b", "7b+", "7c", "7c+",
+               "8a", "8a+", "8b", "8b+", "8c", "8c+",
+               "9a", "9a+", "9b", "9b+", "9c", "9c+"]
+BOULDER_ORDER = ["V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15",
+                 "V16", "V17", "V18", "V19"]
+FONT_ORDER    = ["7C", "7C+", "8A", "8A+", "8B", "8B+",
+                 "8C", "8C+", "9A", "9A+", "9B"]
+
+# Boulder grade aliases (Font ↔ V).
+FONT_TO_V = {
+    "7C": "V9", "7C+": "V10", "8A": "V11", "8A+": "V12",
+    "8B": "V13", "8B+": "V14", "8C": "V15", "8C+": "V16",
+    "9A": "V17", "9A+": "V18", "9B": "V19",
 }
-SPORT_INDEX = {
-    "9a":   15.0,
-    "9a+":  16.0,
-    "9b":   17.0,
-    "9b+":  18.0,
-    "9c":   19.0,
-    "9c+":  20.0,
-}
-
-GRADE_DISPLAY_BOULDER = {15: "V15", 16: "V16", 17: "V17", 18: "V18"}
-GRADE_DISPLAY_SPORT = {15: "9a", 16: "9a+", 17: "9b", 18: "9b+", 19: "9c", 20: "9c+"}
 
 
-def grade_index(send: dict) -> float:
-    """Return the unified difficulty index for a send."""
-    g = str(send.get("grade", "")).strip()
-    if send["discipline"] == "boulder":
-        return BOULDER_INDEX.get(g, BOULDER_INDEX.get(send.get("font_grade", ""), 0.0))
-    return SPORT_INDEX.get(g, 0.0)
+def normalize_grade(grade: str, discipline: str) -> str:
+    g = grade.strip()
+    if discipline == "boulder" and g in FONT_TO_V:
+        return FONT_TO_V[g]
+    return g
 
 
-def is_flash(send: dict) -> bool:
+def grade_rank(grade: str, discipline: str) -> int:
+    """Numeric ordering. Higher = harder. -1 if unknown."""
+    g = normalize_grade(grade, discipline)
+    order = BOULDER_ORDER if discipline == "boulder" else SPORT_ORDER
+    return order.index(g) if g in order else -1
+
+
+def is_flash_style(send: dict) -> bool:
     return send.get("style") in ("flash", "onsight")
 
 
-def grade_label(idx: float, discipline: str) -> str:
-    """Pretty grade label from index, e.g. 17.0 boulder -> 'V17'."""
-    if idx <= 0:
-        return "—"
-    i = int(round(idx))
-    if discipline == "boulder":
-        return GRADE_DISPLAY_BOULDER.get(i, f"V{i}")
-    return GRADE_DISPLAY_SPORT.get(i, "?")
-
-
-def hard_threshold(discipline: str, threshold_cfg: dict) -> float:
-    """Convert threshold config (V15 / 9a+) to a numeric index."""
-    if discipline == "boulder":
-        return BOULDER_INDEX.get(threshold_cfg["boulder"], 15.0)
-    return SPORT_INDEX.get(threshold_cfg["sport"], 16.0)
-
-
 # ---------------------------------------------------------------------
-# Per-climber stats for one (discipline-set, scope) combination.
-# ---------------------------------------------------------------------
-def compute_stats(
-    climber: dict,
-    *,
-    disciplines: set[str],         # e.g. {"sport"} or {"sport","boulder"}
-    year_cutoff: int | None,        # inclusive; None = all-time
-    threshold_cfg: dict,
-) -> dict | None:
-    """Aggregate stats for a single climber and the requested filter.
+def load_inputs():
+    with open(CLIMBERS_PATH) as f:
+        climbers_raw = yaml.safe_load(f)
+    with open(CONFIG_PATH) as f:
+        cfg_raw = yaml.safe_load(f)
+    return climbers_raw, cfg_raw["config"]
 
-    Returns None if the climber has zero qualifying sends in scope.
+
+def grade_points(grade: str, discipline: str, cfg: dict) -> float:
+    table = cfg["sport_points"] if discipline == "sport" else cfg["boulder_points"]
+    g = normalize_grade(grade, discipline)
+    if g in table:
+        return float(table[g])
+    # Boulder: try Font alias as a fallback.
+    if discipline == "boulder" and grade in table:
+        return float(table[grade])
+    return 0.0
+
+
+def meets_threshold(send: dict, cfg: dict) -> tuple[bool, bool]:
+    """Return (qualifies_as_redpoint, qualifies_as_flash) for this send."""
+    discipline = send["discipline"]
+    grade = send["grade"]
+    rank = grade_rank(grade, discipline)
+    if rank < 0:
+        return False, False
+
+    rp_threshold_grade = cfg["thresholds"][f"{discipline}_redpoint"]
+    fl_threshold_grade = cfg["thresholds"][f"{discipline}_flash"]
+    rp_threshold = grade_rank(rp_threshold_grade, discipline)
+    fl_threshold = grade_rank(fl_threshold_grade, discipline)
+
+    qualifies_rp = rank >= rp_threshold
+    qualifies_fl = rank >= fl_threshold and is_flash_style(send)
+    return qualifies_rp, qualifies_fl
+
+
+def score_climber_in_discipline(
+    sends: list[dict], discipline: str, cfg: dict
+) -> dict:
+    """Compute the score for one climber in one discipline.
+
+    Returns a dict with score, sub-scores, hardest send / flash, counts,
+    and the qualifying sends list.
     """
-    sends = []
-    for s in climber.get("sends", []):
-        if s["discipline"] not in disciplines:
+    rp_pts: list[tuple[float, dict]] = []
+    fl_pts: list[tuple[float, dict]] = []
+    qualifying: list[dict] = []
+
+    for s in sends:
+        if s["discipline"] != discipline:
             continue
-        if year_cutoff is not None and int(s.get("year", 0)) < year_cutoff:
-            continue
-        sends.append(s)
+        qrp, qfl = meets_threshold(s, cfg)
+        pts = grade_points(s["grade"], discipline, cfg)
+        if qrp:
+            rp_pts.append((pts, s))
+            qualifying.append(s)
+        if qfl:
+            fl_pts.append((pts, s))
+            # Make sure flash-only sends (below redpoint floor) are still
+            # surfaced in the route list.
+            if not qrp:
+                qualifying.append(s)
 
-    if not sends:
-        return None
+    rp_pts.sort(key=lambda x: x[0], reverse=True)
+    fl_pts.sort(key=lambda x: x[0], reverse=True)
 
-    # Compute the four ranking metrics.
-    hardest_send = max(sends, key=grade_index)
-    hardest_send_idx = grade_index(hardest_send)
+    top_sends = rp_pts[: int(cfg["top_n_sends"])]
+    top_flashes = fl_pts[: int(cfg["top_n_flashes"])]
 
-    flashes = [s for s in sends if is_flash(s)]
-    if flashes:
-        hardest_flash = max(flashes, key=grade_index)
-        hardest_flash_idx = grade_index(hardest_flash)
-    else:
-        hardest_flash = None
-        hardest_flash_idx = 0.0
+    redpoint_score = sum(p for p, _ in top_sends)
+    flash_score    = sum(p for p, _ in top_flashes)
+    total_score    = redpoint_score + float(cfg["flash_multiplier"]) * flash_score
 
-    # "Hard" = at or above threshold for the discipline.
-    def is_hard(s: dict) -> bool:
-        return grade_index(s) >= hard_threshold(s["discipline"], threshold_cfg)
+    def hardest(items):
+        if not items:
+            return None
+        # Items are (points, send); items are sorted by points desc.
+        return items[0][1]
 
-    hard_sends = [s for s in sends if is_hard(s)]
-    hard_flashes = [s for s in flashes if is_hard(s)]
-
-    # Display strings for the table.
-    def display(s: dict) -> str:
-        if not s:
-            return "—"
-        grade = s.get("grade", "")
-        return f"{s.get('route','?')} ({grade})"
+    hardest_send  = hardest(rp_pts)
+    hardest_flash = hardest(fl_pts)
 
     return {
-        "name": climber["name"],
-        "country": climber.get("country", ""),
-        "gender": climber.get("gender", ""),
-        # Sort keys
-        "hardest_send_idx": round(hardest_send_idx, 3),
-        "hard_send_count": len(hard_sends),
-        "hardest_flash_idx": round(hardest_flash_idx, 3),
-        "hard_flash_count": len(hard_flashes),
-        # Display fields
-        "hardest_send": {
-            "route": hardest_send.get("route", ""),
-            "grade": hardest_send.get("grade", ""),
-            "year": hardest_send.get("year", ""),
-            "fa": bool(hardest_send.get("fa", False)),
-            "discipline": hardest_send["discipline"],
-        },
-        "hardest_flash": (
-            {
-                "route": hardest_flash.get("route", ""),
-                "grade": hardest_flash.get("grade", ""),
-                "year": hardest_flash.get("year", ""),
-                "style": hardest_flash.get("style", ""),
-                "discipline": hardest_flash["discipline"],
-            }
-            if hardest_flash
-            else None
+        "score":          round(total_score, 2),
+        "redpoint_score": round(redpoint_score, 2),
+        "flash_score":    round(flash_score, 2),
+        "hard_send_count":   len(rp_pts),
+        "hard_flash_count":  len(fl_pts),
+        "hardest_send":  _summarize(hardest_send),
+        "hardest_flash": _summarize(hardest_flash),
+        "qualifying_sends": sorted(
+            qualifying,
+            key=lambda s: (
+                -grade_rank(s["grade"], s["discipline"]),
+                -(s.get("year") or 0),
+            ),
         ),
-        # Full qualifying sends so the row can expand to show details.
-        "sends": sends,
     }
 
 
-def rank_leaderboard(rows: list[dict]) -> list[dict]:
-    """Sort rows using the 4-tier criteria and assign ranks."""
+def _summarize(s: dict | None) -> dict | None:
+    if not s:
+        return None
+    return {
+        "route":      s.get("route", ""),
+        "grade":      s.get("grade", ""),
+        "year":       s.get("year"),
+        "fa":         bool(s.get("fa", False)),
+        "style":      s.get("style", "redpoint"),
+        "discipline": s["discipline"],
+    }
+
+
+def filter_sends_by_year(sends: list[dict], year_cutoff: int | None) -> list[dict]:
+    if year_cutoff is None:
+        return sends
+    return [s for s in sends if (s.get("year") or 0) >= year_cutoff]
+
+
+def build_one_leaderboard(
+    climbers: list[dict],
+    *,
+    discipline: str | None,    # None = overall
+    year_cutoff: int | None,
+    cfg: dict,
+) -> list[dict]:
+    rows: list[dict] = []
+    for c in climbers:
+        sends = filter_sends_by_year(c.get("sends") or [], year_cutoff)
+        if not sends:
+            continue
+
+        if discipline in ("sport", "boulder"):
+            stats = score_climber_in_discipline(sends, discipline, cfg)
+            if stats["score"] <= 0:
+                continue
+            rows.append({
+                "name":  c["name"],
+                "climbing_history_id": c.get("climbing_history_id"),
+                **stats,
+            })
+        else:
+            sport = score_climber_in_discipline(sends, "sport", cfg)
+            boulder = score_climber_in_discipline(sends, "boulder", cfg)
+            total = sport["score"] + boulder["score"]
+            if total <= 0:
+                continue
+            # Pick the discipline-hardest send overall to display.
+            candidates = [sport["hardest_send"], boulder["hardest_send"]]
+            candidates = [c for c in candidates if c]
+            hardest = max(
+                candidates,
+                key=lambda s: grade_rank(s["grade"], s["discipline"]),
+                default=None,
+            )
+            flashes = [sport["hardest_flash"], boulder["hardest_flash"]]
+            flashes = [f for f in flashes if f]
+            hardest_flash = max(
+                flashes,
+                key=lambda s: grade_rank(s["grade"], s["discipline"]),
+                default=None,
+            )
+            qualifying = sport["qualifying_sends"] + boulder["qualifying_sends"]
+            qualifying.sort(
+                key=lambda s: (
+                    -grade_rank(s["grade"], s["discipline"]),
+                    -(s.get("year") or 0),
+                ),
+            )
+            rows.append({
+                "name": c["name"],
+                "climbing_history_id": c.get("climbing_history_id"),
+                "score": round(total, 2),
+                "sport_score":   sport["score"],
+                "boulder_score": boulder["score"],
+                "hard_send_count":  sport["hard_send_count"] + boulder["hard_send_count"],
+                "hard_flash_count": sport["hard_flash_count"] + boulder["hard_flash_count"],
+                "hardest_send":  hardest,
+                "hardest_flash": hardest_flash,
+                "qualifying_sends": qualifying,
+            })
+
     rows.sort(
         key=lambda r: (
-            -r["hardest_send_idx"],
-            -r["hard_send_count"],
-            -r["hardest_flash_idx"],
-            -r["hard_flash_count"],
-            r["name"].lower(),  # final stable tiebreak
+            -r["score"],
+            -(grade_rank(r["hardest_send"]["grade"], r["hardest_send"]["discipline"])
+              if r.get("hardest_send") else -1),
+            r["name"].lower(),
         )
     )
     for i, r in enumerate(rows, start=1):
@@ -195,101 +263,51 @@ def rank_leaderboard(rows: list[dict]) -> list[dict]:
     return rows
 
 
-def build_leaderboard(
-    climbers: list[dict],
-    *,
-    disciplines: set[str],
-    year_cutoff: int | None,
-    threshold_cfg: dict,
-    size: int,
-) -> list[dict]:
-    rows: list[dict] = []
-    for c in climbers:
-        stats = compute_stats(
-            c,
-            disciplines=disciplines,
-            year_cutoff=year_cutoff,
-            threshold_cfg=threshold_cfg,
-        )
-        if stats:
-            rows.append(stats)
-    rank_leaderboard(rows)
-    return rows[:size]
-
-
 def main() -> None:
-    if not YAML_PATH.exists():
-        sys.stderr.write(f"climbers.yaml not found at {YAML_PATH}\n")
-        sys.exit(1)
-
-    with open(YAML_PATH) as f:
-        raw = yaml.safe_load(f)
-
-    cfg = raw.get("config", {}) or {}
-    threshold_cfg = cfg.get("hard_threshold", {}) or {}
-    threshold_cfg.setdefault("boulder", "V15")
-    threshold_cfg.setdefault("sport", "9a+")
-    leaderboard_size = int(cfg.get("leaderboard_size", 30))
-    current_years = int(cfg.get("current_years", 3))
-
-    climbers = raw.get("climbers", []) or []
-
-    # Validate: every send needs at least a discipline + grade + year.
-    for c in climbers:
-        for s in c.get("sends", []):
-            if "discipline" not in s or "grade" not in s:
-                sys.stderr.write(
-                    f"Bad send for {c.get('name')}: {s}\n"
-                )
+    climbers_raw, cfg = load_inputs()
+    climbers = climbers_raw.get("climbers", []) or []
 
     today = dt.date.today()
-    # "last N years" = sends from (current_year - N) onward, inclusive.
-    # In April 2026 with N=3 this gives 2023+, ~3 years of elapsed time.
+    current_years = int(cfg.get("current_years", 3))
     current_cutoff = today.year - current_years
+    leaderboard_size = int(cfg.get("leaderboard_size", 30))
 
     leaderboards = {}
-    for board_id, disciplines in (
-        ("sport", {"sport"}),
-        ("boulder", {"boulder"}),
-        ("overall", {"sport", "boulder"}),
+    for board_id, discipline in (
+        ("sport", "sport"),
+        ("boulder", "boulder"),
+        ("overall", None),
     ):
         leaderboards[board_id] = {
-            "all_time": build_leaderboard(
-                climbers,
-                disciplines=disciplines,
-                year_cutoff=None,
-                threshold_cfg=threshold_cfg,
-                size=leaderboard_size,
-            ),
-            "current": build_leaderboard(
-                climbers,
-                disciplines=disciplines,
-                year_cutoff=current_cutoff,
-                threshold_cfg=threshold_cfg,
-                size=leaderboard_size,
-            ),
+            "all_time": build_one_leaderboard(
+                climbers, discipline=discipline, year_cutoff=None, cfg=cfg,
+            )[:leaderboard_size],
+            "current": build_one_leaderboard(
+                climbers, discipline=discipline, year_cutoff=current_cutoff, cfg=cfg,
+            )[:leaderboard_size],
         }
 
     out = {
         "generated_at": today.isoformat(),
+        "source": climbers_raw.get("_source", ""),
         "current_window": {
             "years": current_years,
             "from_year": current_cutoff,
         },
-        "thresholds": {
-            "boulder": threshold_cfg["boulder"],
-            "sport": threshold_cfg["sport"],
-        },
+        "thresholds":      cfg["thresholds"],
+        "top_n_sends":     cfg["top_n_sends"],
+        "top_n_flashes":   cfg["top_n_flashes"],
+        "flash_multiplier": cfg["flash_multiplier"],
         "leaderboard_size": leaderboard_size,
         "totals": {
             "climbers": len(climbers),
-            "sends": sum(len(c.get("sends", []) or []) for c in climbers),
+            "sends": sum(len(c.get("sends") or []) for c in climbers),
         },
         "leaderboards": leaderboards,
     }
 
     with open(JSON_PATH, "w") as f:
-        json.dump(out, f, indent=2, sort_keys=False)
+        json.dump(out, f, indent=2, sort_keys=False, ensure_ascii=False)
 
     print(f"Wrote {JSON_PATH}")
     print(f"  Climbers: {out['totals']['climbers']}")
