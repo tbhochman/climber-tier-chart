@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27",
+  "generated_at": "2026-05-01",
   "source": "climbing-history.org (per-climber ascents API)",
   "current_window": {
     "years": 3,
@@ -17,7 +17,7 @@
   "leaderboard_size": 30,
   "totals": {
     "climbers": 210,
-    "sends": 3836
+    "sends": 3848
   },
   "leaderboards": {
     "sport": {
@@ -261,21 +261,21 @@
             },
             {
               "discipline": "sport",
-              "route": "El Gran Cabrón",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 4716
-            },
-            {
-              "discipline": "sport",
               "route": "Vidra la Vida",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 5308
+            },
+            {
+              "discipline": "sport",
+              "route": "El Gran Cabrón",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 4716
             },
             {
               "discipline": "sport",
@@ -2168,21 +2168,21 @@
             },
             {
               "discipline": "sport",
-              "route": "El Gran Cabrón",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 4716
-            },
-            {
-              "discipline": "sport",
               "route": "Vidra la Vida",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 5308
+            },
+            {
+              "discipline": "sport",
+              "route": "El Gran Cabrón",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 4716
             },
             {
               "discipline": "sport",
@@ -5051,21 +5051,21 @@
             },
             {
               "discipline": "boulder",
-              "route": "No Kpote Only",
-              "grade": "8C+",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 827
-            },
-            {
-              "discipline": "boulder",
               "route": "Hypothèse (assis)",
               "grade": "8C+",
               "year": 2019,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 1549
+            },
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "8C+",
+              "year": 2019,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 827
             },
             {
               "discipline": "boulder",
@@ -8330,21 +8330,21 @@
             },
             {
               "discipline": "sport",
-              "route": "El Gran Cabrón",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 4716
-            },
-            {
-              "discipline": "sport",
               "route": "Vidra la Vida",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 5308
+            },
+            {
+              "discipline": "sport",
+              "route": "El Gran Cabrón",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 4716
             },
             {
               "discipline": "sport",
@@ -10123,21 +10123,21 @@
             },
             {
               "discipline": "boulder",
-              "route": "No Kpote Only",
-              "grade": "8C+",
-              "year": 2019,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 827
-            },
-            {
-              "discipline": "boulder",
               "route": "Hypothèse (assis)",
               "grade": "8C+",
               "year": 2019,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 1549
+            },
+            {
+              "discipline": "boulder",
+              "route": "No Kpote Only",
+              "grade": "8C+",
+              "year": 2019,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 827
             },
             {
               "discipline": "boulder",
@@ -11351,21 +11351,21 @@
             },
             {
               "discipline": "sport",
-              "route": "El Gran Cabrón",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 4716
-            },
-            {
-              "discipline": "sport",
               "route": "Vidra la Vida",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 5308
+            },
+            {
+              "discipline": "sport",
+              "route": "El Gran Cabrón",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 4716
             },
             {
               "discipline": "sport",
