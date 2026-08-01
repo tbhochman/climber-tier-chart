@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01",
+  "generated_at": "2026-08-01",
   "source": "climbing-history.org (per-climber ascents API)",
   "current_window": {
     "years": 3,
@@ -16,8 +16,8 @@
   "flash_multiplier": 1.0,
   "leaderboard_size": 30,
   "totals": {
-    "climbers": 214,
-    "sends": 4118
+    "climbers": 220,
+    "sends": 4199
   },
   "leaderboards": {
     "sport": {
@@ -714,7 +714,7 @@
           "scoring_send_count": 10,
           "scoring_flash_count": 5,
           "total_qualifying_sends": 13,
-          "total_qualifying_flashes": 11,
+          "total_qualifying_flashes": 12,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -724,9 +724,9 @@
             "discipline": "sport"
           },
           "hardest_flash": {
-            "route": "Mr. Big",
+            "route": "Baby Cakes",
             "grade": "9a",
-            "year": 2025,
+            "year": 2026,
             "fa": false,
             "style": "flash",
             "discipline": "sport"
@@ -824,6 +824,15 @@
             },
             {
               "discipline": "sport",
+              "route": "Baby Cakes",
+              "grade": "9a",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 3866
+            },
+            {
+              "discipline": "sport",
               "route": "Mr. Big",
               "grade": "9a",
               "year": 2025,
@@ -857,15 +866,6 @@
               "style": "onsight",
               "fa": false,
               "climbing_history_climb_id": 593
-            },
-            {
-              "discipline": "sport",
-              "route": "Estado Crítico",
-              "grade": "9a",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 98
             }
           ],
           "rank": 6
@@ -1643,13 +1643,13 @@
         {
           "name": "Laura Rogora",
           "climbing_history_id": 501,
-          "score": 6.97,
+          "score": 7.22,
           "redpoint_score": 6.47,
-          "flash_score": 0.5,
+          "flash_score": 0.75,
           "scoring_send_count": 1,
-          "scoring_flash_count": 2,
+          "scoring_flash_count": 3,
           "total_qualifying_sends": 1,
-          "total_qualifying_flashes": 2,
+          "total_qualifying_flashes": 3,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
@@ -1659,9 +1659,9 @@
             "discipline": "sport"
           },
           "hardest_flash": {
-            "route": "Ultimate Sacrifice",
+            "route": "Cosi Fan Tutte",
             "grade": "8c+",
-            "year": 2025,
+            "year": 2026,
             "fa": false,
             "style": "onsight",
             "discipline": "sport"
@@ -1675,6 +1675,15 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 678
+            },
+            {
+              "discipline": "sport",
+              "route": "Cosi Fan Tutte",
+              "grade": "8c+",
+              "year": 2026,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 1605
             },
             {
               "discipline": "sport",
@@ -1794,6 +1803,54 @@
           "rank": 23
         },
         {
+          "name": "Giovanni Placci",
+          "climbing_history_id": 1899,
+          "score": 6.72,
+          "redpoint_score": 6.47,
+          "flash_score": 0.25,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 1,
+          "hardest_send": {
+            "route": "Erebor",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "San Ku Kai",
+            "grade": "8c+",
+            "year": 2026,
+            "fa": false,
+            "style": "flash",
+            "discipline": "sport"
+          },
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 678
+            },
+            {
+              "discipline": "sport",
+              "route": "San Ku Kai",
+              "grade": "8c+",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 7663
+            }
+          ],
+          "rank": 24
+        },
+        {
           "name": "Piotr Schab",
           "climbing_history_id": 512,
           "score": 6.72,
@@ -1839,7 +1896,7 @@
               "climbing_history_climb_id": 2376
             }
           ],
-          "rank": 24
+          "rank": 25
         },
         {
           "name": "Alberto Ginés López",
@@ -1871,7 +1928,7 @@
               "climbing_history_climb_id": 564
             }
           ],
-          "rank": 25
+          "rank": 26
         },
         {
           "name": "Alessandro Zeni",
@@ -1903,7 +1960,7 @@
               "climbing_history_climb_id": 481
             }
           ],
-          "rank": 26
+          "rank": 27
         },
         {
           "name": "Alexander Feichter",
@@ -1935,7 +1992,7 @@
               "climbing_history_climb_id": 3110
             }
           ],
-          "rank": 27
+          "rank": 28
         },
         {
           "name": "Anak Verhoeven",
@@ -1967,7 +2024,7 @@
               "climbing_history_climb_id": 492
             }
           ],
-          "rank": 28
+          "rank": 29
         },
         {
           "name": "Buster Martin",
@@ -1997,38 +2054,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 2117
-            }
-          ],
-          "rank": 29
-        },
-        {
-          "name": "Cameron Hörst",
-          "climbing_history_id": 1399,
-          "score": 6.47,
-          "redpoint_score": 6.47,
-          "flash_score": 0,
-          "scoring_send_count": 1,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 1,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "Big Bone",
-            "grade": "9b",
-            "year": 2026,
-            "fa": true,
-            "style": "redpoint",
-            "discipline": "sport"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "sport",
-              "route": "Big Bone",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 7853
             }
           ],
           "rank": 30
@@ -2351,13 +2376,13 @@
         {
           "name": "Alex Megos",
           "climbing_history_id": 472,
-          "score": 46.54,
+          "score": 47.28,
           "redpoint_score": 45.3,
-          "flash_score": 1.24,
+          "flash_score": 1.98,
           "scoring_send_count": 5,
-          "scoring_flash_count": 3,
+          "scoring_flash_count": 4,
           "total_qualifying_sends": 5,
-          "total_qualifying_flashes": 3,
+          "total_qualifying_flashes": 4,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -2367,9 +2392,9 @@
             "discipline": "sport"
           },
           "hardest_flash": {
-            "route": "Mr. Big",
+            "route": "Baby Cakes",
             "grade": "9a",
-            "year": 2025,
+            "year": 2026,
             "fa": false,
             "style": "flash",
             "discipline": "sport"
@@ -2419,6 +2444,15 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 474
+            },
+            {
+              "discipline": "sport",
+              "route": "Baby Cakes",
+              "grade": "9a",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 3866
             },
             {
               "discipline": "sport",
@@ -2991,6 +3025,54 @@
           "rank": 17
         },
         {
+          "name": "Giovanni Placci",
+          "climbing_history_id": 1899,
+          "score": 6.72,
+          "redpoint_score": 6.47,
+          "flash_score": 0.25,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 1,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 1,
+          "hardest_send": {
+            "route": "Erebor",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "San Ku Kai",
+            "grade": "8c+",
+            "year": 2026,
+            "fa": false,
+            "style": "flash",
+            "discipline": "sport"
+          },
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 678
+            },
+            {
+              "discipline": "sport",
+              "route": "San Ku Kai",
+              "grade": "8c+",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 7663
+            }
+          ],
+          "rank": 18
+        },
+        {
           "name": "Alberto Ginés López",
           "climbing_history_id": 1004,
           "score": 6.47,
@@ -3020,7 +3102,7 @@
               "climbing_history_climb_id": 564
             }
           ],
-          "rank": 18
+          "rank": 19
         },
         {
           "name": "Anak Verhoeven",
@@ -3052,7 +3134,7 @@
               "climbing_history_climb_id": 492
             }
           ],
-          "rank": 19
+          "rank": 20
         },
         {
           "name": "Buster Martin",
@@ -3084,7 +3166,7 @@
               "climbing_history_climb_id": 2117
             }
           ],
-          "rank": 20
+          "rank": 21
         },
         {
           "name": "Cameron Hörst",
@@ -3116,7 +3198,7 @@
               "climbing_history_climb_id": 7853
             }
           ],
-          "rank": 21
+          "rank": 22
         },
         {
           "name": "Chris Sharma",
@@ -3148,7 +3230,7 @@
               "climbing_history_climb_id": 2449
             }
           ],
-          "rank": 22
+          "rank": 23
         },
         {
           "name": "Cédric Lachat",
@@ -3180,7 +3262,7 @@
               "climbing_history_climb_id": 2541
             }
           ],
-          "rank": 23
+          "rank": 24
         },
         {
           "name": "Domen Škofic",
@@ -3212,7 +3294,7 @@
               "climbing_history_climb_id": 474
             }
           ],
-          "rank": 24
+          "rank": 25
         },
         {
           "name": "Dylan Chuat",
@@ -3244,7 +3326,7 @@
               "climbing_history_climb_id": 474
             }
           ],
-          "rank": 25
+          "rank": 26
         },
         {
           "name": "Erwan Legrand",
@@ -3276,7 +3358,7 @@
               "climbing_history_climb_id": 4932
             }
           ],
-          "rank": 26
+          "rank": 27
         },
         {
           "name": "Felipe Camargo",
@@ -3308,7 +3390,7 @@
               "climbing_history_climb_id": 5827
             }
           ],
-          "rank": 27
+          "rank": 28
         },
         {
           "name": "Gabriele Moroni",
@@ -3335,38 +3417,6 @@
               "route": "Erebor",
               "grade": "9b",
               "year": 2023,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 678
-            }
-          ],
-          "rank": 28
-        },
-        {
-          "name": "Giovanni Placci",
-          "climbing_history_id": 1899,
-          "score": 6.47,
-          "redpoint_score": 6.47,
-          "flash_score": 0,
-          "scoring_send_count": 1,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 1,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "Erebor",
-            "grade": "9b",
-            "year": 2024,
-            "fa": false,
-            "style": "redpoint",
-            "discipline": "sport"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "sport",
-              "route": "Erebor",
-              "grade": "9b",
-              "year": 2024,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 678
@@ -3771,7 +3821,7 @@
           "flash_score": 0,
           "scoring_send_count": 10,
           "scoring_flash_count": 0,
-          "total_qualifying_sends": 11,
+          "total_qualifying_sends": 12,
           "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
@@ -3800,6 +3850,15 @@
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 1147
+            },
+            {
+              "discipline": "boulder",
+              "route": "Floatin",
+              "grade": "8C+",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1691
             },
             {
               "discipline": "boulder",
@@ -3863,15 +3922,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 850
-            },
-            {
-              "discipline": "boulder",
-              "route": "Creature from the Black Lagoon",
-              "grade": "8C+",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1091
             }
           ],
           "rank": 4
@@ -7177,6 +7227,65 @@
           "rank": 18
         },
         {
+          "name": "Shawn Raboutou",
+          "climbing_history_id": 671,
+          "score": 36.0,
+          "redpoint_score": 36.0,
+          "flash_score": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
+          "hardest_send": {
+            "route": "Floatin",
+            "grade": "8C+",
+            "year": 2026,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "scoring_sends": [
+            {
+              "discipline": "boulder",
+              "route": "Floatin",
+              "grade": "8C+",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1691
+            },
+            {
+              "discipline": "boulder",
+              "route": "United",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 832
+            },
+            {
+              "discipline": "boulder",
+              "route": "Devilution",
+              "grade": "8C+",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 3051
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Story of Three Worlds",
+              "grade": "8C+",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 1980
+            }
+          ],
+          "rank": 19
+        },
+        {
           "name": "Vadim Timonov",
           "climbing_history_id": 837,
           "score": 29.0,
@@ -7231,7 +7340,7 @@
               "climbing_history_climb_id": 2653
             }
           ],
-          "rank": 19
+          "rank": 20
         },
         {
           "name": "Charles Albert",
@@ -7263,7 +7372,7 @@
               "climbing_history_climb_id": 2942
             }
           ],
-          "rank": 20
+          "rank": 21
         },
         {
           "name": "Makoto Yamauchi",
@@ -7295,7 +7404,7 @@
               "climbing_history_climb_id": 826
             }
           ],
-          "rank": 21
+          "rank": 22
         },
         {
           "name": "Nathaniel Coleman",
@@ -7327,7 +7436,7 @@
               "climbing_history_climb_id": 4158
             }
           ],
-          "rank": 22
+          "rank": 23
         },
         {
           "name": "Sam Richard",
@@ -7359,7 +7468,7 @@
               "climbing_history_climb_id": 849
             }
           ],
-          "rank": 23
+          "rank": 24
         },
         {
           "name": "Francesco Berardino",
@@ -7409,7 +7518,7 @@
               "climbing_history_climb_id": 830
             }
           ],
-          "rank": 24
+          "rank": 25
         },
         {
           "name": "Matt Fultz",
@@ -7459,7 +7568,57 @@
               "climbing_history_climb_id": 2194
             }
           ],
-          "rank": 25
+          "rank": 26
+        },
+        {
+          "name": "Pablo Hammack",
+          "climbing_history_id": 883,
+          "score": 27.0,
+          "redpoint_score": 27.0,
+          "flash_score": 0,
+          "scoring_send_count": 3,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 3,
+          "total_qualifying_flashes": 0,
+          "hardest_send": {
+            "route": "Ear of Life",
+            "grade": "8C+",
+            "year": 2026,
+            "fa": true,
+            "style": "redpoint",
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "scoring_sends": [
+            {
+              "discipline": "boulder",
+              "route": "Ear of Life",
+              "grade": "8C+",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 7341
+            },
+            {
+              "discipline": "boulder",
+              "route": "Hypnotized Minds",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 580
+            },
+            {
+              "discipline": "boulder",
+              "route": "Creature from the Black Lagoon",
+              "grade": "8C+",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1091
+            }
+          ],
+          "rank": 27
         },
         {
           "name": "Ritsu Kayotani",
@@ -7509,7 +7668,7 @@
               "climbing_history_climb_id": 1691
             }
           ],
-          "rank": 26
+          "rank": 28
         },
         {
           "name": "Sam Weir",
@@ -7559,57 +7718,7 @@
               "climbing_history_climb_id": 1906
             }
           ],
-          "rank": 27
-        },
-        {
-          "name": "Shawn Raboutou",
-          "climbing_history_id": 671,
-          "score": 27.0,
-          "redpoint_score": 27.0,
-          "flash_score": 0,
-          "scoring_send_count": 3,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 3,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "United",
-            "grade": "8C+",
-            "year": 2025,
-            "fa": false,
-            "style": "redpoint",
-            "discipline": "boulder"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "boulder",
-              "route": "United",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 832
-            },
-            {
-              "discipline": "boulder",
-              "route": "Devilution",
-              "grade": "8C+",
-              "year": 2024,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 3051
-            },
-            {
-              "discipline": "boulder",
-              "route": "The Story of Three Worlds",
-              "grade": "8C+",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 1980
-            }
-          ],
-          "rank": 28
+          "rank": 29
         },
         {
           "name": "Andy Lamb",
@@ -7648,47 +7757,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 1341
-            }
-          ],
-          "rank": 29
-        },
-        {
-          "name": "Ben Hanna",
-          "climbing_history_id": 1980,
-          "score": 18.0,
-          "redpoint_score": 18.0,
-          "flash_score": 0,
-          "scoring_send_count": 2,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 2,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "Sosa",
-            "grade": "8C+",
-            "year": 2026,
-            "fa": false,
-            "style": "redpoint",
-            "discipline": "boulder"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "boulder",
-              "route": "Sosa",
-              "grade": "8C+",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 4334
-            },
-            {
-              "discipline": "boulder",
-              "route": "Grand Illusion",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1285
             }
           ],
           "rank": 30
@@ -8804,7 +8872,7 @@
           "flash_score": 0,
           "scoring_send_count": 10,
           "scoring_flash_count": 0,
-          "total_qualifying_sends": 11,
+          "total_qualifying_sends": 12,
           "total_qualifying_flashes": 0,
           "hardest_send": {
             "route": "Alphane",
@@ -8833,6 +8901,15 @@
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 1147
+            },
+            {
+              "discipline": "boulder",
+              "route": "Floatin",
+              "grade": "8C+",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1691
             },
             {
               "discipline": "boulder",
@@ -8896,15 +8973,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 850
-            },
-            {
-              "discipline": "boulder",
-              "route": "Creature from the Black Lagoon",
-              "grade": "8C+",
-              "year": 2018,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1091
             }
           ],
           "rank": 9
@@ -9330,7 +9398,7 @@
           "scoring_send_count": 10,
           "scoring_flash_count": 5,
           "total_qualifying_sends": 13,
-          "total_qualifying_flashes": 11,
+          "total_qualifying_flashes": 12,
           "hardest_send": {
             "route": "Change",
             "grade": "9b+",
@@ -9340,9 +9408,9 @@
             "discipline": "sport"
           },
           "hardest_flash": {
-            "route": "Mr. Big",
+            "route": "Baby Cakes",
             "grade": "9a",
-            "year": 2025,
+            "year": 2026,
             "fa": false,
             "style": "flash",
             "discipline": "sport"
@@ -9440,6 +9508,15 @@
             },
             {
               "discipline": "sport",
+              "route": "Baby Cakes",
+              "grade": "9a",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 3866
+            },
+            {
+              "discipline": "sport",
               "route": "Mr. Big",
               "grade": "9a",
               "year": 2025,
@@ -9473,15 +9550,6 @@
               "style": "onsight",
               "fa": false,
               "climbing_history_climb_id": 593
-            },
-            {
-              "discipline": "sport",
-              "route": "Estado Crítico",
-              "grade": "9a",
-              "year": 2012,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 98
             }
           ],
           "rank": 14
@@ -12188,6 +12256,117 @@
           "rank": 15
         },
         {
+          "name": "Alex Megos",
+          "climbing_history_id": 472,
+          "score": 47.28,
+          "redpoint_score": 45.3,
+          "flash_score": 1.98,
+          "scoring_send_count": 5,
+          "scoring_flash_count": 4,
+          "total_qualifying_sends": 5,
+          "total_qualifying_flashes": 4,
+          "hardest_send": {
+            "route": "Change",
+            "grade": "9b+",
+            "year": 2024,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "Baby Cakes",
+            "grade": "9a",
+            "year": 2026,
+            "fa": false,
+            "style": "flash",
+            "discipline": "sport"
+          },
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Change",
+              "grade": "9b+",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 469
+            },
+            {
+              "discipline": "sport",
+              "route": "Le Bruit de l’Acid",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 5170
+            },
+            {
+              "discipline": "sport",
+              "route": "Tuareg Blanco",
+              "grade": "9b",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 4492
+            },
+            {
+              "discipline": "sport",
+              "route": "Sleeping Lion",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 2449
+            },
+            {
+              "discipline": "sport",
+              "route": "Move",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 474
+            },
+            {
+              "discipline": "sport",
+              "route": "Baby Cakes",
+              "grade": "9a",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 3866
+            },
+            {
+              "discipline": "sport",
+              "route": "Mr. Big",
+              "grade": "9a",
+              "year": 2025,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 1009
+            },
+            {
+              "discipline": "sport",
+              "route": "Nadesdja",
+              "grade": "8c+",
+              "year": 2026,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 7209
+            },
+            {
+              "discipline": "sport",
+              "route": "Dévers Sévère",
+              "grade": "8c+",
+              "year": 2025,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 2218
+            }
+          ],
+          "rank": 16
+        },
+        {
           "name": "Nicolai Užnik",
           "climbing_history_id": 831,
           "score": 47.0,
@@ -12258,108 +12437,6 @@
               "style": "flash",
               "fa": false,
               "climbing_history_climb_id": 3408
-            }
-          ],
-          "rank": 16
-        },
-        {
-          "name": "Alex Megos",
-          "climbing_history_id": 472,
-          "score": 46.54,
-          "redpoint_score": 45.3,
-          "flash_score": 1.24,
-          "scoring_send_count": 5,
-          "scoring_flash_count": 3,
-          "total_qualifying_sends": 5,
-          "total_qualifying_flashes": 3,
-          "hardest_send": {
-            "route": "Change",
-            "grade": "9b+",
-            "year": 2024,
-            "fa": false,
-            "style": "redpoint",
-            "discipline": "sport"
-          },
-          "hardest_flash": {
-            "route": "Mr. Big",
-            "grade": "9a",
-            "year": 2025,
-            "fa": false,
-            "style": "flash",
-            "discipline": "sport"
-          },
-          "scoring_sends": [
-            {
-              "discipline": "sport",
-              "route": "Change",
-              "grade": "9b+",
-              "year": 2024,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 469
-            },
-            {
-              "discipline": "sport",
-              "route": "Le Bruit de l’Acid",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 5170
-            },
-            {
-              "discipline": "sport",
-              "route": "Tuareg Blanco",
-              "grade": "9b",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 4492
-            },
-            {
-              "discipline": "sport",
-              "route": "Sleeping Lion",
-              "grade": "9b",
-              "year": 2024,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 2449
-            },
-            {
-              "discipline": "sport",
-              "route": "Move",
-              "grade": "9b",
-              "year": 2024,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 474
-            },
-            {
-              "discipline": "sport",
-              "route": "Mr. Big",
-              "grade": "9a",
-              "year": 2025,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 1009
-            },
-            {
-              "discipline": "sport",
-              "route": "Nadesdja",
-              "grade": "8c+",
-              "year": 2026,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 7209
-            },
-            {
-              "discipline": "sport",
-              "route": "Dévers Sévère",
-              "grade": "8c+",
-              "year": 2025,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 2218
             }
           ],
           "rank": 17
@@ -12606,6 +12683,65 @@
           "rank": 22
         },
         {
+          "name": "Shawn Raboutou",
+          "climbing_history_id": 671,
+          "score": 36.0,
+          "redpoint_score": 36.0,
+          "flash_score": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
+          "hardest_send": {
+            "route": "Floatin",
+            "grade": "8C+",
+            "year": 2026,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "boulder"
+          },
+          "hardest_flash": null,
+          "scoring_sends": [
+            {
+              "discipline": "boulder",
+              "route": "Floatin",
+              "grade": "8C+",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1691
+            },
+            {
+              "discipline": "boulder",
+              "route": "United",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 832
+            },
+            {
+              "discipline": "boulder",
+              "route": "Devilution",
+              "grade": "8C+",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 3051
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Story of Three Worlds",
+              "grade": "8C+",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 1980
+            }
+          ],
+          "rank": 23
+        },
+        {
           "name": "Vadim Timonov",
           "climbing_history_id": 837,
           "score": 29.0,
@@ -12660,7 +12796,7 @@
               "climbing_history_climb_id": 2653
             }
           ],
-          "rank": 23
+          "rank": 24
         },
         {
           "name": "Charles Albert",
@@ -12692,7 +12828,7 @@
               "climbing_history_climb_id": 2942
             }
           ],
-          "rank": 24
+          "rank": 25
         },
         {
           "name": "Makoto Yamauchi",
@@ -12724,7 +12860,7 @@
               "climbing_history_climb_id": 826
             }
           ],
-          "rank": 25
+          "rank": 26
         },
         {
           "name": "Nathaniel Coleman",
@@ -12756,7 +12892,7 @@
               "climbing_history_climb_id": 4158
             }
           ],
-          "rank": 26
+          "rank": 27
         },
         {
           "name": "Sam Richard",
@@ -12788,7 +12924,7 @@
               "climbing_history_climb_id": 849
             }
           ],
-          "rank": 27
+          "rank": 28
         },
         {
           "name": "Francesco Berardino",
@@ -12838,7 +12974,7 @@
               "climbing_history_climb_id": 830
             }
           ],
-          "rank": 28
+          "rank": 29
         },
         {
           "name": "Matt Fultz",
@@ -12886,56 +13022,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 2194
-            }
-          ],
-          "rank": 29
-        },
-        {
-          "name": "Ritsu Kayotani",
-          "climbing_history_id": 2809,
-          "score": 27.0,
-          "redpoint_score": 27.0,
-          "flash_score": 0,
-          "scoring_send_count": 3,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 3,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "Tanpopo",
-            "grade": "8C+",
-            "year": 2026,
-            "fa": true,
-            "style": "redpoint",
-            "discipline": "boulder"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "boulder",
-              "route": "Tanpopo",
-              "grade": "8C+",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 7284
-            },
-            {
-              "discipline": "boulder",
-              "route": "Nexus",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1535
-            },
-            {
-              "discipline": "boulder",
-              "route": "Floatin",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1691
             }
           ],
           "rank": 30
