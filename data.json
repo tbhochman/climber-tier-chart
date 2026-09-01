@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01",
+  "generated_at": "2026-09-01",
   "source": "climbing-history.org (per-climber ascents API)",
   "current_window": {
     "years": 3,
@@ -16,8 +16,8 @@
   "flash_multiplier": 1.0,
   "leaderboard_size": 30,
   "totals": {
-    "climbers": 220,
-    "sends": 4199
+    "climbers": 221,
+    "sends": 4269
   },
   "leaderboards": {
     "sport": {
@@ -261,21 +261,21 @@
             },
             {
               "discipline": "sport",
-              "route": "Vidra la Vida",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 5308
-            },
-            {
-              "discipline": "sport",
               "route": "El Gran Cabrón",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 4716
+            },
+            {
+              "discipline": "sport",
+              "route": "Vidra la Vida",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 5308
             },
             {
               "discipline": "sport",
@@ -381,15 +381,6 @@
             },
             {
               "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
               "route": "Sleeping Lion",
               "grade": "9b",
               "year": 2024,
@@ -405,6 +396,15 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 474
+            },
+            {
+              "discipline": "sport",
+              "route": "Stoking the Fire",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 502
             },
             {
               "discipline": "sport",
@@ -1055,21 +1055,21 @@
             },
             {
               "discipline": "sport",
-              "route": "El Picacho",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 3111
-            },
-            {
-              "discipline": "sport",
               "route": "Delincuente Natural (extension)",
               "grade": "9b",
               "year": 2022,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 482
+            },
+            {
+              "discipline": "sport",
+              "route": "El Picacho",
+              "grade": "9b",
+              "year": 2022,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 3111
             },
             {
               "discipline": "sport",
@@ -1190,23 +1190,32 @@
         {
           "name": "Loïc Zehani",
           "climbing_history_id": 594,
-          "score": 38.82,
-          "redpoint_score": 38.82,
+          "score": 45.29,
+          "redpoint_score": 45.29,
           "flash_score": 0,
-          "scoring_send_count": 6,
+          "scoring_send_count": 7,
           "scoring_flash_count": 0,
-          "total_qualifying_sends": 6,
+          "total_qualifying_sends": 7,
           "total_qualifying_flashes": 0,
           "hardest_send": {
-            "route": "Brooklyn",
+            "route": "Harder Better Faster Stronger",
             "grade": "9b",
-            "year": 2023,
+            "year": 2024,
             "fa": true,
             "style": "redpoint",
             "discipline": "sport"
           },
           "hardest_flash": null,
           "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Harder Better Faster Stronger",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 8319
+            },
             {
               "discipline": "sport",
               "route": "Brooklyn",
@@ -1265,6 +1274,81 @@
           "rank": 11
         },
         {
+          "name": "Laura Rogora",
+          "climbing_history_id": 501,
+          "score": 26.64,
+          "redpoint_score": 25.89,
+          "flash_score": 0.75,
+          "scoring_send_count": 2,
+          "scoring_flash_count": 3,
+          "total_qualifying_sends": 2,
+          "total_qualifying_flashes": 3,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9b+",
+            "year": 2026,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "Cosi Fan Tutte",
+            "grade": "8c+",
+            "year": 2026,
+            "fa": false,
+            "style": "onsight",
+            "discipline": "sport"
+          },
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 466
+            },
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2021,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 678
+            },
+            {
+              "discipline": "sport",
+              "route": "Cosi Fan Tutte",
+              "grade": "8c+",
+              "year": 2026,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 1605
+            },
+            {
+              "discipline": "sport",
+              "route": "Ultimate Sacrifice",
+              "grade": "8c+",
+              "year": 2025,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 697
+            },
+            {
+              "discipline": "sport",
+              "route": "La Ligne Claire",
+              "grade": "8c+",
+              "year": 2025,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 923
+            }
+          ],
+          "rank": 12
+        },
+        {
           "name": "Will Bosi",
           "climbing_history_id": 132,
           "score": 25.89,
@@ -1303,7 +1387,7 @@
               "climbing_history_climb_id": 1108
             }
           ],
-          "rank": 12
+          "rank": 13
         },
         {
           "name": "Yannick Flohé",
@@ -1344,7 +1428,7 @@
               "climbing_history_climb_id": 1991
             }
           ],
-          "rank": 13
+          "rank": 14
         },
         {
           "name": "Sachi Amma",
@@ -1403,7 +1487,7 @@
               "climbing_history_climb_id": 486
             }
           ],
-          "rank": 14
+          "rank": 15
         },
         {
           "name": "Janja Garnbret",
@@ -1451,7 +1535,7 @@
               "climbing_history_climb_id": 6304
             }
           ],
-          "rank": 15
+          "rank": 16
         },
         {
           "name": "Brooke Raboutou",
@@ -1483,7 +1567,7 @@
               "climbing_history_climb_id": 2384
             }
           ],
-          "rank": 16
+          "rank": 17
         },
         {
           "name": "Leo Bøe",
@@ -1515,7 +1599,7 @@
               "climbing_history_climb_id": 469
             }
           ],
-          "rank": 17
+          "rank": 18
         },
         {
           "name": "Angela Eiter",
@@ -1556,7 +1640,7 @@
               "climbing_history_climb_id": 492
             }
           ],
-          "rank": 18
+          "rank": 19
         },
         {
           "name": "Enrique Beltrán Blasco",
@@ -1597,7 +1681,7 @@
               "climbing_history_climb_id": 3111
             }
           ],
-          "rank": 19
+          "rank": 20
         },
         {
           "name": "Felipe Camargo",
@@ -1638,32 +1722,32 @@
               "climbing_history_climb_id": 564
             }
           ],
-          "rank": 20
+          "rank": 21
         },
         {
-          "name": "Laura Rogora",
-          "climbing_history_id": 501,
-          "score": 7.22,
+          "name": "Giovanni Placci",
+          "climbing_history_id": 1899,
+          "score": 7.46,
           "redpoint_score": 6.47,
-          "flash_score": 0.75,
+          "flash_score": 0.99,
           "scoring_send_count": 1,
-          "scoring_flash_count": 3,
+          "scoring_flash_count": 2,
           "total_qualifying_sends": 1,
-          "total_qualifying_flashes": 3,
+          "total_qualifying_flashes": 2,
           "hardest_send": {
             "route": "Erebor",
             "grade": "9b",
-            "year": 2021,
+            "year": 2024,
             "fa": false,
             "style": "redpoint",
             "discipline": "sport"
           },
           "hardest_flash": {
-            "route": "Cosi Fan Tutte",
-            "grade": "8c+",
+            "route": "The Famous Gem",
+            "grade": "9a",
             "year": 2026,
             "fa": false,
-            "style": "onsight",
+            "style": "flash",
             "discipline": "sport"
           },
           "scoring_sends": [
@@ -1671,40 +1755,31 @@
               "discipline": "sport",
               "route": "Erebor",
               "grade": "9b",
-              "year": 2021,
+              "year": 2024,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 678
             },
             {
               "discipline": "sport",
-              "route": "Cosi Fan Tutte",
+              "route": "The Famous Gem",
+              "grade": "9a",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 8172
+            },
+            {
+              "discipline": "sport",
+              "route": "San Ku Kai",
               "grade": "8c+",
               "year": 2026,
-              "style": "onsight",
+              "style": "flash",
               "fa": false,
-              "climbing_history_climb_id": 1605
-            },
-            {
-              "discipline": "sport",
-              "route": "Ultimate Sacrifice",
-              "grade": "8c+",
-              "year": 2025,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 697
-            },
-            {
-              "discipline": "sport",
-              "route": "La Ligne Claire",
-              "grade": "8c+",
-              "year": 2025,
-              "style": "onsight",
-              "fa": false,
-              "climbing_history_climb_id": 923
+              "climbing_history_climb_id": 7663
             }
           ],
-          "rank": 21
+          "rank": 22
         },
         {
           "name": "Domen Škofic",
@@ -1752,7 +1827,7 @@
               "climbing_history_climb_id": 3749
             }
           ],
-          "rank": 22
+          "rank": 23
         },
         {
           "name": "Filip Schenk",
@@ -1798,54 +1873,6 @@
               "style": "flash",
               "fa": false,
               "climbing_history_climb_id": 78
-            }
-          ],
-          "rank": 23
-        },
-        {
-          "name": "Giovanni Placci",
-          "climbing_history_id": 1899,
-          "score": 6.72,
-          "redpoint_score": 6.47,
-          "flash_score": 0.25,
-          "scoring_send_count": 1,
-          "scoring_flash_count": 1,
-          "total_qualifying_sends": 1,
-          "total_qualifying_flashes": 1,
-          "hardest_send": {
-            "route": "Erebor",
-            "grade": "9b",
-            "year": 2024,
-            "fa": false,
-            "style": "redpoint",
-            "discipline": "sport"
-          },
-          "hardest_flash": {
-            "route": "San Ku Kai",
-            "grade": "8c+",
-            "year": 2026,
-            "fa": false,
-            "style": "flash",
-            "discipline": "sport"
-          },
-          "scoring_sends": [
-            {
-              "discipline": "sport",
-              "route": "Erebor",
-              "grade": "9b",
-              "year": 2024,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 678
-            },
-            {
-              "discipline": "sport",
-              "route": "San Ku Kai",
-              "grade": "8c+",
-              "year": 2026,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 7663
             }
           ],
           "rank": 24
@@ -2125,15 +2152,6 @@
             },
             {
               "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
               "route": "Sleeping Lion",
               "grade": "9b",
               "year": 2024,
@@ -2149,6 +2167,15 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 474
+            },
+            {
+              "discipline": "sport",
+              "route": "Stoking the Fire",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 502
             },
             {
               "discipline": "sport",
@@ -2227,21 +2254,21 @@
             },
             {
               "discipline": "sport",
-              "route": "Vidra la Vida",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 5308
-            },
-            {
-              "discipline": "sport",
               "route": "El Gran Cabrón",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 4716
+            },
+            {
+              "discipline": "sport",
+              "route": "Vidra la Vida",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 5308
             },
             {
               "discipline": "sport",
@@ -2594,6 +2621,131 @@
           "rank": 7
         },
         {
+          "name": "Loïc Zehani",
+          "climbing_history_id": 594,
+          "score": 25.88,
+          "redpoint_score": 25.88,
+          "flash_score": 0,
+          "scoring_send_count": 4,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 4,
+          "total_qualifying_flashes": 0,
+          "hardest_send": {
+            "route": "Harder Better Faster Stronger",
+            "grade": "9b",
+            "year": 2024,
+            "fa": true,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Harder Better Faster Stronger",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 8319
+            },
+            {
+              "discipline": "sport",
+              "route": "Brooklyn",
+              "grade": "9b",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 2442
+            },
+            {
+              "discipline": "sport",
+              "route": "Mossoul",
+              "grade": "9b",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 2474
+            },
+            {
+              "discipline": "sport",
+              "route": "Quartiers Nord",
+              "grade": "9b",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 2800
+            }
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Laura Rogora",
+          "climbing_history_id": 501,
+          "score": 20.17,
+          "redpoint_score": 19.42,
+          "flash_score": 0.75,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 3,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 3,
+          "hardest_send": {
+            "route": "Bibliographie",
+            "grade": "9b+",
+            "year": 2026,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "Cosi Fan Tutte",
+            "grade": "8c+",
+            "year": 2026,
+            "fa": false,
+            "style": "onsight",
+            "discipline": "sport"
+          },
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Bibliographie",
+              "grade": "9b+",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 466
+            },
+            {
+              "discipline": "sport",
+              "route": "Cosi Fan Tutte",
+              "grade": "8c+",
+              "year": 2026,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 1605
+            },
+            {
+              "discipline": "sport",
+              "route": "Ultimate Sacrifice",
+              "grade": "8c+",
+              "year": 2025,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 697
+            },
+            {
+              "discipline": "sport",
+              "route": "La Ligne Claire",
+              "grade": "8c+",
+              "year": 2025,
+              "style": "onsight",
+              "fa": false,
+              "climbing_history_climb_id": 923
+            }
+          ],
+          "rank": 9
+        },
+        {
           "name": "Janja Garnbret",
           "climbing_history_id": 1002,
           "score": 19.67,
@@ -2639,7 +2791,7 @@
               "climbing_history_climb_id": 6304
             }
           ],
-          "rank": 8
+          "rank": 10
         },
         {
           "name": "Brooke Raboutou",
@@ -2671,7 +2823,7 @@
               "climbing_history_climb_id": 2384
             }
           ],
-          "rank": 9
+          "rank": 11
         },
         {
           "name": "Leo Bøe",
@@ -2703,7 +2855,7 @@
               "climbing_history_climb_id": 469
             }
           ],
-          "rank": 10
+          "rank": 12
         },
         {
           "name": "Will Bosi",
@@ -2735,7 +2887,7 @@
               "climbing_history_climb_id": 2384
             }
           ],
-          "rank": 11
+          "rank": 13
         },
         {
           "name": "Jonathan Siegrist",
@@ -2785,57 +2937,7 @@
               "climbing_history_climb_id": 502
             }
           ],
-          "rank": 12
-        },
-        {
-          "name": "Loïc Zehani",
-          "climbing_history_id": 594,
-          "score": 19.41,
-          "redpoint_score": 19.41,
-          "flash_score": 0,
-          "scoring_send_count": 3,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 3,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "Brooklyn",
-            "grade": "9b",
-            "year": 2023,
-            "fa": true,
-            "style": "redpoint",
-            "discipline": "sport"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "sport",
-              "route": "Brooklyn",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 2442
-            },
-            {
-              "discipline": "sport",
-              "route": "Mossoul",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 2474
-            },
-            {
-              "discipline": "sport",
-              "route": "Quartiers Nord",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 2800
-            }
-          ],
-          "rank": 13
+          "rank": 14
         },
         {
           "name": "Enrique Beltrán Blasco",
@@ -2876,7 +2978,7 @@
               "climbing_history_climb_id": 3111
             }
           ],
-          "rank": 14
+          "rank": 15
         },
         {
           "name": "Jonatan Flor",
@@ -2917,7 +3019,7 @@
               "climbing_history_climb_id": 6388
             }
           ],
-          "rank": 15
+          "rank": 16
         },
         {
           "name": "Adam Ondra",
@@ -2974,7 +3076,64 @@
               "climbing_history_climb_id": 2838
             }
           ],
-          "rank": 16
+          "rank": 17
+        },
+        {
+          "name": "Giovanni Placci",
+          "climbing_history_id": 1899,
+          "score": 7.46,
+          "redpoint_score": 6.47,
+          "flash_score": 0.99,
+          "scoring_send_count": 1,
+          "scoring_flash_count": 2,
+          "total_qualifying_sends": 1,
+          "total_qualifying_flashes": 2,
+          "hardest_send": {
+            "route": "Erebor",
+            "grade": "9b",
+            "year": 2024,
+            "fa": false,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": {
+            "route": "The Famous Gem",
+            "grade": "9a",
+            "year": 2026,
+            "fa": false,
+            "style": "flash",
+            "discipline": "sport"
+          },
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Erebor",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 678
+            },
+            {
+              "discipline": "sport",
+              "route": "The Famous Gem",
+              "grade": "9a",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 8172
+            },
+            {
+              "discipline": "sport",
+              "route": "San Ku Kai",
+              "grade": "8c+",
+              "year": 2026,
+              "style": "flash",
+              "fa": false,
+              "climbing_history_climb_id": 7663
+            }
+          ],
+          "rank": 18
         },
         {
           "name": "Filip Schenk",
@@ -3022,55 +3181,7 @@
               "climbing_history_climb_id": 78
             }
           ],
-          "rank": 17
-        },
-        {
-          "name": "Giovanni Placci",
-          "climbing_history_id": 1899,
-          "score": 6.72,
-          "redpoint_score": 6.47,
-          "flash_score": 0.25,
-          "scoring_send_count": 1,
-          "scoring_flash_count": 1,
-          "total_qualifying_sends": 1,
-          "total_qualifying_flashes": 1,
-          "hardest_send": {
-            "route": "Erebor",
-            "grade": "9b",
-            "year": 2024,
-            "fa": false,
-            "style": "redpoint",
-            "discipline": "sport"
-          },
-          "hardest_flash": {
-            "route": "San Ku Kai",
-            "grade": "8c+",
-            "year": 2026,
-            "fa": false,
-            "style": "flash",
-            "discipline": "sport"
-          },
-          "scoring_sends": [
-            {
-              "discipline": "sport",
-              "route": "Erebor",
-              "grade": "9b",
-              "year": 2024,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 678
-            },
-            {
-              "discipline": "sport",
-              "route": "San Ku Kai",
-              "grade": "8c+",
-              "year": 2026,
-              "style": "flash",
-              "fa": false,
-              "climbing_history_climb_id": 7663
-            }
-          ],
-          "rank": 18
+          "rank": 19
         },
         {
           "name": "Alberto Ginés López",
@@ -3102,7 +3213,7 @@
               "climbing_history_climb_id": 564
             }
           ],
-          "rank": 19
+          "rank": 20
         },
         {
           "name": "Anak Verhoeven",
@@ -3134,7 +3245,7 @@
               "climbing_history_climb_id": 492
             }
           ],
-          "rank": 20
+          "rank": 21
         },
         {
           "name": "Buster Martin",
@@ -3166,7 +3277,7 @@
               "climbing_history_climb_id": 2117
             }
           ],
-          "rank": 21
+          "rank": 22
         },
         {
           "name": "Cameron Hörst",
@@ -3198,7 +3309,7 @@
               "climbing_history_climb_id": 7853
             }
           ],
-          "rank": 22
+          "rank": 23
         },
         {
           "name": "Chris Sharma",
@@ -3230,7 +3341,7 @@
               "climbing_history_climb_id": 2449
             }
           ],
-          "rank": 23
+          "rank": 24
         },
         {
           "name": "Cédric Lachat",
@@ -3262,7 +3373,7 @@
               "climbing_history_climb_id": 2541
             }
           ],
-          "rank": 24
+          "rank": 25
         },
         {
           "name": "Domen Škofic",
@@ -3294,7 +3405,7 @@
               "climbing_history_climb_id": 474
             }
           ],
-          "rank": 25
+          "rank": 26
         },
         {
           "name": "Dylan Chuat",
@@ -3326,7 +3437,7 @@
               "climbing_history_climb_id": 474
             }
           ],
-          "rank": 26
+          "rank": 27
         },
         {
           "name": "Erwan Legrand",
@@ -3358,7 +3469,7 @@
               "climbing_history_climb_id": 4932
             }
           ],
-          "rank": 27
+          "rank": 28
         },
         {
           "name": "Felipe Camargo",
@@ -3390,7 +3501,7 @@
               "climbing_history_climb_id": 5827
             }
           ],
-          "rank": 28
+          "rank": 29
         },
         {
           "name": "Gabriele Moroni",
@@ -3420,38 +3531,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 678
-            }
-          ],
-          "rank": 29
-        },
-        {
-          "name": "Jon Cardwell",
-          "climbing_history_id": 838,
-          "score": 6.47,
-          "redpoint_score": 6.47,
-          "flash_score": 0,
-          "scoring_send_count": 1,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 1,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "Wind Up Bird",
-            "grade": "9b",
-            "year": 2023,
-            "fa": true,
-            "style": "redpoint",
-            "discipline": "sport"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "sport",
-              "route": "Wind Up Bird",
-              "grade": "9b",
-              "year": 2023,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 2849
             }
           ],
           "rank": 30
@@ -4086,21 +4165,21 @@
             },
             {
               "discipline": "boulder",
-              "route": "The Story of Three Worlds",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1980
-            },
-            {
-              "discipline": "boulder",
               "route": "Vecchio Leone SDS",
               "grade": "8C+",
               "year": 2025,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 2194
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Story of Three Worlds",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1980
             },
             {
               "discipline": "boulder",
@@ -6165,21 +6244,21 @@
             },
             {
               "discipline": "boulder",
-              "route": "The Story of Three Worlds",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1980
-            },
-            {
-              "discipline": "boulder",
               "route": "Vecchio Leone SDS",
               "grade": "8C+",
               "year": 2025,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 2194
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Story of Three Worlds",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1980
             },
             {
               "discipline": "boulder",
@@ -7721,20 +7800,20 @@
           "rank": 29
         },
         {
-          "name": "Andy Lamb",
-          "climbing_history_id": 1032,
-          "score": 18.0,
-          "redpoint_score": 18.0,
+          "name": "Simone Tentori",
+          "climbing_history_id": 800,
+          "score": 27.0,
+          "redpoint_score": 27.0,
           "flash_score": 0,
-          "scoring_send_count": 2,
+          "scoring_send_count": 3,
           "scoring_flash_count": 0,
-          "total_qualifying_sends": 2,
+          "total_qualifying_sends": 3,
           "total_qualifying_flashes": 0,
           "hardest_send": {
-            "route": "Event Horizon",
+            "route": "Deep Fake",
             "grade": "8C+",
-            "year": 2024,
-            "fa": true,
+            "year": 2026,
+            "fa": false,
             "style": "redpoint",
             "discipline": "boulder"
           },
@@ -7742,21 +7821,30 @@
           "scoring_sends": [
             {
               "discipline": "boulder",
-              "route": "Event Horizon",
+              "route": "Deep Fake",
               "grade": "8C+",
-              "year": 2024,
+              "year": 2026,
               "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 3852
+              "fa": false,
+              "climbing_history_climb_id": 4374
             },
             {
               "discipline": "boulder",
-              "route": "Insomniac",
+              "route": "Sword of Damocles",
               "grade": "8C+",
-              "year": 2023,
+              "year": 2026,
               "style": "redpoint",
               "fa": false,
-              "climbing_history_climb_id": 1341
+              "climbing_history_climb_id": 4038
+            },
+            {
+              "discipline": "boulder",
+              "route": "Ephyra",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1132
             }
           ],
           "rank": 30
@@ -8085,21 +8173,21 @@
             },
             {
               "discipline": "boulder",
-              "route": "The Story of Three Worlds",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1980
-            },
-            {
-              "discipline": "boulder",
               "route": "Vecchio Leone SDS",
               "grade": "8C+",
               "year": 2025,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 2194
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Story of Three Worlds",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1980
             },
             {
               "discipline": "boulder",
@@ -8594,21 +8682,21 @@
             },
             {
               "discipline": "sport",
-              "route": "Vidra la Vida",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 5308
-            },
-            {
-              "discipline": "sport",
               "route": "El Gran Cabrón",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 4716
+            },
+            {
+              "discipline": "sport",
+              "route": "Vidra la Vida",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 5308
             },
             {
               "discipline": "sport",
@@ -8791,15 +8879,6 @@
             },
             {
               "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
               "route": "Sleeping Lion",
               "grade": "9b",
               "year": 2024,
@@ -8815,6 +8894,15 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 474
+            },
+            {
+              "discipline": "sport",
+              "route": "Stoking the Fire",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 502
             },
             {
               "discipline": "sport",
@@ -10575,21 +10663,21 @@
             },
             {
               "discipline": "sport",
-              "route": "El Picacho",
-              "grade": "9b",
-              "year": 2022,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 3111
-            },
-            {
-              "discipline": "sport",
               "route": "Delincuente Natural (extension)",
               "grade": "9b",
               "year": 2022,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 482
+            },
+            {
+              "discipline": "sport",
+              "route": "El Picacho",
+              "grade": "9b",
+              "year": 2022,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 3111
             },
             {
               "discipline": "sport",
@@ -10708,6 +10796,92 @@
           "rank": 27
         },
         {
+          "name": "Loïc Zehani",
+          "climbing_history_id": 594,
+          "score": 45.29,
+          "redpoint_score": 45.29,
+          "flash_score": 0,
+          "scoring_send_count": 7,
+          "scoring_flash_count": 0,
+          "total_qualifying_sends": 7,
+          "total_qualifying_flashes": 0,
+          "hardest_send": {
+            "route": "Harder Better Faster Stronger",
+            "grade": "9b",
+            "year": 2024,
+            "fa": true,
+            "style": "redpoint",
+            "discipline": "sport"
+          },
+          "hardest_flash": null,
+          "scoring_sends": [
+            {
+              "discipline": "sport",
+              "route": "Harder Better Faster Stronger",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 8319
+            },
+            {
+              "discipline": "sport",
+              "route": "Brooklyn",
+              "grade": "9b",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 2442
+            },
+            {
+              "discipline": "sport",
+              "route": "Mossoul",
+              "grade": "9b",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 2474
+            },
+            {
+              "discipline": "sport",
+              "route": "Quartiers Nord",
+              "grade": "9b",
+              "year": 2023,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 2800
+            },
+            {
+              "discipline": "sport",
+              "route": "Chikane",
+              "grade": "9b",
+              "year": 2022,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 1885
+            },
+            {
+              "discipline": "sport",
+              "route": "Harlem",
+              "grade": "9b",
+              "year": 2022,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 2095
+            },
+            {
+              "discipline": "sport",
+              "route": "Obsession",
+              "grade": "9b",
+              "year": 2019,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 669
+            }
+          ],
+          "rank": 28
+        },
+        {
           "name": "Adam Shahar",
           "climbing_history_id": 1944,
           "score": 45.0,
@@ -10755,7 +10929,7 @@
               "climbing_history_climb_id": 1151
             }
           ],
-          "rank": 28
+          "rank": 29
         },
         {
           "name": "Beckett Hsin",
@@ -10803,56 +10977,6 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 1091
-            }
-          ],
-          "rank": 29
-        },
-        {
-          "name": "Nalle Hukkataival",
-          "climbing_history_id": 602,
-          "score": 45.0,
-          "redpoint_score": 45.0,
-          "flash_score": 0,
-          "scoring_send_count": 3,
-          "scoring_flash_count": 0,
-          "total_qualifying_sends": 3,
-          "total_qualifying_flashes": 0,
-          "hardest_send": {
-            "route": "Burden of Dreams",
-            "grade": "9A",
-            "year": 2016,
-            "fa": true,
-            "style": "redpoint",
-            "discipline": "boulder"
-          },
-          "hardest_flash": null,
-          "scoring_sends": [
-            {
-              "discipline": "boulder",
-              "route": "Burden of Dreams",
-              "grade": "9A",
-              "year": 2016,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 826
-            },
-            {
-              "discipline": "boulder",
-              "route": "Gioia",
-              "grade": "8C+",
-              "year": 2014,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 550
-            },
-            {
-              "discipline": "boulder",
-              "route": "Livin' Large",
-              "grade": "8C+",
-              "year": 2009,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 850
             }
           ],
           "rank": 30
@@ -10942,21 +11066,21 @@
             },
             {
               "discipline": "boulder",
-              "route": "The Story of Three Worlds",
-              "grade": "8C+",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 1980
-            },
-            {
-              "discipline": "boulder",
               "route": "Vecchio Leone SDS",
               "grade": "8C+",
               "year": 2025,
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 2194
+            },
+            {
+              "discipline": "boulder",
+              "route": "The Story of Three Worlds",
+              "grade": "8C+",
+              "year": 2025,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 1980
             },
             {
               "discipline": "boulder",
@@ -11250,15 +11374,6 @@
             },
             {
               "discipline": "sport",
-              "route": "Stoking the Fire",
-              "grade": "9b",
-              "year": 2025,
-              "style": "redpoint",
-              "fa": false,
-              "climbing_history_climb_id": 502
-            },
-            {
-              "discipline": "sport",
               "route": "Sleeping Lion",
               "grade": "9b",
               "year": 2024,
@@ -11274,6 +11389,15 @@
               "style": "redpoint",
               "fa": false,
               "climbing_history_climb_id": 474
+            },
+            {
+              "discipline": "sport",
+              "route": "Stoking the Fire",
+              "grade": "9b",
+              "year": 2024,
+              "style": "redpoint",
+              "fa": false,
+              "climbing_history_climb_id": 502
             },
             {
               "discipline": "sport",
@@ -11751,21 +11875,21 @@
             },
             {
               "discipline": "sport",
-              "route": "Vidra la Vida",
-              "grade": "9b",
-              "year": 2026,
-              "style": "redpoint",
-              "fa": true,
-              "climbing_history_climb_id": 5308
-            },
-            {
-              "discipline": "sport",
               "route": "El Gran Cabrón",
               "grade": "9b",
               "year": 2026,
               "style": "redpoint",
               "fa": true,
               "climbing_history_climb_id": 4716
+            },
+            {
+              "discipline": "sport",
+              "route": "Vidra la Vida",
+              "grade": "9b",
+              "year": 2026,
+              "style": "redpoint",
+              "fa": true,
+              "climbing_history_climb_id": 5308
             },
             {
               "discipline": "sport",
